@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>click_Applications</name>
+   <tag></tag>
+   <elementGuidId>5a2f5af1-f75b-4451-90e6-63910d26a67d</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;main-menu-nav&quot;]/a[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@href = '/application' and @class = 'main-nav nav-item  nav-link' and (text() = '  Applications' or . = '  Applications')]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>379856a1-c602-4f9a-aac8-3f945684ea02</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/application</value>
+      <webElementGuid>d504fdea-77b3-4a3d-9c10-b3e69019c031</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>main-nav nav-item  nav-link</value>
+      <webElementGuid>296b5b28-0283-48cd-a012-153a65374a9d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>  Applications</value>
+      <webElementGuid>0c513a18-742c-49b3-978d-65c750dfb19f</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main-menu-nav&quot;)/a[@class=&quot;main-nav nav-item  nav-link&quot;]</value>
+      <webElementGuid>478fb73f-ff1e-40c7-aea2-1f8bbb098d4e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main-menu-nav']/a[2]</value>
+      <webElementGuid>4da4784d-4c96-426b-9d5c-b1b6119e402e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='formsflow.ai'])[2]/following::a[2]</value>
+      <webElementGuid>e17eff67-5ce4-4099-a3a5-cba7b99d39b5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Client FFA'])[1]/preceding::a[1]</value>
+      <webElementGuid>9f02a29d-0e2d-46df-a17e-397a16897b31</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Submission Saved.'])[1]/preceding::a[1]</value>
+      <webElementGuid>46a3f8d8-68d0-4ccb-8caf-11b1da1cc71b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Applications']/parent::*</value>
+      <webElementGuid>905f9b1d-9737-4cbd-a0c7-cf71857339f0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>//a[contains(@href, '/application')]</value>
+      <webElementGuid>023a3569-2ceb-48f4-a51f-a6ae1ccd7b8f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[2]</value>
+      <webElementGuid>43ca43ac-4b4a-4fee-b080-d02982f94436</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

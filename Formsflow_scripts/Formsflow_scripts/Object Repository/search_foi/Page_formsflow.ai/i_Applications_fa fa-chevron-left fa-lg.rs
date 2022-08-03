@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_Applications_fa fa-chevron-left fa-lg</name>
+   <tag></tag>
+   <elementGuidId>4db66ac1-8213-4bc8-912f-76be8ef979e5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div/div/a/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.fa.fa-chevron-left.fa-lg</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>294b143d-233e-46ed-a74a-a901a3cf841b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fa fa-chevron-left fa-lg</value>
+      <webElementGuid>4809e50e-e416-4f32-b22c-8b968c121275</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[1]/div[@class=&quot;container overflow-y-auto&quot;]/div[@class=&quot;main-header&quot;]/a[1]/i[@class=&quot;fa fa-chevron-left fa-lg&quot;]</value>
+      <webElementGuid>b289cd6f-ee89-434d-809b-28cab9ef1f5c</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/div/a/i</value>
+      <webElementGuid>34416d40-59fc-41ae-8d7d-a068cf2a675b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/a/i</value>
+      <webElementGuid>3e15a024-2be4-4a52-a626-e754378bf7ec</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

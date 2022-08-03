@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Select Clerk Action_form-control ui flu_224690</name>
+   <tag></tag>
+   <elementGuidId>fcc7f2fc-5959-4671-b994-595c58f264de</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='elgpmpq']/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.form-control.ui.fluid.selection.dropdown</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>906e92c4-7be6-49ed-94a1-100d4436a6a3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>form-control ui fluid selection dropdown</value>
+      <webElementGuid>d090c41d-f535-42ed-b4e7-9645af84f7a6</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tabindex</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>637846a9-f8c5-4616-bbbc-98d54fa9f3df</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;elgpmpq&quot;)/div[@class=&quot;choices form-group formio-choices&quot;]/div[@class=&quot;form-control ui fluid selection dropdown&quot;]</value>
+      <webElementGuid>b1a814ef-1f74-4fc0-8227-2924d3a63fd1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='elgpmpq']/div/div</value>
+      <webElementGuid>461d163c-2a07-49e2-a9bd-749ab2adeb9e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Clerk Action'])[1]/following::div[2]</value>
+      <webElementGuid>41c7f0e8-f70a-4fbb-bd68-ef220e3dd683</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Clerk Actions'])[1]/following::div[4]</value>
+      <webElementGuid>3c2146cc-a0a5-4f2a-9021-89347d73d6f9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reviewed'])[1]/preceding::div[2]</value>
+      <webElementGuid>bc7f3be8-dd53-4d39-a28b-e350a7897685</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Returned'])[1]/preceding::div[3]</value>
+      <webElementGuid>6e0e45be-7af4-4fea-a35b-cd6c2b5aff06</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div/div[2]/div/div/div</value>
+      <webElementGuid>ae966e5f-3beb-486f-b522-dc740a1372ea</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

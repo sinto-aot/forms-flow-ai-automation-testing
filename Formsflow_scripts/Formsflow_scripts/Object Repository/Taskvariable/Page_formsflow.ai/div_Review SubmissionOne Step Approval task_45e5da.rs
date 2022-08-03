@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Review SubmissionOne Step Approval task_45e5da</name>
+   <tag></tag>
+   <elementGuidId>b03ef0e1-ca19-4056-bcf6-3e988495490b</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div/section/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.clickable.shadow.border.false</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>43138af3-c592-455b-bb9d-b1c26b24c403</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>clickable shadow border  false</value>
+      <webElementGuid>ebed1f4d-13ce-48c3-a39c-b3e3b62b10c2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Review SubmissionOne Step Approval task listener1_updated      Created a few seconds ago50ApplicationId3192Form NameAutomation Test</value>
+      <webElementGuid>6bc156fd-4aa5-4249-9b3c-a65eda774547</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12&quot;]/section[1]/div[@class=&quot;service-task-list list-group&quot;]/div[@class=&quot;clickable shadow border  false&quot;]</value>
+      <webElementGuid>94131877-e5fd-4ab0-8a7a-0ba952b6923e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/section/div/div[2]</value>
+      <webElementGuid>af2e1d30-c3ee-4217-9d60-edcdafccf02e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='For Variable, ignore case ofNamevalue'])[1]/following::div[1]</value>
+      <webElementGuid>78dbb8ae-210d-407e-aff4-994d5be9c010</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Automation Test'])[1]/following::div[3]</value>
+      <webElementGuid>06e84a2d-fc8b-4355-8aec-3dd53759a89c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/div[2]</value>
+      <webElementGuid>fa012659-b55f-4296-ab4d-26e6ab22f90f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Review SubmissionOne Step Approval task listener1_updated      Created a few seconds ago50ApplicationId3192Form NameAutomation Test' or . = 'Review SubmissionOne Step Approval task listener1_updated      Created a few seconds ago50ApplicationId3192Form NameAutomation Test')]</value>
+      <webElementGuid>116d91d9-3f64-4f89-9a47-4f069466fa7e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
