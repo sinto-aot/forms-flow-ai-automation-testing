@@ -18,6 +18,8 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Reviewer_task/Page_formsflow.ai/div_One Step Approval'))
 
 WebUI.click(findTestObject('Reviewer_task/Page_formsflow.ai/span_Claim'))

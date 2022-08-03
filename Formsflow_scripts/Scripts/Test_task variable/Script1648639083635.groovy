@@ -17,3 +17,24 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.openBrowser('')
+
+WebUI.navigateToUrl('https://app2.aot-technologies.com/')
+
+WebUI.setText(findTestObject('Object Repository/test_script/Page_Log in to forms-flow-mahagony/input_Username or email_username'), 
+    'john.hon')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/test_script/Page_Log in to forms-flow-mahagony/input_Password_password'), 
+    'VAecVr+ctxg=')
+
+WebUI.setText(findTestObject('Object Repository/test_script/Page_Log in to forms-flow-mahagony/input_Username or email_username'), 
+    'john.honai')
+
+WebUI.setEncryptedText(findTestObject('Object Repository/test_script/Page_Log in to forms-flow-mahagony/input_Password_password'), 
+    '76bZg6XXmfs=')
+
+WebUI.sendKeys(findTestObject('Object Repository/test_script/Page_Log in to forms-flow-mahagony/input_Password_password'), 
+    Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Object Repository/test_script/Page_formsflow.ai/div_Review SubmissionOne Step Approval     _ec4149'))
+
