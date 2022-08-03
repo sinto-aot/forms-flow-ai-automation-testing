@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Assignee</name>
+   <tag></tag>
+   <elementGuidId>74ca15bb-2a8e-4f94-9267-cfa43f08cafc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;main&quot;]/div/div[1]/section/div/div[1]/div/div/div/div[4]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>dc87d28c-9ba2-4e12-ab68-f0ad0480735b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>clickable p-0 mb-2</value>
+      <webElementGuid>1a906d75-22e3-45e8-91ad-a1091b8de8d9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Assignee</value>
+      <webElementGuid>1f70aa5e-d527-4856-b3c4-360dda345836</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12&quot;]/section[1]/div[@class=&quot;service-task-list list-group&quot;]/div[@class=&quot;filter-container&quot;]/div[1]/div[2]/div[@class=&quot;filter-details&quot;]/div[@class=&quot;box-container&quot;]/span[@class=&quot;click-element mr-1 list-span&quot;]/div[@class=&quot;filter-items&quot;]/div[@class=&quot;clickable p-0 mb-2&quot;]</value>
+      <webElementGuid>7fa8b6d2-2be5-4693-b3d0-f0c1ffb12b43</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/section/div/div/div/div[2]/div/div[2]/span/div/div[4]</value>
+      <webElementGuid>55bd39db-a47c-4885-ab2e-c18c95a40160</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Process Definition Name'])[1]/following::div[1]</value>
+      <webElementGuid>1ccf647c-48d3-498a-8934-9ce33c0e8d3e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Task Variables'])[1]/following::div[2]</value>
+      <webElementGuid>303ad6e3-e5e3-4f6a-8523-7e441e58fbba</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Candidate Group'])[1]/preceding::div[1]</value>
+      <webElementGuid>ad893876-abf1-4a1b-a208-b3c9c62907e0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Candidate User'])[1]/preceding::div[2]</value>
+      <webElementGuid>e7c8b627-1f1c-46a7-a744-e00541b7ca27</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Assignee']/parent::*</value>
+      <webElementGuid>c82375b0-383c-4760-b168-c3f611a61fe7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/div/div[4]</value>
+      <webElementGuid>347aa01a-da2a-4bfb-9a56-f4825271562b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Assignee' or . = 'Assignee')]</value>
+      <webElementGuid>26f32b89-0de1-4ac9-a63a-5d31ce4da6f4</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Review SubmissionOne Step Approval     _ec4149</name>
+   <tag></tag>
+   <elementGuidId>fe460dd5-56e5-40a9-a228-7a258309b83f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div/section/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.clickable.shadow.border.false</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>d115fa63-542b-4f29-96fc-4971e953a780</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>clickable shadow border  false</value>
+      <webElementGuid>50a100dd-b740-4b24-8aee-a9fd3f8ab154</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Review SubmissionOne Step Approval      Created an hour ago50ApplicationId3206Form NameFreedom of Information and Protection of Privacy</value>
+      <webElementGuid>b54bf1f0-6110-4d72-876e-0ec0f62b3d3c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12&quot;]/section[1]/div[@class=&quot;service-task-list list-group&quot;]/div[@class=&quot;clickable shadow border  false&quot;]</value>
+      <webElementGuid>ee1a7ac1-1619-4ad0-8ea2-61564d92376d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/section/div/div[2]</value>
+      <webElementGuid>ac139e1b-2e3d-4b6c-bf47-0f5b22df30be</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Created'])[1]/following::div[6]</value>
+      <webElementGuid>640c30cd-7a97-473c-afc0-4fe49f81554d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/div[2]</value>
+      <webElementGuid>fa445077-5de7-4b32-ab11-584e15da6b8f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Review SubmissionOne Step Approval      Created an hour ago50ApplicationId3206Form NameFreedom of Information and Protection of Privacy' or . = 'Review SubmissionOne Step Approval      Created an hour ago50ApplicationId3206Form NameFreedom of Information and Protection of Privacy')]</value>
+      <webElementGuid>e57d3356-890d-46f5-a437-42ccc72d7803</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

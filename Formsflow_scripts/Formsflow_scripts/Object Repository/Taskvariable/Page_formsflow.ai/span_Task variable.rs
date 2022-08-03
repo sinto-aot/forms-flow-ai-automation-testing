@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Task variable</name>
+   <tag></tag>
+   <elementGuidId>2f3b19e5-3f77-459a-b50f-64f5e7bfdf11</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div/div/div/div[2]/div/div/div[5]/div/div/button[2]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>2ce1c049-3718-45fc-a547-e674a4e5995c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>MuiTab-wrapper</value>
+      <webElementGuid>bcc084e7-ad14-4241-867b-1146097ffb33</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Task variable</value>
+      <webElementGuid>03653a93-ff63-4e2a-8366-9db07846c15d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[1]/div[@class=&quot;paper-root&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-baseline&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12&quot;]/div[2]/div[1]/div[@class=&quot;MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-baseline&quot;]/div[@class=&quot;MuiTabs-root&quot;]/div[@class=&quot;MuiTabs-scroller MuiTabs-fixed&quot;]/div[@class=&quot;MuiTabs-flexContainer&quot;]/button[@class=&quot;MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary&quot;]/span[@class=&quot;MuiTab-wrapper&quot;]</value>
+      <webElementGuid>93ac75e8-8a79-41f9-9285-345334d71381</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/div/div/div[2]/div/div/div[5]/div/div/button[2]/span</value>
+      <webElementGuid>a945c414-0fbb-4e74-8b8e-d7b867e595bf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Workflow Associate'])[1]/following::span[2]</value>
+      <webElementGuid>a4a7d77f-5637-4ba5-be67-020b985c0684</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Next'])[1]/following::span[3]</value>
+      <webElementGuid>fe576bb2-7e90-40d3-ac95-6cf36248814f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Please select from one of the following workflows.'])[1]/preceding::span[5]</value>
+      <webElementGuid>2083a545-51a7-4adf-9ba1-afad40c2cfb0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='One Step Approval task listener1_updated'])[1]/preceding::span[6]</value>
+      <webElementGuid>0eb7150f-173c-49ef-9090-2515c2153906</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Task variable']/parent::*</value>
+      <webElementGuid>66c2a9a8-2a74-4423-bdb5-a8e345290520</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]/span</value>
+      <webElementGuid>29937dde-cd46-4f03-964b-7d54c763a560</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Task variable' or . = 'Task variable')]</value>
+      <webElementGuid>11cdae07-b173-47b7-a90b-4474a196f29b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

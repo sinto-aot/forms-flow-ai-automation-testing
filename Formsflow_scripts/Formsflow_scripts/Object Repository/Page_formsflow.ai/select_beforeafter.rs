@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>select_beforeafter</name>
+   <tag></tag>
+   <elementGuidId>90e1cfc4-a909-4024-90cc-c9ba25b8c8a2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>select.operator-selector.click-element</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div/section/div/div/div/div[2]/div/div[2]/span[2]/span[2]/div/span/select</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>select</value>
+      <webElementGuid>a0312f5f-b899-4ece-9923-2892e08e65ac</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>operator-selector click-element</value>
+      <webElementGuid>70c20d7b-4f63-4ef9-85bf-06de3500b488</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>beforeafter</value>
+      <webElementGuid>410f7118-ad79-4a9e-a1c5-0dba3412fc46</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12&quot;]/section[1]/div[@class=&quot;service-task-list list-group&quot;]/div[@class=&quot;filter-container&quot;]/div[1]/div[2]/div[@class=&quot;filter-details&quot;]/div[@class=&quot;box-container&quot;]/span[2]/span[@class=&quot;condition-container&quot;]/div[@class=&quot;operator-box-container&quot;]/span[@class=&quot;operator-container&quot;]/select[@class=&quot;operator-selector click-element&quot;]</value>
+      <webElementGuid>5dc3ca3a-8945-47bf-9e2c-394e22c2b5e4</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/section/div/div/div/div[2]/div/div[2]/span[2]/span[2]/div/span/select</value>
+      <webElementGuid>8fa85e97-fa17-4e08-bc0e-12da7a71430e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Due Date'])[1]/following::select[1]</value>
+      <webElementGuid>ed7f3ff0-9b08-4a76-bda2-8da610ce64c2</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Sunday, July 31, 2022 at 12:00 AM'])[1]/preceding::select[1]</value>
+      <webElementGuid>75a473db-fdd7-4b4e-9f09-acd14d3314c0</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Review Applications'])[1]/preceding::select[1]</value>
+      <webElementGuid>f2539178-c87c-454a-bb6a-6e07f94e8b19</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//select</value>
+      <webElementGuid>b79b64e7-ea3f-42ff-bada-de28b69ea1a5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//select[(text() = 'beforeafter' or . = 'beforeafter')]</value>
+      <webElementGuid>e12e9a2f-e365-42da-b5bb-bb802e7a6e6b</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

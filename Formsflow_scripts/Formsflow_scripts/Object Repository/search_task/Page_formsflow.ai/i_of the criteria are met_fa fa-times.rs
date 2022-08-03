@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_of the criteria are met_fa fa-times</name>
+   <tag></tag>
+   <elementGuidId>afce380e-f816-4fa8-ba5d-1e3f8f008dd9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div/section/div/div/div/div[2]/div/div/span/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.fa.fa-times</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>2fd66048-cdea-43fd-8f9f-a6aa5894a835</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fa fa-times</value>
+      <webElementGuid>58e0404b-315b-4ef7-91f3-8348150a8645</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>3b9b8af1-ead2-4921-98c2-477fb081e64d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12&quot;]/section[1]/div[@class=&quot;service-task-list list-group&quot;]/div[@class=&quot;filter-container&quot;]/div[1]/div[2]/div[@class=&quot;filter-details&quot;]/div[@class=&quot;close-container  click-element&quot;]/span[@class=&quot;close-btn&quot;]/i[@class=&quot;fa fa-times&quot;]</value>
+      <webElementGuid>3d01ecec-9c63-4f96-9c9e-160a6e26d703</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/section/div/div/div/div[2]/div/div/span/i</value>
+      <webElementGuid>6496c182-d8fd-4833-8e73-2ba7fba43b0a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/span/i</value>
+      <webElementGuid>e249ba33-3535-4157-a58b-abb0f0792376</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

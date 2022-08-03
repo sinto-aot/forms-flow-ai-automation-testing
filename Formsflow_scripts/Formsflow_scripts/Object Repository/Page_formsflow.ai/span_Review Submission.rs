@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Review Submission</name>
+   <tag></tag>
+   <elementGuidId>857b658f-a09f-496f-8d31-a356cf0edff5</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>#task-search-input > span.click-element</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='task-search-input']/span</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>c8fb53c0-42c2-418a-9b65-7b7c5e5e4dbe</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>value</value>
+      <webElementGuid>579f4c92-2bd6-4666-9891-31b6a5423628</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>click-element</value>
+      <webElementGuid>f20d0148-0d13-4d55-bf86-4a89a3b3e3a7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Review Submission</value>
+      <webElementGuid>68afaf26-f37a-484b-a48c-701b0ea016fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;task-search-input&quot;)/span[@class=&quot;click-element&quot;]</value>
+      <webElementGuid>66276348-9866-4f67-b1ed-d13df4e33a2a</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='task-search-input']/span</value>
+      <webElementGuid>69d159b2-5669-4bee-81be-83c5eedbb737</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Assignee'])[1]/following::span[6]</value>
+      <webElementGuid>e1915333-9779-49ce-89bf-8761745025aa</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='No task matching filters found.'])[1]/preceding::span[2]</value>
+      <webElementGuid>68abe116-31ff-472c-bd50-14042ff00812</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select a task in the list.'])[1]/preceding::span[2]</value>
+      <webElementGuid>38237a88-b9f8-4a80-87ff-c59721ef6746</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Review Submission']/parent::*</value>
+      <webElementGuid>4b57c656-3226-4d22-9077-6843d58e9906</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]/div/span[2]/span</value>
+      <webElementGuid>45f41f8d-8589-4183-8124-f0b0da433c83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'value' and (text() = 'Review Submission' or . = 'Review Submission')]</value>
+      <webElementGuid>2672cd13-28c2-41e4-8acc-778147ef7f86</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

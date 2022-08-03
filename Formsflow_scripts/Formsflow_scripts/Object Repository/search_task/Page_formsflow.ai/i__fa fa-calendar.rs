@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i__fa fa-calendar</name>
+   <tag></tag>
+   <elementGuidId>c23e7fc8-9859-4bee-81c4-1e0d3a8fd37f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>i.fa.fa-calendar</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//span[@id='task-search-input']/div/div/div/i</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>9978d8a5-9b9e-4b91-ad2f-4f28a2764705</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fa fa-calendar</value>
+      <webElementGuid>3e7a2a45-0502-42bc-a471-557055fea190</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;task-search-input&quot;)/div[@class=&quot;react-datepicker-wrapper&quot;]/div[@class=&quot;react-datepicker__input-container&quot;]/div[1]/i[@class=&quot;fa fa-calendar&quot;]</value>
+      <webElementGuid>4eb0bb6a-a882-43f6-b92a-07044756b245</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//span[@id='task-search-input']/div/div/div/i</value>
+      <webElementGuid>45076ed6-5613-44bc-bdd6-9a4e7bd02245</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span[2]/div/div/div/i</value>
+      <webElementGuid>833c0702-8401-4aa1-b5e9-5045751d1d5f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

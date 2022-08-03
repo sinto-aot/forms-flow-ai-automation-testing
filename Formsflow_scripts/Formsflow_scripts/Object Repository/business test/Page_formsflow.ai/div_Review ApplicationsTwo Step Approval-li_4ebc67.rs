@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Review ApplicationsTwo Step Approval-li_4ebc67</name>
+   <tag></tag>
+   <elementGuidId>1ef337ac-c834-4950-a7b1-58c0b18889fc</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div/section/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.clickable.shadow.border.false</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>2b962a7e-1f19-43b4-a1ed-bc1336d353fb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>clickable shadow border  false</value>
+      <webElementGuid>9b6a09ae-e5fe-4336-8575-0118c0fec47b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Review ApplicationsTwo Step Approval-listener john.honai     Created a month ago50StatusResubmittedID2837</value>
+      <webElementGuid>605ee435-cf65-441c-927e-98c4939b03d4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12&quot;]/section[1]/div[@class=&quot;service-task-list list-group&quot;]/div[@class=&quot;clickable shadow border  false&quot;]</value>
+      <webElementGuid>85b10fbf-1da1-438b-8ef5-69b5cfec0d59</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/section/div/div[2]</value>
+      <webElementGuid>523c197b-aa1c-4f08-9f3a-f844644dc042</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='For Variable, ignore case ofNamevalue'])[1]/following::div[1]</value>
+      <webElementGuid>2e69280a-71c3-4054-8531-f5c5a02933cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Resubmitted'])[1]/following::div[3]</value>
+      <webElementGuid>913cae90-ee79-45bc-949f-bf4170cd447d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/div[2]</value>
+      <webElementGuid>f8790289-c73f-4f82-846d-d352be9a6111</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Review ApplicationsTwo Step Approval-listener john.honai     Created a month ago50StatusResubmittedID2837' or . = 'Review ApplicationsTwo Step Approval-listener john.honai     Created a month ago50StatusResubmittedID2837')]</value>
+      <webElementGuid>55cdeab1-f877-4536-a2aa-d99fc0931ee8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

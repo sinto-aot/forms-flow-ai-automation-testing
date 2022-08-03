@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>a_Approver task (44)</name>
+   <tag></tag>
+   <elementGuidId>26a16a1a-c507-4f3a-9a3f-13a3b5ce2d0c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main-menu-nav']/div/div/a[6]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>cc355dd0-706e-4d2e-b692-3e2a4adcb618</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/task</value>
+      <webElementGuid>37492bb6-4333-42ac-8494-974bc8635bcc</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>main-nav nav-item  dropdown-item</value>
+      <webElementGuid>e06227ad-9b50-4583-9c94-eaf015964b41</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Approver task (44)</value>
+      <webElementGuid>88fda0eb-2e72-4758-b403-79cc56858c33</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main-menu-nav&quot;)/div[@class=&quot;main-nav nav-item taskDropdown active-tab-dropdown nav-item show dropdown&quot;]/div[@class=&quot;dropdown-menu show&quot;]/a[@class=&quot;main-nav nav-item  dropdown-item&quot;]</value>
+      <webElementGuid>8568f1ec-479f-46f6-ab5c-3079e57a7719</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main-menu-nav']/div/div/a[6]</value>
+      <webElementGuid>3e4960e4-2833-4770-a903-26c696dd0d3f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='My task (254)'])[1]/following::a[1]</value>
+      <webElementGuid>f9aa4c47-d1b2-48ec-82e3-046ff4171e52</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Reviewer Tasks (484)'])[1]/following::a[2]</value>
+      <webElementGuid>85573f1a-fba4-4a0a-acb1-1dd9d0256b44</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NRS Receiver Task (2)'])[1]/preceding::a[1]</value>
+      <webElementGuid>9d49a2ae-e6db-47a2-bf4f-278592c7418e</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NRS Reviewer Task (0)'])[1]/preceding::a[2]</value>
+      <webElementGuid>aff132d8-956c-498d-9b25-0b41bce2152a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Approver task']/parent::*</value>
+      <webElementGuid>65f271bd-f021-4185-a393-2fecbd4551df</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:href</name>
+      <type>Main</type>
+      <value>(//a[contains(@href, '/task')])[6]</value>
+      <webElementGuid>faeb0849-660a-4798-bc42-f1ad0f62206a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//a[6]</value>
+      <webElementGuid>6bd5ca6d-7c7e-4c58-b047-37bb7bdf6fde</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//a[@href = '/task' and (text() = 'Approver task (44)' or . = 'Approver task (44)')]</value>
+      <webElementGuid>cda305a3-c05f-426a-b886-efc2d622f365</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

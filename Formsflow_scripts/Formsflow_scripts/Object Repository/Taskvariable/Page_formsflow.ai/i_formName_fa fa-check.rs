@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_formName_fa fa-check</name>
+   <tag></tag>
+   <elementGuidId>bed5e2ce-2032-4218-bbe3-2f1f61239027</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;main&quot;]/div/div[1]/section/div/div[1]/div[1]/div[2]/div/div[2]/span[2]/span[2]/span/span/button[2]/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.fa.fa-check</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>3f68da04-4e22-4f84-a187-28c6ce0972b7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fa fa-check</value>
+      <webElementGuid>f0c7ba92-2a43-4d9d-b4dd-d3e98c252bcf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>a2646a09-b3ec-4d7d-bbc7-c9eb6e1ee0b1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12&quot;]/section[1]/div[@class=&quot;service-task-list list-group&quot;]/div[@class=&quot;filter-container&quot;]/div[1]/div[2]/div[@class=&quot;filter-details&quot;]/div[@class=&quot;box-container&quot;]/span[2]/span[@class=&quot;condition-container&quot;]/span[@class=&quot;btn-container second-box&quot;]/span[@class=&quot;second-inner-box&quot;]/button[@class=&quot;btn click-element&quot;]/i[@class=&quot;fa fa-check&quot;]</value>
+      <webElementGuid>e6f20f69-a7d9-4547-8702-fe8f7612282d</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/section/div/div/div/div[2]/div/div[2]/span[2]/span[2]/span/span/button[2]/i</value>
+      <webElementGuid>bbaee79e-057d-483c-9b04-3ab69d8e6f56</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//button[2]/i</value>
+      <webElementGuid>5a9bd97a-b104-4b14-85b8-15f757de0011</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

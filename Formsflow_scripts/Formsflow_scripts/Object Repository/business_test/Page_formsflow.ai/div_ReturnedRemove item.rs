@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_ReturnedRemove item</name>
+   <tag></tag>
+   <elementGuidId>89a81836-9ecd-4b0f-8ba7-d8ee302afa64</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='elgpmpq']/div/div/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.choices__item.choices__item--selectable</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>6ebfae7f-5fbf-41c7-b02f-fd55e245518a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>choices__item choices__item--selectable</value>
+      <webElementGuid>5aed5520-aa42-41f9-bc80-9186345f0470</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-id</name>
+      <type>Main</type>
+      <value>4</value>
+      <webElementGuid>0a709929-5a58-4103-9030-6c3340856929</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-value</name>
+      <type>Main</type>
+      <value>Returned</value>
+      <webElementGuid>ded64c4b-5524-4dc2-9ce0-b47935b62963</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-selected</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>01750940-625c-4fa8-a19a-d9fd7e207e63</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>ReturnedRemove item</value>
+      <webElementGuid>26b249a8-dd94-4599-9f10-8830c00fbd05</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;elgpmpq&quot;)/div[@class=&quot;choices form-group formio-choices&quot;]/div[@class=&quot;form-control ui fluid selection dropdown&quot;]/div[@class=&quot;choices__list choices__list--single&quot;]/div[@class=&quot;choices__item choices__item--selectable&quot;]</value>
+      <webElementGuid>ffcac754-575c-4582-b139-67ca2fcb6060</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='elgpmpq']/div/div/div/div</value>
+      <webElementGuid>3019cbe5-d824-4f0f-aef2-1f10de75ecc8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Select Clerk Action'])[1]/following::div[4]</value>
+      <webElementGuid>babea557-a0a7-4a19-bcbe-2fceb918f92c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Clerk Actions'])[1]/following::div[6]</value>
+      <webElementGuid>f9fd8965-7d57-4645-a971-aeb5757122a3</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[6]/div/div[2]/div/div/div/div/div</value>
+      <webElementGuid>2d172593-ea23-42f3-8dcf-124c5e9bef25</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'ReturnedRemove item' or . = 'ReturnedRemove item')]</value>
+      <webElementGuid>d0c7931b-b245-46b7-917c-38920fa4e509</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
