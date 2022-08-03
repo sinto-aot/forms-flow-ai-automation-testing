@@ -71,3 +71,60 @@ WebUI.click(findTestObject('Object Repository/businessform_clerk-reviewer/Page_f
 //WebUI.click(findTestObject('businessform_clerk-reviewer/Page_formsflow.ai/a_history_nextpage'))
 WebUI.click(findTestObject('Object Repository/businessform_clerk-reviewer/Page_formsflow.ai/a_Process Diagram'))
 
+WebUI.click(findTestObject('Object Repository/task filter/Page_formsflow.ai/a_Tasks'))
+
+WebUI.click(findTestObject('Object Repository/business test/Page_formsflow.ai/input_Created_filter'))
+
+WebUI.click(findTestObject('Object Repository/business test/Page_formsflow.ai/div_Process Variables'))
+
+WebUI.click(findTestObject('Object Repository/business test/Page_formsflow.ai/span_'))
+
+WebUI.setText(findTestObject('businessform_clerk-reviewer/Page_formsflow.ai/input_processvariable'), 'applicationStatus')
+
+WebUI.sendKeys(findTestObject('businessform_clerk-reviewer/Page_formsflow.ai/input_processvariable'), Keys.chord(Keys.ENTER))
+
+WebUI.click(findTestObject('Object Repository/business test/Page_formsflow.ai/span__1'))
+
+WebUI.setText(findTestObject('Object Repository/business test/Page_formsflow.ai/input_applicationStatus_filters'), findTestData(
+        'Search_values').getValue(5, 4))
+
+WebUI.click(findTestObject('Object Repository/business test/Page_formsflow.ai/i_applicationStatus_fa fa-check'))
+
+WebUI.click(findTestObject('Object Repository/businessform_clerk-reviewer/Page_formsflow.ai/div_Two Step Approval'))
+
+WebUI.click(findTestObject('Object Repository/businessform_clerk-reviewer/Page_formsflow.ai/span_Claim'))
+
+WebUI.scrollToElement(findTestObject('businessform_clerk-reviewer/Page_formsflow.ai/div_Select Approver Action_dropdown'), 
+    3)
+
+WebUI.click(findTestObject('businessform_clerk-reviewer/Page_formsflow.ai/div_Select Approver Action_dropdown'))
+
+WebUI.setText(findTestObject('Businesslicensecreateform/Page_formsflow.ai/input_Select Approver_Action_choices'), 'Approved')
+
+WebUI.sendKeys(findTestObject('Businesslicensecreateform/Page_formsflow.ai/input_Select Approver_Action_choices'), Keys.chord(
+        Keys.ENTER))
+
+WebUI.click(findTestObject('businessform_clerk-reviewer/Page_formsflow.ai/select_Approved_reviewer'))
+
+WebUI.scrollToElement(findTestObject('businessform_clerk-reviewer/Page_formsflow.ai/textarea_Approver Comments_dataapproverComments'), 
+    3)
+
+WebUI.setText(findTestObject('Object Repository/businessform_clerk-reviewer/Page_formsflow.ai/textarea_Approver Comments_dataapproverComments'), 
+    'approved')
+
+WebUI.click(findTestObject('businessform_clerk-reviewer/Page_formsflow.ai/button_Submit_approver'))
+
+WebUI.delay(3)
+
+WebUI.click(findTestObject('business/Page_formsflow.ai/a_Applications'))
+
+WebUI.click(findTestObject('businessform_clerk-reviewer/Page_formsflow.ai/application_id'))
+
+WebUI.click(findTestObject('Object Repository/businessform_clerk-reviewer/Page_formsflow.ai/a_Form'))
+
+WebUI.click(findTestObject('Object Repository/businessform_clerk-reviewer/Page_formsflow.ai/a_History'))
+
+WebUI.click(findTestObject('businessform_clerk-reviewer/Page_formsflow.ai/a_history_nextpage'))
+
+WebUI.click(findTestObject('Object Repository/businessform_clerk-reviewer/Page_formsflow.ai/a_Process Diagram'))
+

@@ -6,19 +6,19 @@
    <elementGuidId>61a53471-538f-471f-93c3-e07d93b7a2be</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>div.col-6.pr-0</value>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div/section/div/div[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;main&quot;]/div/div[1]/section/ul/div[2]/div[2]/div[1]</value>
+         <key>CSS</key>
+         <value>div.col-6.pr-0</value>
       </entry>
       <entry>
          <key>BASIC</key>
          <value>//*[@id=&quot;main&quot;]/div/div[1]/section/ul/div[2]/div[2]/div[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -26,6 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>div</value>
+      <webElementGuid>b305b60b-a32c-4c0b-8054-840a753787c0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -33,6 +34,7 @@
       <name>class</name>
       <type>Main</type>
       <value>col-6 pr-0</value>
+      <webElementGuid>37d4741c-4e58-4c9d-a4b8-03d9ac74702e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -40,6 +42,7 @@
       <name>text</name>
       <type>Main</type>
       <value>One Step Approval</value>
+      <webElementGuid>ee5fe3e9-e3bf-4a8d-9bba-d9600045bc10</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -47,6 +50,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id=&quot;main&quot;]/div/div[1]/section/ul/div[2]/div[2]/div[1]</value>
+      <webElementGuid>fa02f6fc-073b-4174-b153-ba24bc8589fe</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,6 +58,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='main']/div/div/section/ul/div[2]/div[2]/div</value>
+      <webElementGuid>e9fb01b3-02e0-42ef-a8a7-56fe6b77b478</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -61,6 +66,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Review Submission'])[1]/following::div[2]</value>
+      <webElementGuid>d188ae37-8ed4-4d2e-ad06-0f82af75c8ee</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -68,6 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Created'])[1]/following::div[9]</value>
+      <webElementGuid>a990d7ab-c74c-4b49-a6b8-c3ed28c926c2</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -75,6 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Review Applications'])[1]/preceding::div[5]</value>
+      <webElementGuid>357648f3-c9c7-4448-b991-15ac899016d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -82,6 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='One Step Approval']/parent::*</value>
+      <webElementGuid>0eea6e69-f2ad-4a04-9b16-277d2497aa2d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -89,5 +98,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/div[2]/div</value>
+      <webElementGuid>e8b1a487-7c8e-42d8-ad5b-537bac624f26</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

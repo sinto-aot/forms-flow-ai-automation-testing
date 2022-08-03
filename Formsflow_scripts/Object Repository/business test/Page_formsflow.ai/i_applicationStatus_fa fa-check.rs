@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//div[@id='main']/div/div/section/div/div/div/div[2]/div/div[2]/span[2]/span[2]/span/span/button[2]/i</value>
+         <value>//*[@id=&quot;main&quot;]/div/div[1]/section/div/div[1]/div[1]/div[2]/div/div[1]/span/i</value>
       </entry>
       <entry>
          <key>CSS</key>
@@ -22,7 +22,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>i</value>
-      <webElementGuid>aba1a68e-42db-4857-97c0-fb7db32e7d3d</webElementGuid>
+      <webElementGuid>23d5179f-c4e9-4516-8483-1c992ed1d88c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +30,7 @@
       <name>class</name>
       <type>Main</type>
       <value>fa fa-check</value>
-      <webElementGuid>331068ab-5940-4565-985f-962f20d6e818</webElementGuid>
+      <webElementGuid>93e8613d-fab1-408e-b7c2-2c11d30020c9</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +38,7 @@
       <name>aria-hidden</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>9961151e-4654-41d0-869c-5e7b30fa1dac</webElementGuid>
+      <webElementGuid>52b41281-e788-43ad-8ea1-aa9d43013c88</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +46,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12&quot;]/section[1]/div[@class=&quot;service-task-list list-group&quot;]/div[@class=&quot;filter-container&quot;]/div[1]/div[2]/div[@class=&quot;filter-details&quot;]/div[@class=&quot;box-container&quot;]/span[2]/span[@class=&quot;condition-container&quot;]/span[@class=&quot;btn-container second-box&quot;]/span[@class=&quot;second-inner-box&quot;]/button[@class=&quot;btn click-element&quot;]/i[@class=&quot;fa fa-check&quot;]</value>
-      <webElementGuid>0694bd46-e6bd-4bc1-b082-180576b6f6ce</webElementGuid>
+      <webElementGuid>b7c486b3-29ca-420f-bda5-1efe70aadd81</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -54,7 +54,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='main']/div/div/section/div/div/div/div[2]/div/div[2]/span[2]/span[2]/span/span/button[2]/i</value>
-      <webElementGuid>59715654-d498-47cd-af34-de95d4a63e20</webElementGuid>
+      <webElementGuid>c2b9f05f-2a8d-45d2-9afb-efe8ebf72b0c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -62,6 +62,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//button[2]/i</value>
-      <webElementGuid>86f2cf61-45e8-426d-bc73-86ba3fc1f062</webElementGuid>
+      <webElementGuid>5d845a4c-407c-48f9-bfdb-01a6150638f6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>
