@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>input_Publish this form for Client Users_Ch_a04cc3</name>
+   <tag></tag>
+   <elementGuidId>bc90c928-612f-432f-b988-c7b96b0280c2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@name='Check box to associate form with a workflow']</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input[name=&quot;Check box to associate form with a workflow&quot;]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>input</value>
+      <webElementGuid>eeb218e0-11ec-4433-9288-459c43aab732</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>jss8</value>
+      <webElementGuid>2b3c7762-806f-4f61-8dfa-328e41c3d31d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>Check box to associate form with a workflow</value>
+      <webElementGuid>f6d10306-7d8c-46fd-b4fe-17b2ef492f41</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>checkbox</value>
+      <webElementGuid>d5dfea4d-c650-4f25-bcb4-cb4563b02a08</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-indeterminate</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>1d93f420-f375-4493-9e7e-f2620edbe610</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[1]/div[@class=&quot;paper-root&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-baseline&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12&quot;]/div[2]/div[1]/div[1]/div[@class=&quot;MuiGrid-root MuiGrid-container MuiGrid-spacing-xs-3 MuiGrid-align-items-xs-baseline&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12 MuiGrid-grid-sm-8&quot;]/div[@class=&quot;MuiPaper-root MuiCard-root MuiPaper-outlined MuiPaper-rounded&quot;]/div[@class=&quot;MuiCardContent-root&quot;]/form[1]/div[3]/label[1]/label[@class=&quot;MuiFormControlLabel-root&quot;]/span[@class=&quot;MuiButtonBase-root MuiIconButton-root jss5 MuiCheckbox-root MuiCheckbox-colorPrimary MuiIconButton-colorPrimary&quot;]/span[@class=&quot;MuiIconButton-label&quot;]/input[@class=&quot;jss8&quot;]</value>
+      <webElementGuid>ef15e32d-1b28-4896-90a1-2969b8f5f307</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>//input[@name='Check box to associate form with a workflow']</value>
+      <webElementGuid>cd4af905-43ba-46a6-b1e1-f891640be037</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/div/div/div[2]/div/div/div/div[4]/div/div/form/div[3]/label/label[2]/span/span/input</value>
+      <webElementGuid>61f031fc-6458-4776-aeea-e503f267e13d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//input</value>
+      <webElementGuid>09fa8533-4546-4f34-a2c2-a464dcb06af9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//input[@name = 'Check box to associate form with a workflow' and @type = 'checkbox']</value>
+      <webElementGuid>591f82dc-76f3-41ef-9f90-7a7c3334edb8</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
