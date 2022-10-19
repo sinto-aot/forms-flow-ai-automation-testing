@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_john-smith</name>
+   <tag></tag>
+   <elementGuidId>eb9b7731-200a-48f7-be89-e2e3b64bc6b9</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='application-details-tabpane-history']/div/div[2]/div/div/table/tbody/tr/td[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>20551c81-d416-403e-ab60-5fc45edad2eb</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>john-smith</value>
+      <webElementGuid>975dd829-f06a-4b11-aee7-3867394e5739</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;application-details-tabpane-history&quot;)/div[@class=&quot;container&quot;]/div[2]/div[@class=&quot;_loading_overlay_wrapper css-79elbk&quot;]/div[@class=&quot;react-bootstrap-table&quot;]/table[@class=&quot;table table-bordered&quot;]/tbody[1]/tr[1]/td[3]</value>
+      <webElementGuid>97fdad5d-3425-40c6-9e73-52de23d244db</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='application-details-tabpane-history']/div/div[2]/div/div/table/tbody/tr/td[3]</value>
+      <webElementGuid>5c9630f5-7b7a-4d99-8d4f-a6d34b6db20a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New'])[1]/following::td[2]</value>
+      <webElementGuid>c1baad79-5969-4b1f-af9a-8ba719bc185b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Submissions'])[1]/following::td[3]</value>
+      <webElementGuid>c4544272-d48b-4672-91db-1bc997711f85</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Completed'])[2]/preceding::td[2]</value>
+      <webElementGuid>adf2929f-cc2f-4ef6-b363-35fd4b8d2dd8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/table/tbody/tr/td[3]</value>
+      <webElementGuid>24bddd9f-5488-4b05-b14c-00a49fac7b29</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'john-smith' or . = 'john-smith')]</value>
+      <webElementGuid>98e2d21d-65b8-49e8-b378-65e7f1f28cfb</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

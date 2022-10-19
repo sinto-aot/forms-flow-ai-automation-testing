@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This tc is to submit an anonymous form</description>
+   <name>Anonymous submission</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1e267103-1f03-4c60-bee4-1e97d4314965</testCaseGuid>
+</TestCaseEntity>

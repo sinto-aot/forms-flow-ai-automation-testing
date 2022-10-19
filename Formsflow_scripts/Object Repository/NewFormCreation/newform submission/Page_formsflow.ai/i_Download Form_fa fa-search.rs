@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_Download Form_fa fa-search</name>
+   <tag></tag>
+   <elementGuidId>826173ca-abae-41f7-afa7-3377c16f83af</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/section/div/div/div/button[2]/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>i.fa.fa-search</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>0e09715f-f354-42c2-91c6-b6cce8e60d20</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fa fa-search</value>
+      <webElementGuid>4c77f0e9-616e-4da7-a6a2-b47ce48c4222</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;container&quot;]/section[@class=&quot;custom-grid grid-forms&quot;]/div[@class=&quot;row mt-2 mx-2&quot;]/div[@class=&quot;col&quot;]/div[@class=&quot;input-group&quot;]/button[@class=&quot;btn btn-outline-primary ml-2&quot;]/i[@class=&quot;fa fa-search&quot;]</value>
+      <webElementGuid>6cbe1b10-b499-4177-b204-e439f67f55eb</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/section/div/div/div/button[2]/i</value>
+      <webElementGuid>6285314a-8603-44e3-99cf-7d7266b5f5d9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/div/div/button[2]/i</value>
+      <webElementGuid>adb15f34-8553-4b5d-b24d-7d0c45a708e1</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
