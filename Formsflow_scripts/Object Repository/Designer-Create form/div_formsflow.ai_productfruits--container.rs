@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_formsflow.ai_productfruits--container</name>
+   <tag></tag>
+   <elementGuidId>c98e9e67-2b55-4e50-8ef5-9e5c3bc586e8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>CSS</key>
+         <value>div.productfruits--container</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//button[@class = 'productfruits--btn productfruits--card-footer-skip-button']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[3]</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>a8ddfc16-f138-4f66-a948-7d5648d49bd9</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>productfruits--btn productfruits--card-footer-skip-button</value>
+      <webElementGuid>802dc7f1-646d-451e-aa5b-e5d694c747dd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html[1]/body[@class=&quot;no-scroll&quot;]/div[@class=&quot;productfruits--container&quot;]</value>
+      <webElementGuid>714e96e9-f2e7-45b5-9030-853976c5d01a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Skip</value>
+      <webElementGuid>c4b43efc-2e45-4fc6-8192-37ab2ad8874e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]</value>
+      <webElementGuid>27a3f90c-70c8-4c6f-a9ee-fd46193e741f</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

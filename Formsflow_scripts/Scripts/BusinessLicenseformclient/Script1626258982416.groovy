@@ -17,30 +17,40 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-WebUI.setText(findTestObject('search_foi/Page_formsflow.ai/search_form name'), findTestData('Search_values').getValue(2, 
-        2))
+WebUI.setText(findTestObject('Business_Licence/search_form name'), findTestData('Search_values').getValue(2, 2))
+
+WebUI.click(findTestObject('Business_Licence/button_Forms_search-button'))
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('business/Page_formsflow.ai/button_Submit New'))
 
+'Verify the form opened is correct'
+WebUI.verifyElementPresent(findTestObject('Business_Licence/b_NEW BUSINESS LICENCE APPLICATION'), 2)
+
 WebUI.setText(findTestObject('Object Repository/FOI_client_submitform/Page_formsflow.ai/input_Business Operating Name_databusinessO_c3a9d7'), 
     findTestData('data for other fields').getValue(1, 2))
 
-WebUI.click(findTestObject('business1/Page_formsflow.ai/i_Proposed Business Start Date_fa fa-calendar'))
+WebUI.verifyElementPresent(findTestObject('Business_Licence/span_Saved to ApplicationsDrafts'), 2)
 
-WebUI.setText(findTestObject('Businesslicensecreateform/Page_formsflow.ai/input_date'), '04/29/2022')
+WebUI.sendKeys(findTestObject('FOI_client_submitform/Page_formsflow.ai/input_Business Operating Name_databusinessO_c3a9d7'), 
+    Keys.chord(Keys.TAB))
 
-WebUI.sendKeys(findTestObject('Businesslicensecreateform/Page_formsflow.ai/input_date'), Keys.chord(Keys.ENTER))
+WebUI.click(findTestObject('Business_Licence/input_Proposed Business Start Date_form-control input active'))
+
+WebUI.setText(findTestObject('Business_Licence/input_Proposed Business Start Date_form-control input active'), '04/29/2022')
+
+WebUI.sendKeys(findTestObject('Business_Licence/input_Proposed Business Start Date_form-control input active'), Keys.chord(
+        Keys.ENTER))
 
 WebUI.setText(findTestObject('business/Page_formsflow.ai/input_Business E-Mail_dataeMail'), findTestData('data for other fields').getValue(
-        3, 2))
+        8, 2))
 
 WebUI.setText(findTestObject('FOI_client_submitform/Page_formsflow.ai/input_Nature of Business_datanatureOfBusiness'), findTestData(
-        'data for other fields').getValue(2, 2))
+        'data for other fields').getValue(9, 2))
 
 WebUI.setText(findTestObject('FOI_client_submitform/Page_formsflow.ai/input_Number of Employees_datanumberOfEmployees'), 
-    findTestData('data for other fields').getValue(4, 2))
+    findTestData('Data_FOI_businessLIcense').getValue(12, 2))
 
 WebUI.click(findTestObject('Object Repository/business test/Page_formsflow.ai/span_Sole Proprietor'))
 
@@ -54,17 +64,35 @@ WebUI.scrollToElement(findTestObject('business/Page_formsflow.ai/button_Submit')
 
 WebUI.click(findTestObject('business/Page_formsflow.ai/button_Submit'))
 
+WebUI.delay(3)
+
 WebUI.verifyTextPresent('Submission Saved', false)
 
 WebUI.delay(3)
 
 WebUI.click(findTestObject('BusinessLicense/a_Applications'))
 
-WebUI.click(findTestObject('Object Repository/Reviewer_task/Page_formsflow.ai/a_23'))
+GlobalVariable.ApplicationId = WebUI.getText(findTestObject('Reviewer_task/Page_formsflow.ai/a_23'))
+
+WebUI.click(findTestObject('Reviewer_task/Page_formsflow.ai/a_23'))
+
+WebUI.verifyElementText(findTestObject('Business_Licence/td_5118'), GlobalVariable.ApplicationId)
+
+'Verify Application Status'
+WebUI.verifyElementText(findTestObject('Business_Licence/td_Application Status'), 'New')
 
 WebUI.click(findTestObject('Object Repository/Reviewer_task/Page_formsflow.ai/a_Form'))
 
+WebUI.verifyElementPresent(findTestObject('Business_Licence/b_NEW BUSINESS LICENCE APPLICATION-application'), 0)
+
+WebUI.verifyElementClickable(findTestObject('Business_Licence/button_Export PDF'), FailureHandling.STOP_ON_FAILURE)
+
 WebUI.click(findTestObject('Object Repository/Reviewer_task/Page_formsflow.ai/a_History'))
+
+'Verify History tab has details'
+WebUI.verifyElementPresent(findTestObject('Business_Licence/td_New'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Business_Licence/td_john-smith'), 0)
 
 //WebUI.switchToWindowIndex(1)
 //WebUI.executeJavaScript('window.scrollTo(0, document.body.scrollHeight)', null)

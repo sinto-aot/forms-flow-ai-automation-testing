@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Dashboard</name>
+   <tag></tag>
+   <elementGuidId>23b42e54-6e35-4355-b5d6-7fc8937e0f27</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//a[@href = '/metrics' and @data-testid = 'Dashboards']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>Text</name>
+      <type>Main</type>
+      <value>Tasks</value>
+      <webElementGuid>d9eb7b77-33bd-4806-a947-1828a9262f4b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>href</name>
+      <type>Main</type>
+      <value>/metrics</value>
+      <webElementGuid>3515d074-87bf-491c-8af9-b7b5137e3887</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>a</value>
+      <webElementGuid>91e87e07-1a97-4e50-973b-3ce2f0c03236</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>starts with</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>main-nav nav-item taskDropdown</value>
+      <webElementGuid>93cc50d8-9cb4-4e53-b0a7-b484892763ca</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-testid</name>
+      <type>Main</type>
+      <value>Dashboards</value>
+      <webElementGuid>69cfca53-a50b-4b1e-8e86-837d6207af30</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

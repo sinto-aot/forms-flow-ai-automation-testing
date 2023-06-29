@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_pdferror</name>
+   <tag></tag>
+   <elementGuidId>5de04c58-e6c6-491d-955f-12b8985a28a6</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='application-details-tabpane-form']/div/div/div/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.fade.alert.alert-danger.show</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>d3ec8c42-ff4d-4c82-afa3-9a7e258f7f84</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>alert</value>
+      <webElementGuid>e1d30061-3a96-42a0-b7b0-45912e2a3dc7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fade alert alert-danger show</value>
+      <webElementGuid>bb21afe1-d2f6-44cb-ac41-439a3385812e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Something went wrong. Please try again!</value>
+      <webElementGuid>68cd0e5d-b5a4-4b8b-9c25-7a042aee8bd2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;application-details-tabpane-form&quot;)/div[@class=&quot;container row task-container&quot;]/div[@class=&quot;main-header&quot;]/div[@class=&quot;btn-right d-flex flex-row&quot;]/div[@class=&quot;d-flex flex-column container&quot;]/div[@class=&quot;fade alert alert-danger show&quot;]</value>
+      <webElementGuid>cc4e9936-0db0-40f7-9fc2-5ea13b2d72ec</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='application-details-tabpane-form']/div/div/div/div/div[2]</value>
+      <webElementGuid>da0dbf08-56e3-44ee-9902-c47cfdbd4d70</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Export PDF'])[1]/following::div[1]</value>
+      <webElementGuid>fee085b4-128c-46ed-8a69-71a2580daabb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NEW BUSINESS LICENCE APPLICATION'])[1]/preceding::div[1]</value>
+      <webElementGuid>6b49f250-0618-49ad-ab7d-e7c4f3c1d7f5</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Something went wrong. Please try again!']/parent::*</value>
+      <webElementGuid>7c728342-07d0-47c4-9b5c-beae18f40763</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div[2]/div/div/div/div/div[2]</value>
+      <webElementGuid>5f3f155f-6355-404e-8023-14d556d3ef14</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Something went wrong. Please try again!' or . = 'Something went wrong. Please try again!')]</value>
+      <webElementGuid>8c7a0882-dd98-452f-a2a4-61f5e425568e</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

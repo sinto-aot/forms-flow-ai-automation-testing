@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_tasksearchresult</name>
+   <tag></tag>
+   <elementGuidId>27a36f49-74ab-4f9a-9740-28c73a81fc33</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div[2]/div/section/div/div[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.clickable.shadow.border.false</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>dcedfc0c-ac55-45dc-8be2-c6165e5b8c9e</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>clickable shadow border  false</value>
+      <webElementGuid>c31cc3ff-98eb-4574-ade5-531ffb537d05</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Approve/Reject ApplicationsTwo Step Approval-listener      Created 27 minutes ago50Business Operating NamejohnProposed Business Start Date2024-08-02T07:00:00.000Z</value>
+      <webElementGuid>73c23fb7-e332-4cdd-b9a8-6ba2cca739db</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12&quot;]/section[1]/div[@class=&quot;service-task-list list-group&quot;]/div[@class=&quot;clickable shadow border  false&quot;]</value>
+      <webElementGuid>52e55ecc-ac5b-437f-b279-03caf8dbb3ab</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div[2]/div/section/div/div[2]</value>
+      <webElementGuid>c68a7b4d-42ff-42ca-9ee8-b9b41048e020</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='For Variable, ignore case ofNamevalue'])[1]/following::div[1]</value>
+      <webElementGuid>a46b1962-8975-4a76-b4ae-ff2c2428d470</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='applicationId'])[1]/following::div[4]</value>
+      <webElementGuid>91c1db51-699b-4195-abf4-12303c755cb9</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//section/div/div[2]</value>
+      <webElementGuid>5f054614-40a8-48f2-8851-2ca36f4e6692</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = 'Approve/Reject ApplicationsTwo Step Approval-listener      Created 27 minutes ago50Business Operating NamejohnProposed Business Start Date2024-08-02T07:00:00.000Z' or . = 'Approve/Reject ApplicationsTwo Step Approval-listener      Created 27 minutes ago50Business Operating NamejohnProposed Business Start Date2024-08-02T07:00:00.000Z')]</value>
+      <webElementGuid>07317eb9-44a1-4838-9d30-80fc976512c9</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

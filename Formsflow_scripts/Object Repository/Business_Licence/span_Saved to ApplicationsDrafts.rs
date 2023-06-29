@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Saved to ApplicationsDrafts</name>
+   <tag></tag>
+   <elementGuidId>721d2c67-b08b-40be-beb0-d78210991542</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div/span/div/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.px-2.text-success</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>47493cee-42df-4e72-a44a-a8835a88b54b</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>px-2 text-success</value>
+      <webElementGuid>cd97754c-2002-4ea8-85f4-4fea73157508</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Saved to Applications/Drafts</value>
+      <webElementGuid>ff7575bc-993d-4ac6-a185-9185f7e88c62</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[1]/div[@class=&quot;container overflow-y-auto form-view-wrapper&quot;]/span[@class=&quot;pr-2  mr-2 d-flex justify-content-end align-items-center&quot;]/div[@class=&quot;d-flex align-items-center justify-content-end px-2 transition-end&quot;]/span[@class=&quot;px-2 text-success&quot;]</value>
+      <webElementGuid>130f4e6d-1a93-4319-9f82-18003bd935dc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/span/div/span</value>
+      <webElementGuid>9033977d-9c58-4c99-bfce-dc7048b2a4e1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Forms'])[1]/following::span[2]</value>
+      <webElementGuid>1099cacc-3752-4662-9ca4-3eb16a7b826d</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Saved to Applications/Drafts']/parent::*</value>
+      <webElementGuid>c34ef783-6b8c-4360-920c-1b3eba7de378</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//span/div/span</value>
+      <webElementGuid>a751892e-0a31-4f71-a9dc-0f2019fca3bd</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Saved to Applications/Drafts' or . = 'Saved to Applications/Drafts')]</value>
+      <webElementGuid>d47fe777-5d47-4495-8596-501582f30ecf</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

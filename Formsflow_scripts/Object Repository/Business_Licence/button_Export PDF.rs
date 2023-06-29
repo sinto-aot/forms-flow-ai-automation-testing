@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>button_Export PDF</name>
+   <tag></tag>
+   <elementGuidId>6f34d7ed-ca79-4e4e-8534-48f5c12d3929</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>(//button[@type='button'])[2]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>button.btn.btn-primary.btn-sm</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>58ec2c79-ef89-4140-9ad6-f24d3b7173cd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>type</name>
+      <type>Main</type>
+      <value>button</value>
+      <webElementGuid>94a82dfb-a17e-4633-a01c-b4d0a95e50bf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>btn btn-primary btn-sm</value>
+      <webElementGuid>cce1e7a1-1f64-4347-b305-e85df0333819</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Export PDF</value>
+      <webElementGuid>6ea10ce4-a2e3-4f74-b177-69e0930bcb2a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;application-details-tabpane-form&quot;)/div[@class=&quot;container row task-container&quot;]/div[@class=&quot;main-header&quot;]/div[@class=&quot;btn-right d-flex flex-row&quot;]/div[@class=&quot;d-flex flex-column container&quot;]/div[@class=&quot;d-flex justify-content-center&quot;]/button[@class=&quot;btn btn-primary btn-sm&quot;]</value>
+      <webElementGuid>6d55f546-f2cc-440b-972d-a9e1ae35a35e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:attributes</name>
+      <type>Main</type>
+      <value>(//button[@type='button'])[2]</value>
+      <webElementGuid>6de65547-7512-4751-9200-1313c30b9b12</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='application-details-tabpane-form']/div/div/div/div/div/button</value>
+      <webElementGuid>6ebefb1d-f0b1-4705-9b10-d837aa93f975</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)=':'])[6]/following::button[1]</value>
+      <webElementGuid>b5487702-9712-4ae0-b5c4-495a9d84b4cb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='NEW BUSINESS LICENCE APPLICATION'])[1]/preceding::button[1]</value>
+      <webElementGuid>b1197886-eef0-4d3a-898c-cb2c42d59b24</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Export PDF']/parent::*</value>
+      <webElementGuid>6d882cad-0431-4ce1-ab4d-fc1beecf692c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/div/button</value>
+      <webElementGuid>902b97bd-88bf-48f9-b273-0d51244cf582</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//button[@type = 'button' and (text() = 'Export PDF' or . = 'Export PDF')]</value>
+      <webElementGuid>07352752-c167-45d8-a6a8-8be2010d641d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

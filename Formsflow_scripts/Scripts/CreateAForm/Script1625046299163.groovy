@@ -21,10 +21,10 @@ WebUI.click(findTestObject('TC3/Page_formsflow.ai/a_Forms'))
 
 WebUI.click(findTestObject('Object Repository/Page_formsflow.ai/a_Create Form'))
 
-WebUI.setText(findTestObject('Object Repository/TC2/Page_formsflow.ai/input_Title_title'), findTestData('login').getValue(
-        3, 2))
+WebUI.setText(findTestObject('Object Repository/TC2/Page_formsflow.ai/input_Title_title'), findTestData('New Form Data').getValue(
+        1, 2))
 
-WebUI.setText(findTestObject('TC3/Page_formsflow.ai/input_Name_name'), findTestData('login').getValue(3, 3))
+WebUI.setText(findTestObject('TC3/Page_formsflow.ai/input_Name_name'), findTestData('New Form Data').getValue(1, 2))
 
 //WebUI.click(findTestObject('Object Repository/Page_formsflow.ai/button_Submit'))
 //Thread.sleep(10000)

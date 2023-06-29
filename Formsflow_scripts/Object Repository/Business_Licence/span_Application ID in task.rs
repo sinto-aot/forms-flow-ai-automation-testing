@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Application ID in task</name>
+   <tag></tag>
+   <elementGuidId>ac8de74e-f54b-4db7-8263-bd9684ed403c</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div[2]/div[2]/div/div/div[3]/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>ace2f2b2-1912-4aec-965c-f86e719a16da</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-title</name>
+      <type>Main</type>
+      <value>Application ID</value>
+      <webElementGuid>3cf9c071-07ee-40a8-b300-59c6f84e9609</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>application-id</value>
+      <webElementGuid>49b69ad1-16e3-46ac-baf0-db6e02383e06</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Application ID# 5124</value>
+      <webElementGuid>42edc760-1256-4a3f-81de-806a11362898</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;pl-0 col-xl-9 col-lg-9 col-md-8 col-sm-12 col-12&quot;]/div[@class=&quot;service-task-details&quot;]/div[@class=&quot;_loading_overlay_wrapper css-79elbk&quot;]/div[@class=&quot;ml-0 row&quot;]/span[@class=&quot;application-id&quot;]</value>
+      <webElementGuid>529df157-7ffd-4195-b28c-5145bae1be3f</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div[2]/div[2]/div/div/div[3]/span</value>
+      <webElementGuid>a70be879-2191-4cb2-b068-05d47d2d6560</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Review Applications'])[16]/following::span[2]</value>
+      <webElementGuid>0f8dec2a-57ba-4ed0-9629-2188cf39f8ef</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Application ID']/parent::*</value>
+      <webElementGuid>f3678288-2111-49c2-ab58-5b7c3609f9cc</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[3]/span</value>
+      <webElementGuid>21381e64-b970-420b-8c23-571cd4a2163f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[(text() = 'Application ID# 5124' or . = 'Application ID# 5124')]</value>
+      <webElementGuid>d1c1e9a6-61b4-4c06-b4e2-ecea5cdc9c57</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

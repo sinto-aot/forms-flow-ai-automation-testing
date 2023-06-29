@@ -6,12 +6,12 @@
    <elementGuidId>78b5191f-5bfd-4486-8d88-88379f0b4e4f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>CSS</key>
-         <value>input.choices__input.choices__input--cloned</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
          <value>//*[@id=&quot;elgpmpq&quot;]/div[1]/div[2]/input[count(. | //input[@type = 'text' and @placeholder = 'Type to search']) = count(//input[@type = 'text' and @placeholder = 'Type to search'])]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>input.choices__input.choices__input--cloned</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -26,6 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
+      <webElementGuid>e08b30b4-6a78-4227-8115-d2d57a7d3776</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -33,6 +34,7 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
+      <webElementGuid>877ac214-9df5-43e9-bf86-ea5df44c05a7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -40,6 +42,7 @@
       <name>class</name>
       <type>Main</type>
       <value>choices__input choices__input--cloned</value>
+      <webElementGuid>b5aeabcb-1846-47f4-b7f8-bc61c927d521</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -47,6 +50,7 @@
       <name>autocomplete</name>
       <type>Main</type>
       <value>off</value>
+      <webElementGuid>13f1ac4e-815c-4be4-88d2-706f84845081</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,6 +58,7 @@
       <name>autocapitalize</name>
       <type>Main</type>
       <value>off</value>
+      <webElementGuid>ddfa4495-3626-4773-bef7-982934378d6d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -61,6 +66,7 @@
       <name>spellcheck</name>
       <type>Main</type>
       <value>false</value>
+      <webElementGuid>23751816-0299-4549-8365-eccea5e767ec</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -68,6 +74,7 @@
       <name>role</name>
       <type>Main</type>
       <value>textbox</value>
+      <webElementGuid>f253e454-bf20-4eaa-bf61-717db6a0d163</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -75,6 +82,7 @@
       <name>aria-autocomplete</name>
       <type>Main</type>
       <value>list</value>
+      <webElementGuid>ff648c79-dd6c-44f7-8758-bd27944928b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -82,6 +90,7 @@
       <name>aria-label</name>
       <type>Main</type>
       <value>false</value>
+      <webElementGuid>9f61646b-6209-437b-82c0-2d228b1bda92</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -89,6 +98,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Type to search</value>
+      <webElementGuid>508dd877-37dd-41b0-9599-135c1141e185</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -96,6 +106,7 @@
       <name>aria-activedescendant</name>
       <type>Main</type>
       <value>choices--elgpmpq-clerkActionType-item-choice-1</value>
+      <webElementGuid>26a7e6f3-5a82-48a9-ba20-d76ec7784376</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -103,6 +114,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>//*[@id=&quot;elgpmpq&quot;]/div[1]/div[2]/input</value>
+      <webElementGuid>92be542f-07d9-4d11-be73-74b6013aaa66</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -110,6 +122,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>(//input[@type='text'])[14]</value>
+      <webElementGuid>ca783515-4e6b-4f3a-b0b1-679892218e62</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -117,6 +130,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='elgpmpq']/div/div[2]/input</value>
+      <webElementGuid>1d5f1473-1147-4dbc-a376-4d1e934fc641</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -124,6 +138,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div[2]/input</value>
+      <webElementGuid>67ddbc86-1c66-48ba-a89e-402da8274788</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -131,5 +146,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @placeholder = 'Type to search']</value>
+      <webElementGuid>60a3233a-a475-42cb-a42c-906951dcdd4f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

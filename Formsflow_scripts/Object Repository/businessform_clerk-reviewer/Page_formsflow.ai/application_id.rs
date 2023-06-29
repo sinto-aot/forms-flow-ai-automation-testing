@@ -10,6 +10,10 @@
          <value>a[title=&quot;13&quot;]</value>
       </entry>
       <entry>
+         <key>BASIC</key>
+         <value>//*[@title = '13' and @href = '/application/13' and (text() = '13' or . = '13')]</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//*[@id=&quot;main&quot;]/div/div[2]/div/div[1]/table/tbody/tr[1]/td[1]/a</value>
       </entry>
@@ -22,6 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
+      <webElementGuid>7956df46-5d83-49fe-81ae-afdbdac40fc5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -29,6 +34,7 @@
       <name>title</name>
       <type>Main</type>
       <value>13</value>
+      <webElementGuid>ebd17a00-455a-465e-9f2c-3b0175cc94de</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -36,6 +42,7 @@
       <name>href</name>
       <type>Main</type>
       <value>/application/13</value>
+      <webElementGuid>12f28bc4-33f6-48a6-a05b-0da7d76a45ef</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -43,6 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>13</value>
+      <webElementGuid>eae62e2d-a18e-47c7-8ff1-22daa70b124f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -50,6 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;main&quot;)/div[@class=&quot;container&quot;]/div[2]/div[@class=&quot;_loading_overlay_wrapper css-79elbk&quot;]/div[@class=&quot;react-bootstrap-table&quot;]/table[@class=&quot;table table-bordered&quot;]/tbody[1]/tr[1]/td[1]/a[1]</value>
+      <webElementGuid>92d0cdcc-e266-47cc-a48d-85df1dcc2389</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -57,6 +66,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='main']/div/div[2]/div/div/table/tbody/tr/td/a</value>
+      <webElementGuid>0886bf61-a8ad-4fbd-8a18-91c71ac0b8a0</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -64,6 +74,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'13')]</value>
+      <webElementGuid>4e97b731-9a10-4de0-b2b0-6ef3c9096f1a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -71,6 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Create New Business License Application'])[1]/preceding::a[1]</value>
+      <webElementGuid>9ec905a8-60e8-47cf-81a1-bb12676e93da</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,6 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Resubmitted'])[2]/preceding::a[1]</value>
+      <webElementGuid>3f1676be-41b5-482f-9ca5-1cd9ac6721db</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -85,6 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='13']/parent::*</value>
+      <webElementGuid>e8b61133-b5d9-48c1-b17e-0283bdbdc5d7</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -92,6 +106,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '/application/13')]</value>
+      <webElementGuid>2b234e5e-da98-4d6a-a332-ceddd264f8dd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -99,5 +114,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//td/a</value>
+      <webElementGuid>4b75a3b8-b675-437b-b64b-baef4ea32eaa</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

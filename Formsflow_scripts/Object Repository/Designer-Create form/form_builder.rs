@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>form_builder</name>
+   <tag></tag>
+   <elementGuidId>89bc190d-b307-4db4-a7aa-7d1dd033cc86</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//div[@class = 'builder-components drag-container formio-builder-form' and @ref = '-container']</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>builder-components drag-container formio-builder-form</value>
+      <webElementGuid>443ccbd1-ce78-4f85-b857-c5c7720a28af</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref</name>
+      <type>Main</type>
+      <value>-container</value>
+      <webElementGuid>7acea3c4-ca9f-4df8-8bc5-d101d9d5b11a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>1c07554f-4042-4a04-84f2-a828444d51bc</webElementGuid>
+   </webElementProperties>
+</WebElementEntity>

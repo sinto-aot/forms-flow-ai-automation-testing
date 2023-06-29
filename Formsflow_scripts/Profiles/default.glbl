@@ -9,4 +9,14 @@
       <initValue>'https://app2.aot-technologies.com/'</initValue>
       <name>url</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>''</initValue>
+      <name>ApplicationId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'https://forms-flow-web-root.aot-technologies.com'</initValue>
+      <name>mf</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

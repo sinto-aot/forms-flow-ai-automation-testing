@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_New</name>
+   <tag></tag>
+   <elementGuidId>d3b762c7-dabb-4425-931d-4f0103bff734</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'New' or . = 'New')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='service-task-details-tabpane-history']/div/div[2]/div/div/table/tbody/tr/td</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>td</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>78009a78-5b56-4bf4-820c-7dc361f50340</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>New</value>
+      <webElementGuid>3f337f56-40fd-40ad-bdbb-f1fa1a4b75d1</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;service-task-details-tabpane-history&quot;)/div[@class=&quot;container&quot;]/div[2]/div[@class=&quot;_loading_overlay_wrapper css-79elbk&quot;]/div[@class=&quot;react-bootstrap-table&quot;]/table[@class=&quot;table table-bordered&quot;]/tbody[1]/tr[1]/td[1]</value>
+      <webElementGuid>fb682b93-9e6d-4d0a-ba31-99933bbd50f1</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='service-task-details-tabpane-history']/div/div[2]/div/div/table/tbody/tr/td</value>
+      <webElementGuid>a6a3f23b-aaed-43cd-95d8-a7ef40895ff8</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Submissions'])[1]/following::td[1]</value>
+      <webElementGuid>909cc1db-46ae-4ae4-8117-1dfab4c09830</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Submitted By'])[1]/following::td[1]</value>
+      <webElementGuid>b961af8e-f0f7-467c-b50c-b17a71b7a2de</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='john-smith'])[1]/preceding::td[2]</value>
+      <webElementGuid>1a94e214-c116-476a-80e0-222dd01f1821</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='New']/parent::*</value>
+      <webElementGuid>3deade4b-4394-44ab-bea2-94aa7bbf5c83</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td</value>
+      <webElementGuid>0382fc8c-41ab-426f-b2b4-8e470e3695ed</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'New' or . = 'New')]</value>
+      <webElementGuid>3942b54b-e01f-45c4-821a-8ad67cffc317</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

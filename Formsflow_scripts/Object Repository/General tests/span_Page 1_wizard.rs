@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>span_Page 1_wizard</name>
+   <tag></tag>
+   <elementGuidId>ad88289e-d786-4b02-b861-2b77cbaa7ce3</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div/div/div/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/ol/li/span</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>span.mr-2.badge.badge-primary.wizard-page-label</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>span</value>
+      <webElementGuid>45ab80a4-db1b-4a79-a6db-ddf9d4c7ca0a</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>ref</name>
+      <type>Main</type>
+      <value>gotoPage</value>
+      <webElementGuid>a570d04f-0a92-4022-ab8a-3678136a1de3</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>mr-2 badge badge-primary wizard-page-label</value>
+      <webElementGuid>568cc8dd-9e0d-48c4-9278-818deca3235d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Page 1</value>
+      <webElementGuid>dd7b61f1-010a-432c-88df-f3ee796e5dcf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>Page 1</value>
+      <webElementGuid>26e6f624-d54c-4287-b2e9-4965df7cf4d4</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[1]/div[@class=&quot;paper-root&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-container MuiGrid-align-items-xs-baseline&quot;]/div[@class=&quot;MuiGrid-root MuiGrid-item MuiGrid-grid-xs-12&quot;]/div[2]/div[1]/div[1]/div[@class=&quot;p-4&quot;]/div[2]/div[1]/div[@class=&quot;formio builder row formbuilder&quot;]/div[@class=&quot;col-xs-8 col-sm-9 col-md-10 formarea&quot;]/ol[@class=&quot;breadcrumb&quot;]/li[1]/span[@class=&quot;mr-2 badge badge-primary wizard-page-label&quot;]</value>
+      <webElementGuid>d8ecc8ce-5f43-4e24-a948-2fba56ff6f14</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div/div/div/div/div[2]/div/div/div[2]/div[2]/div/div/div[2]/ol/li/span</value>
+      <webElementGuid>c3d3c433-8cc6-4672-b757-e0f46dbfa5b7</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Page 1'])[2]/preceding::span[2]</value>
+      <webElementGuid>e3f0afd4-5112-48d4-818a-eb908c1233ac</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Page 1']/parent::*</value>
+      <webElementGuid>13280985-f8fd-4066-ade6-a518588e7f5a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//li/span</value>
+      <webElementGuid>2f19a3f1-b4e3-49f1-966d-0c1905286b35</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//span[@title = 'Page 1' and (text() = 'Page 1' or . = 'Page 1')]</value>
+      <webElementGuid>39d2e813-299f-45e9-9aef-c12fecadb785</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

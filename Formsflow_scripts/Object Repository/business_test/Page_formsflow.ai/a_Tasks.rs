@@ -6,15 +6,19 @@
    <elementGuidId>9416b4d8-bb22-4ad6-943f-d7fd1d132256</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//a[@id='task-dropdown']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#task-dropdown</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id = 'task-dropdown' and @href = '#' and (text() = 'Tasks ' or . = 'Tasks ')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//a[@id='task-dropdown']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>a</value>
-      <webElementGuid>d4d93425-9c51-45e1-87f7-374201991a9d</webElementGuid>
+      <webElementGuid>ab39809d-720c-4b62-9754-a72605df1f2f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>aria-haspopup</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>7cf90569-5459-48b3-9439-4fe2a279d6a0</webElementGuid>
+      <webElementGuid>ab60efc3-f0aa-4dbe-a1ff-b6c6e1a9926e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>aria-expanded</name>
       <type>Main</type>
       <value>false</value>
-      <webElementGuid>cb3111c2-1146-47b7-ae59-f0a785026c5d</webElementGuid>
+      <webElementGuid>a17ff8bb-953e-4955-95ed-53d5fe4a3c53</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>id</name>
       <type>Main</type>
       <value>task-dropdown</value>
-      <webElementGuid>7318c83b-e05b-4936-986b-7effc53fc2bc</webElementGuid>
+      <webElementGuid>562cd31a-3168-4eac-bf9e-67491e9abc6a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -54,7 +58,7 @@
       <name>href</name>
       <type>Main</type>
       <value>#</value>
-      <webElementGuid>224ddb4a-ab07-4900-b6f9-4972f1e4ab65</webElementGuid>
+      <webElementGuid>64eba378-4fa2-456e-9428-9f5869233ce5</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -62,7 +66,7 @@
       <name>class</name>
       <type>Main</type>
       <value>dropdown-toggle nav-link</value>
-      <webElementGuid>ec18cef6-d241-45c7-9512-10d38f3363f5</webElementGuid>
+      <webElementGuid>58988714-ec7a-4023-a972-4ee8cf63ba6c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>role</name>
       <type>Main</type>
       <value>button</value>
-      <webElementGuid>bf967326-35cc-44a1-a4cb-1955dc62a972</webElementGuid>
+      <webElementGuid>1d49ee55-eae9-4f9d-ba31-e19c5dcdeec1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -78,7 +82,7 @@
       <name>text</name>
       <type>Main</type>
       <value>Tasks </value>
-      <webElementGuid>f2d32291-2035-4140-b76b-2d3654eb3226</webElementGuid>
+      <webElementGuid>b31f327e-fe35-426c-be59-a61388f7dd8d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;task-dropdown&quot;)</value>
-      <webElementGuid>edb73253-2158-4411-b291-38c109ad38f6</webElementGuid>
+      <webElementGuid>e089b0ba-600f-4434-a63a-434eb8f8a4b5</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//a[@id='task-dropdown']</value>
-      <webElementGuid>3622d325-b585-4406-b139-59d881a653c5</webElementGuid>
+      <webElementGuid>4fde87ca-5325-43fe-ba2e-b129ec04c970</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='main-menu-nav']/div/a</value>
-      <webElementGuid>7ae7ba5f-3417-40ca-b136-6e572ffba4c6</webElementGuid>
+      <webElementGuid>464deccb-6f77-4645-991f-34b7f089922a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:link</name>
       <type>Main</type>
       <value>//a[contains(text(),'Tasks')]</value>
-      <webElementGuid>a5d1883e-02e6-46aa-a864-3576a815700b</webElementGuid>
+      <webElementGuid>4177d3bf-7296-46b1-862c-21634ccf9d17</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Processes'])[1]/following::a[2]</value>
-      <webElementGuid>7b539e9d-6a71-4483-bf9a-6cd5f150e6a8</webElementGuid>
+      <webElementGuid>733832c8-07d7-4d58-9070-7447066dbef8</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,7 +130,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Created'])[1]/preceding::a[4]</value>
-      <webElementGuid>d19319ff-9801-4dee-9e6d-21d43805f8c3</webElementGuid>
+      <webElementGuid>6eef71f7-cd72-4f69-8ba7-4cc3ba736b11</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -134,7 +138,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Review Applications'])[1]/preceding::a[4]</value>
-      <webElementGuid>4dffa962-bb29-45e2-af21-7f4156874fe6</webElementGuid>
+      <webElementGuid>fbed7b4c-838d-412a-aa4a-4afd818f489b</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -142,7 +146,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='Tasks']/parent::*</value>
-      <webElementGuid>1c913a2f-12f1-4c1b-abba-145e2b40e1c9</webElementGuid>
+      <webElementGuid>4b7318b0-aac6-4a79-92c3-c12bc109d84c</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -150,7 +154,7 @@
       <name>xpath:href</name>
       <type>Main</type>
       <value>//a[contains(@href, '#')]</value>
-      <webElementGuid>af03aa72-30c2-4eb5-b5b4-9d4bc94c65d0</webElementGuid>
+      <webElementGuid>318d3208-ad68-4a75-a61a-5ef21936df15</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -158,7 +162,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//div/div/div/div/a</value>
-      <webElementGuid>7c0dd3f0-4182-4c30-afc6-f42ea25c9d82</webElementGuid>
+      <webElementGuid>4edd627b-e3e6-4dbe-b81a-66c2e85e6e93</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -166,6 +170,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//a[@id = 'task-dropdown' and @href = '#' and (text() = 'Tasks ' or . = 'Tasks ')]</value>
-      <webElementGuid>10a6e952-b172-42ac-b858-3a018e65b709</webElementGuid>
+      <webElementGuid>c3873b9e-76a9-4159-93a3-0dabfbfcd126</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

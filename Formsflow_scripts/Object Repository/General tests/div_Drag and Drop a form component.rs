@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>div_Drag and Drop a form component</name>
+   <tag></tag>
+   <elementGuidId>ff594362-8ffc-4f81-b0ae-6e0c72d63ec8</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='esvm88v-page1']/div/div</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.drag-and-drop-alert.alert.alert-info.no-drag</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>div</value>
+      <webElementGuid>88e62f60-1efe-4b49-a264-963f8857b359</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-position</name>
+      <type>Main</type>
+      <value>0</value>
+      <webElementGuid>5a847974-4341-4151-a989-5bf532558562</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-noattach</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>6090dae6-c8bb-4382-a0f6-e4d1453bfbfd</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>role</name>
+      <type>Main</type>
+      <value>alert</value>
+      <webElementGuid>5ae15ffe-14dc-4105-97a9-62c25595c887</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>drag-and-drop-alert alert alert-info no-drag</value>
+      <webElementGuid>35c13327-62aa-4211-8fb1-1701c6060655</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>
+  Drag and Drop a form component
+</value>
+      <webElementGuid>bcc1368d-e42d-473c-a2cc-53852c64ba50</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;esvm88v-page1&quot;)/div[@class=&quot;builder-components drag-container formio-builder-components&quot;]/div[@class=&quot;drag-and-drop-alert alert alert-info no-drag&quot;]</value>
+      <webElementGuid>32b95b48-9ecd-4214-b9dc-f0abf443ef2e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='esvm88v-page1']/div/div</value>
+      <webElementGuid>b2af6313-0b4f-4326-a812-627a1cb3a766</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Page 1'])[2]/following::div[3]</value>
+      <webElementGuid>485e4e7e-a70b-4e6c-b8de-4f567abc0624</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='formsflow.ai'])[3]/preceding::div[3]</value>
+      <webElementGuid>e94df2ae-19dc-411e-8b8a-bbadaaeb0e4b</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='Drag and Drop a form component']/parent::*</value>
+      <webElementGuid>0ed57dab-2545-4c07-a2b8-fcc6773a05eb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[2]/div/div/div/div/div/div[2]/div/div[2]/div/div</value>
+      <webElementGuid>0196c0b2-0295-40a6-8b4e-a416132e6a96</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//div[(text() = '
+  Drag and Drop a form component
+' or . = '
+  Drag and Drop a form component
+')]</value>
+      <webElementGuid>5e36f380-89e1-49e4-ade4-5942486ea40c</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

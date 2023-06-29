@@ -6,12 +6,16 @@
    <elementGuidId>5f5c9dee-8004-4dec-af20-009bfc59338c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//div[@id='main']/div/div/section/div/div/div/div[2]/div/div[2]/span[2]/div/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>div.text-truncate > span.click-element</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@title = 'property' and @class = 'click-element' and (text() = '??' or . = '??')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//*[@title = 'property' and @class = 'click-element' and (text() = '??' or . = '??')])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>53d5a5a8-3675-4ee4-a2e8-6b8bc7e395ea</webElementGuid>
+      <webElementGuid>351ee9ff-7387-4206-ac91-0fee4c56d175</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -30,7 +34,7 @@
       <name>data-bs-toggle</name>
       <type>Main</type>
       <value>tooltip</value>
-      <webElementGuid>aa4d611d-05b1-411e-aae7-10506212dbd2</webElementGuid>
+      <webElementGuid>7043e165-02ef-4c3c-9342-a521d872dcc7</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>data-bs-placement</name>
       <type>Main</type>
       <value>top</value>
-      <webElementGuid>87561dda-9510-40ea-a49d-66711c6d7a62</webElementGuid>
+      <webElementGuid>857d220a-a826-43f0-9807-32c11cce8c25</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,15 +50,15 @@
       <name>title</name>
       <type>Main</type>
       <value>property</value>
-      <webElementGuid>d38f8587-ef5c-4ffa-a2c0-14ae59433d5f</webElementGuid>
+      <webElementGuid>c09d85a9-98d9-4c7a-8b9f-d442d6e08435</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>click-element</value>
-      <webElementGuid>b4866527-bd98-4975-b628-59d37ae06c94</webElementGuid>
+      <webElementGuid>2cdbbd18-fd53-4ec2-87a2-39b0f7f9a75e</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>text</name>
       <type>Main</type>
       <value>??</value>
-      <webElementGuid>8653456c-67ef-496f-a09b-ab0e987cd108</webElementGuid>
+      <webElementGuid>5fc2a003-7859-4b05-964e-d12b3f89a54f</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12&quot;]/section[1]/div[@class=&quot;service-task-list list-group&quot;]/div[@class=&quot;filter-container&quot;]/div[1]/div[2]/div[@class=&quot;filter-details&quot;]/div[@class=&quot;box-container&quot;]/span[2]/div[@class=&quot;text-truncate&quot;]/span[@class=&quot;click-element&quot;]</value>
-      <webElementGuid>ae32c9c0-9412-497e-a8a4-3d862c07863f</webElementGuid>
+      <webElementGuid>e65ce906-3ba1-495a-8f95-5b21e220cb08</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='main']/div/div/section/div/div/div/div[2]/div/div[2]/span[2]/div/span</value>
-      <webElementGuid>4748d27c-92ed-497b-a9a5-22e8f494263e</webElementGuid>
+      <webElementGuid>05b345cd-19ff-4d8e-9ef9-cedbcfeae32f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Process Variables :'])[1]/following::span[3]</value>
-      <webElementGuid>fb34eae8-c7b1-4e00-a57e-74b54dfd60f0</webElementGuid>
+      <webElementGuid>c138f643-ad44-4a89-a633-eb5b0989b501</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='??'])[2]/preceding::span[2]</value>
-      <webElementGuid>66f9a787-aa7f-4f01-8a3f-c1eafdbdf3ad</webElementGuid>
+      <webElementGuid>7530875a-9aec-4c72-8615-a849df74655a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='For Variable, ignore case ofNamevalue'])[1]/preceding::span[6]</value>
-      <webElementGuid>6e9c29f1-cddf-4268-a188-1d30e5e5e2fa</webElementGuid>
+      <webElementGuid>b88322a6-8e80-4086-a8c8-fdc2673dba3d</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='??']/parent::*</value>
-      <webElementGuid>688abed8-f335-4442-ae77-554e6a958dae</webElementGuid>
+      <webElementGuid>d0d5588d-dd77-4567-ae8f-b655f19e632a</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,7 +122,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span[2]/div/span</value>
-      <webElementGuid>03328dae-6438-45a4-b4e6-60cbe20c016e</webElementGuid>
+      <webElementGuid>bfa63445-50ad-4062-88f3-5901b05d68fd</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -126,6 +130,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[@title = 'property' and (text() = '??' or . = '??')]</value>
-      <webElementGuid>2b49af9b-b9fa-4bf1-9092-1d56c5e0f728</webElementGuid>
+      <webElementGuid>97a7d2a6-aaee-466f-8fdf-f6e1ff69d6b1</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

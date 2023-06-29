@@ -30,7 +30,7 @@ WebUI.delay(3)
 WebUI.scrollToElement(findTestObject('businessform_clerk-reviewer/Page_formsflow.ai/input_Business E-Mail_dataeMail'), 3)
 
 WebUI.setText(findTestObject('Object Repository/businessform_clerk-reviewer/Page_formsflow.ai/input_Business E-Mail_dataeMail'), 
-    findTestData('data for other fields').getValue(3, 2))
+    findTestData('data for other fields').getValue(8, 3))
 
 WebUI.click(findTestObject('Object Repository/businessform_clerk-reviewer/Page_formsflow.ai/button_Submit_1'))
 

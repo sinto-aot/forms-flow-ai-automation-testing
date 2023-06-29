@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>i_taskvariabledropdown</name>
+   <tag></tag>
+   <elementGuidId>bad27f89-7940-41d8-99e4-4be1bf03a663</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='main']/div[2]/div/section/div/div[2]/div[5]/i</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>div.justify-content-center.row > i.fa.fa-angle-down</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>i</value>
+      <webElementGuid>24e4860d-7cd4-4d30-8a43-d49d61364f02</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>fa fa-angle-down</value>
+      <webElementGuid>79fa4cc5-bb85-4ce1-b206-12ca3db5d098</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-hidden</name>
+      <type>Main</type>
+      <value>true</value>
+      <webElementGuid>63d55d8f-c180-4c9b-9a3c-9e12c69f38b2</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12&quot;]/section[1]/div[@class=&quot;service-task-list list-group&quot;]/div[@class=&quot;clickable shadow border  false&quot;]/div[@class=&quot;justify-content-center row&quot;]/i[@class=&quot;fa fa-angle-down&quot;]</value>
+      <webElementGuid>c0e34eca-e5e6-43be-b951-3c39bae31fa8</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='main']/div[2]/div/section/div/div[2]/div[5]/i</value>
+      <webElementGuid>4272b0e3-20e7-4399-9426-75ba3e42d092</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div[5]/i</value>
+      <webElementGuid>e1d1d5a5-2423-4d33-9577-ebeb6963da35</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

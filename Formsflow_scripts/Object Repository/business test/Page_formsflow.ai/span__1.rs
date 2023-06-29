@@ -6,15 +6,19 @@
    <elementGuidId>28b98085-31a4-4ae7-b20d-f79cecee73fc</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//span[@id='task-search-input']/span</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#task-search-input > span.click-element</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@title = 'value' and @class = 'click-element' and (text() = '??' or . = '??')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>(//*[@title = 'property' and @class = 'click-element' and (text() = '??' or . = '??')])[2]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>span</value>
-      <webElementGuid>46ba5f88-bc53-4309-9f35-fdd328f2bc2b</webElementGuid>
+      <webElementGuid>a8c4b3ee-99ff-4dee-868f-b9daa8e76250</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,15 +34,15 @@
       <name>title</name>
       <type>Main</type>
       <value>value</value>
-      <webElementGuid>3fe901cf-ec2d-4271-9617-084a54b4572a</webElementGuid>
+      <webElementGuid>1999b420-902b-4f84-83bd-2bf7accd7b91</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>click-element</value>
-      <webElementGuid>d61a3e1b-9539-44ba-abfc-5b7020aa947b</webElementGuid>
+      <webElementGuid>4f40a748-a230-4457-8e20-dd57cee58d32</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>text</name>
       <type>Main</type>
       <value>??</value>
-      <webElementGuid>f67f6130-2371-4380-b2b3-223fde3616d8</webElementGuid>
+      <webElementGuid>5039d5cb-6bbe-4e5b-8a7c-b08f70f6d066</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;task-search-input&quot;)/span[@class=&quot;click-element&quot;]</value>
-      <webElementGuid>8a8cee7a-760f-4322-8e39-b1f3525e396c</webElementGuid>
+      <webElementGuid>8e4f4953-988a-4584-9e02-3721706228f8</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//span[@id='task-search-input']/span</value>
-      <webElementGuid>d14df0c6-f7c9-492d-b836-277710f3dd55</webElementGuid>
+      <webElementGuid>7ef5d917-e087-4410-9e1b-0d03015c9578</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='applicationStatus'])[1]/following::span[4]</value>
-      <webElementGuid>d2d8321b-fc2c-4ca6-a6ec-1d148490fd64</webElementGuid>
+      <webElementGuid>14e834ea-d0c6-41ee-a58d-2da653f02d12</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Process Variables :'])[1]/following::span[7]</value>
-      <webElementGuid>f40dd082-2e15-40d5-ac74-773c673ccf86</webElementGuid>
+      <webElementGuid>ef095dfc-0e80-4cc7-b4ec-c52d8863ce6f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='For Variable, ignore case ofNamevalue'])[1]/preceding::span[2]</value>
-      <webElementGuid>4f65ebd3-5bc8-4cce-b17e-cb9be6418b93</webElementGuid>
+      <webElementGuid>d6faa93b-099b-4044-a9e5-44dbafd9a01f</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>(.//*[normalize-space(text()) and normalize-space(.)='Review Applications'])[1]/preceding::span[9]</value>
-      <webElementGuid>c3a06960-dd82-46b3-a389-be5d6455e114</webElementGuid>
+      <webElementGuid>fab6b230-1f17-492b-83ea-7c482616f680</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:neighbor</name>
       <type>Main</type>
       <value>//*/text()[normalize-space(.)='??']/parent::*</value>
-      <webElementGuid>76701c56-0e0b-4c0f-9098-7757a6d200b5</webElementGuid>
+      <webElementGuid>2969fbd7-6e4f-477c-90f8-7a9852697981</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,7 +114,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//span[2]/div/span[2]/span</value>
-      <webElementGuid>3890e485-783a-4e4a-84fe-46d781820e47</webElementGuid>
+      <webElementGuid>8b313e0a-9f96-4600-98b5-d7443322e857</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -118,6 +122,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//span[@title = 'value' and (text() = '??' or . = '??')]</value>
-      <webElementGuid>dc21edc1-dcf7-476f-8768-207891cd9d6c</webElementGuid>
+      <webElementGuid>55b3c993-0693-4b56-994b-bab9e60d22e7</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

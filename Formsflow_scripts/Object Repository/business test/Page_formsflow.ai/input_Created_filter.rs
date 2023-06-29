@@ -6,15 +6,19 @@
    <elementGuidId>dbe29ce9-49b2-41c6-9f89-26d9c82c6fe6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@type='text']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>input.filter</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@type = 'text' and @class = 'filter' and @placeholder = 'Filter Tasks']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@type='text']</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -22,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>03849dd5-570f-4f28-99dd-101e5c3416bf</webElementGuid>
+      <webElementGuid>65c3b659-f8d8-4e70-a9d5-df03353a9583</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -30,15 +34,15 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>65ae69b0-694c-4679-835f-0a90fa40042e</webElementGuid>
+      <webElementGuid>98cb2038-52de-4f2d-b2b1-76675dbfc62a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
       <value>filter</value>
-      <webElementGuid>fe8f1212-b207-4916-a9b5-cdf080616a6e</webElementGuid>
+      <webElementGuid>2aac5f2a-fb68-49de-b779-82579cf99a49</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -46,7 +50,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Filter Tasks</value>
-      <webElementGuid>34646f71-fd89-4a35-be21-a190378532c5</webElementGuid>
+      <webElementGuid>1b4d31fa-7d81-4648-9abe-a9a02746f727</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -54,7 +58,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;main&quot;)/div[@class=&quot;p-2 row&quot;]/div[@class=&quot;col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12&quot;]/section[1]/div[@class=&quot;service-task-list list-group&quot;]/div[@class=&quot;filter-container&quot;]/div[1]/div[1]/input[@class=&quot;filter&quot;]</value>
-      <webElementGuid>65aeaceb-b936-48b4-8f3b-c085d0bd7683</webElementGuid>
+      <webElementGuid>680cab33-2d74-44de-b30e-a7acec438ee3</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -62,7 +66,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@type='text']</value>
-      <webElementGuid>c6dba558-516f-44cb-8c18-6bd7f67c3f33</webElementGuid>
+      <webElementGuid>baeb0ca5-b7c3-4a86-8716-bd050bfb88af</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -70,7 +74,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='main']/div/div/section/div/div/div/div/input</value>
-      <webElementGuid>72d2acfe-d8cc-4d23-84cd-c8fcffce491d</webElementGuid>
+      <webElementGuid>aced0d85-1404-472c-a5aa-82976b659521</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//input</value>
-      <webElementGuid>2e217f53-8333-4167-86ed-7a3f5f37c258</webElementGuid>
+      <webElementGuid>d81edffe-1df5-4aac-80f9-6c280eb4cab6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -86,6 +90,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @placeholder = 'Filter Tasks']</value>
-      <webElementGuid>4ac6c048-0b09-430a-aac5-414aa4a9f192</webElementGuid>
+      <webElementGuid>96f8cbe0-35bd-4ad6-8170-1187d5b713c6</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

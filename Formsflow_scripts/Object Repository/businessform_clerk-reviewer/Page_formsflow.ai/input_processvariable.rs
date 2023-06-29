@@ -6,31 +6,35 @@
    <elementGuidId>c358593e-9f0a-4c76-abe6-9068333dc088</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;main&quot;]/div/div[1]/section/div/div[1]/div[1]/div[2]/div/div[2]/span[2]/div/input</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#e45h9e-businessOperatingName</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//input[@class = 'filters position-box' and @type = 'text']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;main&quot;]/div/div[1]/section/div/div[1]/div[1]/div[2]/div/div[2]/span[2]/div/input</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>true</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>906117a6-c7d4-499f-bc2c-bf9c283ba92e</webElementGuid>
+      <webElementGuid>755abd6f-7dc1-436e-afd4-73097d861e5b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
       <value>e45h9e-businessOperatingName</value>
-      <webElementGuid>3e7cffc5-8134-4254-ba22-66148e4ef8f4</webElementGuid>
+      <webElementGuid>db7320e4-c4af-475a-b0cd-5e4e4376053a</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -38,7 +42,7 @@
       <name>spellcheck</name>
       <type>Main</type>
       <value>true</value>
-      <webElementGuid>9bcdbbf5-fcd5-4df8-8dd4-1e49f10a5653</webElementGuid>
+      <webElementGuid>f8970c91-a2dc-46fc-af7e-a038a52bd69b</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -46,15 +50,15 @@
       <name>lang</name>
       <type>Main</type>
       <value>en</value>
-      <webElementGuid>a03269dc-8542-4693-8387-55aa815738a9</webElementGuid>
+      <webElementGuid>a62d4be6-cf61-48d5-8bae-f33701fe128d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>class</name>
       <type>Main</type>
-      <value>form-control</value>
-      <webElementGuid>d11c3153-7053-4708-8a52-6272548cfe1f</webElementGuid>
+      <value>filters position-box</value>
+      <webElementGuid>459eed57-9e8f-4e6e-a935-b96f26f0cd84</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -62,15 +66,15 @@
       <name>type</name>
       <type>Main</type>
       <value>text</value>
-      <webElementGuid>cca3680a-dc72-4fc7-bf70-7f63d357f0d6</webElementGuid>
+      <webElementGuid>9bc6919c-b8d9-448f-a372-8c413d5ca41d</webElementGuid>
    </webElementProperties>
    <webElementProperties>
-      <isSelected>true</isSelected>
+      <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
       <name>name</name>
       <type>Main</type>
       <value>data[businessOperatingName]</value>
-      <webElementGuid>e7287b14-b68e-4f58-a0da-5cfda0ed026c</webElementGuid>
+      <webElementGuid>b20bd1df-7852-4d88-9079-4b46ece11ec1</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -78,7 +82,7 @@
       <name>ref</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>af91e738-f55e-40fd-873d-7d2f882afd37</webElementGuid>
+      <webElementGuid>389e4a09-f21c-4996-868b-0cf20a58d5a2</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -86,7 +90,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;e45h9e-businessOperatingName&quot;)</value>
-      <webElementGuid>5fd7bab8-b5c8-44b6-8a28-886d38c96855</webElementGuid>
+      <webElementGuid>5aadef8b-ba82-4df1-b343-3a969207d92f</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -94,7 +98,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='e45h9e-businessOperatingName']</value>
-      <webElementGuid>706e0da0-3663-4932-b255-b3fe4dfb3ab6</webElementGuid>
+      <webElementGuid>59fe8e93-5269-4939-a0be-4f7448ae99be</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -102,7 +106,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='e45h9e']/div/input</value>
-      <webElementGuid>be430b76-73d4-4f5d-8893-332d7232d0a7</webElementGuid>
+      <webElementGuid>a211c873-bd11-4ce4-9cd8-3810377aea35</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -110,6 +114,6 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//input</value>
-      <webElementGuid>b2b8d801-e774-4900-a3a1-a95597438c40</webElementGuid>
+      <webElementGuid>883cf748-4b9d-466c-979d-e688f33aaf44</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

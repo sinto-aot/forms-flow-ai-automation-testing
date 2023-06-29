@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>td_john-smith</name>
+   <tag></tag>
+   <elementGuidId>a03b18a8-9979-49bd-9077-6297b42b413f</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[(text() = 'john-smith' or . = 'john-smith')]</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='service-task-details-tabpane-history']/div/div[2]/div/div/table/tbody/tr/td[3]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value></value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>td</value>
+      <webElementGuid>94e8529e-57f3-4aa1-aed0-34a99aea85c7</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>john-smith</value>
+      <webElementGuid>aee3940f-2306-4659-8e70-730357ea41ed</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;service-task-details-tabpane-history&quot;)/div[@class=&quot;container&quot;]/div[2]/div[@class=&quot;_loading_overlay_wrapper css-79elbk&quot;]/div[@class=&quot;react-bootstrap-table&quot;]/table[@class=&quot;table table-bordered&quot;]/tbody[1]/tr[1]/td[3]</value>
+      <webElementGuid>04ef0d97-d341-416a-b924-ce16e2989e0e</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='service-task-details-tabpane-history']/div/div[2]/div/div/table/tbody/tr/td[3]</value>
+      <webElementGuid>0e7e8890-c23d-4ea3-9fc7-e6cf3734773f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='New'])[1]/following::td[2]</value>
+      <webElementGuid>8584b309-b1b5-4307-9c74-fa41f3d84d74</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Submissions'])[1]/following::td[3]</value>
+      <webElementGuid>26ce4ad4-867c-4ce2-ab5f-7c03c36127cf</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='john-smith']/parent::*</value>
+      <webElementGuid>f2aa7b57-162b-4dfa-b0eb-ca9e65b64c20</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//td[3]</value>
+      <webElementGuid>f8ec56e9-252b-41f9-81a3-bf8e8f01f72f</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//td[(text() = 'john-smith' or . = 'john-smith')]</value>
+      <webElementGuid>8814a199-b019-4718-87d1-89ea4faa8333</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

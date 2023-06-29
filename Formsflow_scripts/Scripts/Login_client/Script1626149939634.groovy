@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
-WebUI.navigateToUrl(GlobalVariable.url)
+WebUI.navigateToUrl(GlobalVariable.mf)
 
 WebUI.maximizeWindow()
 
@@ -30,4 +30,20 @@ WebUI.setEncryptedText(findTestObject('Object Repository/Page_Log in to forms-fl
         'login').getValue(2, 2))
 
 WebUI.click(findTestObject('Object Repository/Page_Log in to forms-flow-ai-app3/input_Password_login'))
+
+'Verify Logged in user\'s name'
+WebUI.verifyElementText(findTestObject('Business_Licence/users_name'), findTestData('login').getValue(3, 2))
+
+'Open the profile'
+WebUI.click(findTestObject('Business_Licence/users_name'))
+
+'Verify logged in user\'s role'
+WebUI.verifyElementPresent(findTestObject('Business_Licence/userrole_name'), 2)
+
+'Close the profile'
+WebUI.click(findTestObject('Business_Licence/users_name -close dropdown'))
+
+WebUI.verifyElementNotPresent(findTestObject('Business_Licence/Tasks'), 0)
+
+WebUI.verifyElementNotPresent(findTestObject('Business_Licence/Dashboard'), 0)
 

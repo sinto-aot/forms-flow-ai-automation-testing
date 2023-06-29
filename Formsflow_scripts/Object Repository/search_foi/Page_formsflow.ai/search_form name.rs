@@ -6,16 +6,16 @@
    <elementGuidId>cadbf242-00ea-4def-a618-cea4793372d4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//input[@id='text-filter-column-title']</value>
-      </entry>
-      <entry>
          <key>CSS</key>
          <value>#text-filter-column-title</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@type = 'text' and @id = 'text-filter-column-title' and @placeholder = 'Search by form name']</value>
+         <value>//*[@type = 'search' and @id = 'form1' and @placeholder = 'Search by form name']</value>
+      </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//input[@id='text-filter-column-title']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -26,7 +26,7 @@
       <name>tag</name>
       <type>Main</type>
       <value>input</value>
-      <webElementGuid>1e8fbba3-4784-4941-843d-f4571a314e2c</webElementGuid>
+      <webElementGuid>90221ca1-1866-4892-aa05-9463c31646bb</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -34,23 +34,23 @@
       <name>delay</name>
       <type>Main</type>
       <value>800</value>
-      <webElementGuid>24420760-94e1-4f11-b056-f2a8106100e0</webElementGuid>
+      <webElementGuid>3d72b604-b3fd-4c8c-8e56-52de3a5e8584</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>type</name>
       <type>Main</type>
-      <value>text</value>
-      <webElementGuid>bb70566a-f89b-4b41-af74-dfff93acb40b</webElementGuid>
+      <value>search</value>
+      <webElementGuid>dacea8fb-c339-47e8-bbf8-80084f7c27b0</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>id</name>
       <type>Main</type>
-      <value>text-filter-column-title</value>
-      <webElementGuid>5b54f837-3bac-47e9-9b17-e69b83b5e434</webElementGuid>
+      <value>form1</value>
+      <webElementGuid>693b3211-70b4-434a-977d-acda3bf0fde3</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -58,7 +58,7 @@
       <name>class</name>
       <type>Main</type>
       <value>filter text-filter form-control icon-search</value>
-      <webElementGuid>8d18aa9a-1050-49da-be07-90e37abf5b96</webElementGuid>
+      <webElementGuid>17551816-bfda-4341-9f1d-158cd318d607</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -66,7 +66,7 @@
       <name>placeholder</name>
       <type>Main</type>
       <value>Search by form name</value>
-      <webElementGuid>ba752475-28ce-48f3-b896-c54e592902de</webElementGuid>
+      <webElementGuid>0c47b37d-4467-413a-8fb7-b2c17e8ca58c</webElementGuid>
    </webElementProperties>
    <webElementProperties>
       <isSelected>false</isSelected>
@@ -74,7 +74,7 @@
       <name>xpath</name>
       <type>Main</type>
       <value>id(&quot;text-filter-column-title&quot;)</value>
-      <webElementGuid>b8d5c982-35e0-46c6-b148-812e42353704</webElementGuid>
+      <webElementGuid>9dbd9d97-bebd-4f70-8382-1750067b772d</webElementGuid>
    </webElementProperties>
    <webElementXpaths>
       <isSelected>true</isSelected>
@@ -82,7 +82,7 @@
       <name>xpath:attributes</name>
       <type>Main</type>
       <value>//input[@id='text-filter-column-title']</value>
-      <webElementGuid>d2dccfb4-6658-4758-a1fb-1a760253daf5</webElementGuid>
+      <webElementGuid>b4c88bf2-ea0c-4ece-a0ca-dba05d24b985</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -90,7 +90,7 @@
       <name>xpath:idRelative</name>
       <type>Main</type>
       <value>//div[@id='main']/div/section/div/div/div/div/table/tbody/tr/th/label/input</value>
-      <webElementGuid>dcc05b88-72d9-4b59-93de-3d8edd55e37e</webElementGuid>
+      <webElementGuid>20a3aeee-9162-4435-921e-afafdf55d2a6</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -98,7 +98,7 @@
       <name>xpath:position</name>
       <type>Main</type>
       <value>//input</value>
-      <webElementGuid>c799cd3c-37a5-4fb0-a3ad-187edcd5ab30</webElementGuid>
+      <webElementGuid>38ddb0dc-3d48-4f17-9b84-d769eb5f9a10</webElementGuid>
    </webElementXpaths>
    <webElementXpaths>
       <isSelected>false</isSelected>
@@ -106,6 +106,6 @@
       <name>xpath:customAttributes</name>
       <type>Main</type>
       <value>//input[@type = 'text' and @id = 'text-filter-column-title' and @placeholder = 'Search by form name']</value>
-      <webElementGuid>2d464f85-f418-443f-8c36-af01fb73de3b</webElementGuid>
+      <webElementGuid>642131c0-825f-4a8b-afc0-ace1dc39330f</webElementGuid>
    </webElementXpaths>
 </WebElementEntity>

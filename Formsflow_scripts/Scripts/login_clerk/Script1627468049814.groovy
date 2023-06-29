@@ -18,10 +18,17 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 WebUI.setText(findTestObject('Object Repository/Page_Log in to forms-flow-ai-app3/input_Username or email_username'), findTestData(
-        'login').getValue(1, 5))
+        'login').getValue(1, 6))
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_Log in to forms-flow-ai-app3/input_Password_password'), findTestData(
-        'login').getValue(2, 5))
+        'login').getValue(2, 6))
 
 WebUI.click(findTestObject('Object Repository/Page_Log in to forms-flow-ai-app3/input_Password_login'))
+
+'Verify Logged in user\'s name'
+WebUI.verifyElementText(findTestObject('Business_Licence/users_name'), findTestData('login').getValue(3, 6))
+
+WebUI.verifyElementPresent(findTestObject('Business_Licence/Tasks'), 0)
+
+WebUI.verifyElementPresent(findTestObject('Business_Licence/Dashboard'), 0)
 

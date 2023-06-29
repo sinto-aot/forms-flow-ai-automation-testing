@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>b_NEW BUSINESS LICENCE APPLICATION</name>
+   <tag></tag>
+   <elementGuidId>d3a207fa-bcbf-47d3-8052-82eb227071a0</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='eykmv5a']/div/h3/b</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>b</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>b</value>
+      <webElementGuid>5b1e3be2-819c-4d0b-8f6b-b502e949df6c</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>text</name>
+      <type>Main</type>
+      <value>NEW BUSINESS LICENCE APPLICATION</value>
+      <webElementGuid>1f7da631-173d-47dd-b38f-38f50f091fb5</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;eykmv5a&quot;)/div[@class=&quot;formio-component-htmlelement&quot;]/h3[@class=&quot;pt-3&quot;]/b[1]</value>
+      <webElementGuid>0ba43b6b-599b-4ff0-9ef9-632aa07e75e6</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='eykmv5a']/div/h3/b</value>
+      <webElementGuid>58021d84-1aa7-4189-abed-72f7d0018eae</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>(.//*[normalize-space(text()) and normalize-space(.)='Finance Department'])[1]/preceding::b[1]</value>
+      <webElementGuid>df5786ac-c752-4e77-8309-7a5e33faa10c</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:neighbor</name>
+      <type>Main</type>
+      <value>//*/text()[normalize-space(.)='NEW BUSINESS LICENCE APPLICATION']/parent::*</value>
+      <webElementGuid>dac4f517-2a08-41c7-966b-0ecb40113fe1</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//b</value>
+      <webElementGuid>0c1e0021-0894-430c-afaf-26bb42e7ab36</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//b[(text() = 'NEW BUSINESS LICENCE APPLICATION' or . = 'NEW BUSINESS LICENCE APPLICATION')]</value>
+      <webElementGuid>8a051992-febc-4d90-8201-b29d776cd559</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>
