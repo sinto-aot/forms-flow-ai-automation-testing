@@ -38,6 +38,8 @@ jobs:
     - name: Run Robot Framework tests
       run: |
         robot -d results /home/runner/work/forms-flow-ai-automation-testing/forms-flow-ai-automation-testing/login.robot
+      env:
+        CHROME_BINARY_PATH: ${{ steps.find-chrome-path.outputs.CHROME_BINARY_PATH }}
 
     - name: Upload test results
       uses: actions/upload-artifact@v2
