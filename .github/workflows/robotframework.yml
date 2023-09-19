@@ -23,6 +23,11 @@ jobs:
         pip install --upgrade pip
         pip install robotframework robotframework-seleniumlibrary
 
+    - name: Debug
+      run: |
+        pwd
+        ls -R
+
     - name: Run Robot Framework tests
       run: |
         robot -d results tests/login.robot
