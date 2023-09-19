@@ -18,6 +18,18 @@ jobs:
       with:
         python-version: 3.9
 
+    - name: Install Chrome
+      run: |
+        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+        sudo dpkg -i google-chrome-stable_current_amd64.deb
+        sudo apt-get install -f
+
+    - name: Find Chrome Binary Path
+      run: |
+        CHROME_BINARY_PATH=$(which google-chrome)
+        echo "Chrome Binary Path: $CHROME_BINARY_PATH"
+      id: find-chrome-path
+
     - name: Install dependencies
       run: |
         pip install --upgrade pip
