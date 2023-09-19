@@ -1,0 +1,36 @@
+name: Robot Framework Tests
+
+on:
+  push:
+    branches:
+      - main  # Adjust the branch as needed
+
+jobs:
+  run_tests:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 'latest'  # Use the latest Python version
+
+    - name: Install Robot Framework
+      run: |
+        pip install robotframework
+      # Optionally, you can install other necessary dependencies here
+
+    - name: Run Robot Framework Tests
+      run: |
+        robot -d results login.robot  # Adjust the path to your test case file
+      env:
+        ROBOT_SYSLOG_FILE: ${{github.workspace}}/output.xml
+
+    - name: Upload Test Results
+      uses: actions/upload-artifact@v2
+      with:
+        name: robot-results
+        path: results/
