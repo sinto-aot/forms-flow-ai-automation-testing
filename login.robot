@@ -5,7 +5,7 @@ Library           SeleniumLibrary
 Library           DateTime
 
 *** Variables ***
-${browser}        ${{ steps.find-chrome-path.outputs.CHROME_BINARY_PATH }}
+${browser}        ${{ env.CHROME_BINARY_PATH }}
 ${url}            https://forms-flow-web-qa.aot-technologies.com/
 ${username}       formsflow-client
 ${password}       aot123
