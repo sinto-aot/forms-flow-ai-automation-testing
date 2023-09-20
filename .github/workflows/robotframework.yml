@@ -28,12 +28,12 @@ jobs:
     - name: Check Chrome Version
       run: google-chrome --version
 
-    # Add a step to replace the Chromedriver
+    # Add a step to replace Chromedriver with version 117.0.5938.88
     - name: Replace Chromedriver
       run: |
         CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d '.' -f 1)
-        CHROMEDRIVER_VERSION="your-chromedriver-version"  # Replace with the version you downloaded
-        CHROMEDRIVER_PATH="/usr/bin/chromedriver"  # Path to the existing Chromedriver
+        CHROMEDRIVER_VERSION="117.0.5938.88"
+        CHROMEDRIVER_PATH="/usr/bin/chromedriver"
 
         if [ "$CHROME_VERSION" != "$CHROMEDRIVER_VERSION" ]; then
           echo "Replacing Chromedriver..."
