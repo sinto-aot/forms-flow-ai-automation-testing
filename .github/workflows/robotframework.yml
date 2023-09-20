@@ -18,35 +18,6 @@ jobs:
       with:
         python-version: 3.9
 
-    - name: Install Chrome
-      run: |
-        wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-        sudo dpkg -i google-chrome-stable_current_amd64.deb
-        sudo apt-get install -f
-
-    # Add a step to check the Chrome version
-    - name: Check Chrome Version
-      run: google-chrome --version
-
-    # Add a step to replace Chromedriver with version 117.0.5938.88
-    - name: Replace Chromedriver
-      run: |
-        CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d '.' -f 1)
-        CHROMEDRIVER_VERSION="117.0.5938.88"
-        CHROMEDRIVER_PATH="/usr/bin/chromedriver"
-
-        if [ "$CHROME_VERSION" != "$CHROMEDRIVER_VERSION" ]; then
-          echo "Replacing Chromedriver..."
-          wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip
-          unzip chromedriver_linux64.zip
-          sudo mv chromedriver $CHROMEDRIVER_PATH
-          sudo chmod +x $CHROMEDRIVER_PATH
-          rm chromedriver_linux64.zip
-          echo "Chromedriver replaced successfully."
-        else
-          echo "Chromedriver is already compatible with Chrome version $CHROME_VERSION."
-        fi
-
     - name: Install dependencies
       run: |
         pip install --upgrade pip
