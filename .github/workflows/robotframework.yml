@@ -18,14 +18,18 @@ jobs:
       with:
         python-version: 3.9
 
+    # Add a step to check Chrome installation
+    - name: Check Chrome Installation
+      run: google-chrome --version
+
     - name: Install dependencies
       run: |
         pip install --upgrade pip
         pip install robotframework robotframework-seleniumlibrary
 
-    - name: Run Robot Framework tests
-      run: |
-        robot -d results /home/runner/work/forms-flow-ai-automation-testing/forms-flow-ai-automation-testing/login.robot
+    # Add a step to run Robot Framework tests with xvfb (headless mode)
+    - name: Run Robot Framework tests with xvfb
+      run: xvfb-run robot -d results /home/runner/work/forms-flow-ai-automation-testing/forms-flow-ai-automation-testing/login.robot
 
     - name: Upload test results
       uses: actions/upload-artifact@v2
