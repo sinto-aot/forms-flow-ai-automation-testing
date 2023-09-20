@@ -24,11 +24,28 @@ jobs:
         sudo dpkg -i google-chrome-stable_current_amd64.deb
         sudo apt-get install -f
 
-    - name: Find Chrome Binary Path
+    # Add a step to check the Chrome version
+    - name: Check Chrome Version
+      run: google-chrome --version
+
+    # Add a step to replace the Chromedriver
+    - name: Replace Chromedriver
       run: |
-        CHROME_BINARY_PATH=$(which google-chrome)
-        echo "Chrome Binary Path: $CHROME_BINARY_PATH"
-      id: find-chrome-path
+        CHROME_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d '.' -f 1)
+        CHROMEDRIVER_VERSION="your-chromedriver-version"  # Replace with the version you downloaded
+        CHROMEDRIVER_PATH="/usr/bin/chromedriver"  # Path to the existing Chromedriver
+
+        if [ "$CHROME_VERSION" != "$CHROMEDRIVER_VERSION" ]; then
+          echo "Replacing Chromedriver..."
+          wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver $CHROMEDRIVER_PATH
+          sudo chmod +x $CHROMEDRIVER_PATH
+          rm chromedriver_linux64.zip
+          echo "Chromedriver replaced successfully."
+        else
+          echo "Chromedriver is already compatible with Chrome version $CHROME_VERSION."
+        fi
 
     - name: Install dependencies
       run: |
@@ -38,8 +55,6 @@ jobs:
     - name: Run Robot Framework tests
       run: |
         robot -d results /home/runner/work/forms-flow-ai-automation-testing/forms-flow-ai-automation-testing/login.robot
-      env:
-        CHROME_BINARY_PATH: ${{ steps.find-chrome-path.outputs.CHROME_BINARY_PATH }}
 
     - name: Upload test results
       uses: actions/upload-artifact@v2
