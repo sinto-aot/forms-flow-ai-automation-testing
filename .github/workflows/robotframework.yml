@@ -29,7 +29,7 @@ jobs:
 
     # Add a step to run Robot Framework tests with xvfb (headless mode)
     - name: Run Robot Framework tests with xvfb
-      run: xvfb-run robot -d results /home/runner/work/forms-flow-ai-automation-testing/forms-flow-ai-automation-testing/login.robot
+      run: xvfb-run robot -d results /home/runner/work/forms-flow-ai-automation-testing/forms-flow-ai-automation-testing/test-cases/*.robot
 
     - name: Upload test results
       uses: actions/upload-artifact@v2
