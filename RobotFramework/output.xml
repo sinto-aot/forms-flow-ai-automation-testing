@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230928 21:00:36.609" rpa="false" schemaversion="4">
+<suite id="s1" name="Bundle negative" source="D:\robot framework code\robotframework-selenium-example - Copy\test-cases\Bundle_negative.robot">
+<test id="s1-t1" name="BundlingRBAC_negative" line="15">
+<kw name="Open chrome Browser and goto QAbundle instance" library="keywords" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230928 21:00:36.738" level="INFO">Opening browser 'Chrome' to base url 'https://forms-flow-web-qaee.aot-technologies.com/'.</msg>
+<status status="PASS" starttime="20230928 21:00:36.738" endtime="20230928 21:00:45.061"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230928 21:00:45.061" endtime="20230928 21:00:45.192"/>
+</kw>
+<status status="PASS" starttime="20230928 21:00:36.737" endtime="20230928 21:00:45.192"/>
+</kw>
+<kw name="Login To Qaee instance as designer" library="keywords">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230928 21:00:45.194" endtime="20230928 21:00:48.036"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 21:00:48.038" level="INFO">Typing text 'formsflow-designer' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20230928 21:00:48.037" endtime="20230928 21:00:48.185"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 21:00:48.187" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg timestamp="20230928 21:00:48.248" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20230928 21:00:48.343" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20230928 21:00:48.185" endtime="20230928 21:00:48.343"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="kc-login"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230928 21:00:48.344" level="INFO">Clicking button '//*[@id="kc-login"]'.</msg>
+<status status="PASS" starttime="20230928 21:00:48.343" endtime="20230928 21:00:50.492"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230928 21:00:55.493" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230928 21:00:50.492" endtime="20230928 21:00:55.493"/>
+</kw>
+<status status="PASS" starttime="20230928 21:00:45.193" endtime="20230928 21:00:55.493"/>
+</kw>
+<kw name="Verify negative flow-enter same bundle name created earlier">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main"]/div/section/div[1]/div[1]/div/div[2]/h3/span</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230928 21:00:55.497" level="INFO">Clicking element '//*[@id="main"]/div/section/div[1]/div[1]/div/div[2]/h3/span'.</msg>
+<status status="PASS" starttime="20230928 21:00:55.495" endtime="20230928 21:00:55.600"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230928 21:00:57.601" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230928 21:00:55.600" endtime="20230928 21:00:57.601"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${form_bundlename}</var>
+<arg>xpath=//*[@id="main"]/div/section/div[2]/div/table/tbody/tr[3]/td[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230928 21:00:57.646" level="INFO">${form_bundlename} = Automation_bundle</msg>
+<status status="PASS" starttime="20230928 21:00:57.601" endtime="20230928 21:00:57.646"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main"]/div/section/div[1]/div[2]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230928 21:00:57.647" level="INFO">Clicking element '//*[@id="main"]/div/section/div[1]/div[2]/a'.</msg>
+<status status="PASS" starttime="20230928 21:00:57.646" endtime="20230928 21:00:57.760"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="main"]/div/div[2]/div[2]/section[1]/div/div[1]/input</arg>
+<arg>${form_bundlename}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 21:00:57.761" level="INFO">Typing text 'Automation_bundle' into text field '//*[@id="main"]/div/div[2]/div[2]/section[1]/div/div[1]/input'.</msg>
+<status status="PASS" starttime="20230928 21:00:57.760" endtime="20230928 21:00:57.971"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="main"]/div/div[2]/div[2]/section[1]/div/div[2]/textarea</arg>
+<arg>${BundleDesc}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 21:00:57.972" level="INFO">Typing text 'bundleAutomation' into text field '//*[@id="main"]/div/div[2]/div[2]/section[1]/div/div[2]/textarea'.</msg>
+<status status="PASS" starttime="20230928 21:00:57.971" endtime="20230928 21:00:58.139"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="main"]/div/div[2]/div[2]/section[2]/div[1]/div/div[1]/div/table/tbody/tr[2]/td/button</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230928 21:00:58.141" level="INFO">Clicking element '//*[@id="main"]/div/div[2]/div[2]/section[2]/div[1]/div/div[1]/div/table/tbody/tr[2]/td/button'.</msg>
+<status status="PASS" starttime="20230928 21:00:58.140" endtime="20230928 21:00:58.200"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230928 21:01:01.201" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230928 21:00:58.200" endtime="20230928 21:01:01.201"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@placeholder='Search...']</arg>
+<arg>${formname}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230928 21:01:01.203" level="INFO">Typing text 'automation' into text field '//input[@placeholder='Search...']'.</msg>
+<status status="PASS" starttime="20230928 21:01:01.201" endtime="20230928 21:01:01.386"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//input[@placeholder='Search...']</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230928 21:01:01.387" level="INFO">Sending key(s) ('ENTER',) to //input[@placeholder='Search...'] element.</msg>
+<msg timestamp="20230928 21:01:01.705" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230928 21:01:01.705" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230928 21:01:01.386" endtime="20230928 21:01:01.733"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230928 21:01:04.734" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230928 21:01:01.734" endtime="20230928 21:01:04.734"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>xpath=//html/body/div[2]/div/div/div[2]/div[2]/div/table/thead/tr/th[1]/span/span[1]/input</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20230928 21:01:04.735" level="INFO">Selecting checkbox 'xpath=//html/body/div[2]/div/div/div[2]/div[2]/div/table/thead/tr/th[1]/span/span[1]/input'.</msg>
+<status status="PASS" starttime="20230928 21:01:04.734" endtime="20230928 21:01:04.843"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Insert')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230928 21:01:04.844" level="INFO">Clicking button 'xpath=//button[contains(text(),'Insert')]'.</msg>
+<status status="PASS" starttime="20230928 21:01:04.843" endtime="20230928 21:01:04.978"/>
+</kw>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Save &amp; Preview')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230928 21:01:04.978" endtime="20230928 21:01:05.286"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230928 21:01:05.786" level="INFO">Slept 500 milliseconds</msg>
+<status status="PASS" starttime="20230928 21:01:05.286" endtime="20230928 21:01:05.786"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>xpath=//button[contains(text(),'Save &amp; Preview')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20230928 21:01:05.787" level="INFO">Clicking button 'xpath=//button[contains(text(),'Save &amp; Preview')]'.</msg>
+<status status="PASS" starttime="20230928 21:01:05.786" endtime="20230928 21:01:05.893"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230928 21:01:10.895" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230928 21:01:05.893" endtime="20230928 21:01:10.895"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${negative}</var>
+<arg>xpath=//*[@id="main"]/div/div[2]/div[1]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20230928 21:01:10.923" level="INFO">${negative} = ValidatorError (name) - The Name must be unique per Project.</msg>
+<status status="PASS" starttime="20230928 21:01:10.895" endtime="20230928 21:01:10.923"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${negative}</arg>
+<arg>ValidatorError (name) - The Name must be unique per Project.</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20230928 21:01:10.923" endtime="20230928 21:01:10.923"/>
+</kw>
+<status status="PASS" starttime="20230928 21:00:55.494" endtime="20230928 21:01:10.923"/>
+</kw>
+<tag>Negative</tag>
+<status status="PASS" starttime="20230928 21:00:36.737" endtime="20230928 21:01:10.924"/>
+</test>
+<doc>Form BundlingRBAC.</doc>
+<status status="PASS" starttime="20230928 21:00:36.610" endtime="20230928 21:01:10.926"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Negative</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Bundle negative">Bundle negative</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
