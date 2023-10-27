@@ -1,43 +1,18 @@
-
 *** Settings ***
-Documentation     Simple example using SeleniumLibrary.
+Documentation     Filling Business License form
 Library           SeleniumLibrary
-Library           DateTime
 
 *** Variables ***
-${browser}        $CHROME_BINARY_PATH
-${url}            https://forms-flow-web-qa.aot-technologies.com/
-${username}       formsflow-client
-${password}       aot123
-${formname}       New Business
+
 ${BusinessName}    aot
 ${natureOfBusiness}    IT
 ${noOfEmployess}    15
 ${mail}           ati@gmail.com
+${textField}     yes
+${textArea}    check
 
-
-
-
-
-
-
-
-
-
-
-
-*** Test Cases ***
-Logintest
-    Create Webdriver    Chrome
-    Go To    ${url}
-        LoginToApplication
-    Input Text    //*[@id="form1"]    ${formname}
-    Press Keys    //*[@id="form1"]    ENTER
-    sleep    3
-    click Button    //*[@id="main"]/div/section/div[2]/div/div[1]/div/table/tbody/tr/td[2]/span/button
-
-FillForm
-    sleep    5
+*** Keywords ***
+Fill_Form
     Input Text    //input[@name='data[businessOperatingName]']    ${BusinessName}
     ${my_date_to_select}    Get Current Date    result_format=%d%m%Y
     Input Text    //*[@id="e8pvw39"]/div[1]/div/input[2]    ${my_date_to_select}
@@ -53,16 +28,17 @@ FillForm
     Wait Until Element Is Enabled    //*[@name="data[submit]"]
     Scroll Element Into View    //*[@id="elmutrg"]/button
     Click Button    //*[@name="data[submit]"]
-    Sleep    3
     Wait Until Page Contains    Submission Saved.
-
-*** Keywords ***
-
-
-LoginToApplication
-                Maximize Browser Window
-                Wait Until Element Is Visible    //*[@id="username"]
-                Input Text    //*[@id="username"]    ${username}
-                Input Password    //*[@id="password"]    ${password}
-                Click Button    //*[@id="kc-login"]
-                Sleep    5
+Fill_BundleForm
+    Input Text    //*[@name="data[textField]"]    ${textField}
+    Input Text     //*[@name="data[textArea]"]    ${textArea}
+	Click Button     //button[contains(text(),'Submit Form')]
+	sleep     3
+	Wait Until Element Is Visible    xpath=//h3[contains(text(),'automation1')]
+	 ${next_formBundle}=    Get Text    //h3[contains(text(),'automation1')]
+	 Should Be Equal As Strings    ${next_formBundle}    automation1
+	 Log To Console    criteria satisfied.second form displayed
+	 ${next_textField}=     Get Value     xpath=//*[@name="data[textField]"]
+	 Should Be Equal As Strings    ${next_textField}    ${textField}
+	 Click Button     //button[contains(text(),'Submit Form')]
+    Wait Until Page Contains    Submission Saved.
