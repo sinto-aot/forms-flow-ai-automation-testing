@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - main  # Adjust the branch as needed
+  schedule:
+    - cron: '0 0 */2 * *' # Schedule to run every two days
 
 jobs:
   run_tests:
@@ -34,3 +36,11 @@ jobs:
       with:
         name: robot-results
         path: results/
+
+    - name: Notify on success or failure
+      if: always()
+      uses: Ilshidur/action-slack@v3
+      with:
+        status: ${{ job.status }}
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
