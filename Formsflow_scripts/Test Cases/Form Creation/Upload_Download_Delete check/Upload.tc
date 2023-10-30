@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>This is to upload a form</description>
-   <name>Upload</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>355a87b4-7de0-45f7-834f-e8d31a9f1c76</testCaseGuid>
-</TestCaseEntity>
