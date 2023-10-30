@@ -3,7 +3,8 @@ name: Robot Framework Tests
 on:
   push:
     branches:
-      - main  # Adjust the branch as needed
+      - main
+      - develop  # Adjust the branch as needed
   schedule:
     - cron: '0 0 */2 * *' # Schedule to run every two days
 
@@ -25,9 +26,9 @@ jobs:
         pip install robotframework
       # Optionally, you can install other necessary dependencies here
 
-    - name: Run Robot Framework Tests
+    - name: Run Robot Framework
       run: |
-        robot -d results login.robot  # Adjust the path to your test case file
+        robot -d results test-cases/*.robot 
       env:
         ROBOT_SYSLOG_FILE: ${{github.workspace}}/output.xml
 

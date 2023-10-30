@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>This is to identify whether our form submission exist in application or not</description>
-   <name>Application checking</name>
-   <tag></tag>
-   <comment></comment>
-   <testCaseGuid>d9e21b1c-3fe8-4a30-9f11-e3705d31c27a</testCaseGuid>
-</TestCaseEntity>
