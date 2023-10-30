@@ -39,7 +39,7 @@ jobs:
 
     - name: Notify on success or failure
       if: always()
-      uses: Ilshidur/action-slack@v1
+      uses: Ilshidur/action-slack@2.1.0
       with:
         status: ${{ job.status }}
       env:
