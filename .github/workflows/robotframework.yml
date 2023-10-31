@@ -32,7 +32,7 @@ jobs:
 
     - name: Run Robot Framework
       run: |
-        xvfb-run robot -d results test-cases/*.robot 
+        robot -d results test-cases/*.robot 
       env:
         ROBOT_SYSLOG_FILE: ${{github.workspace}}/output.xml
 
