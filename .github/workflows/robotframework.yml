@@ -1,52 +1,57 @@
-name: Notify Slack on Success/Failure
+name: Robot Framework Tests
 
 on:
   push:
     branches:
       - main
-      - develop
+      - develop  # Adjust the branch as needed
   schedule:
-    - cron: '0 0 */2 * *'
+    - cron: '0 0 */2 * *' # Schedule to run every two days
 
 jobs:
-  notify-slack:
+  run-tests:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+    - name: Checkout code
+      uses: actions/checkout@v2
 
-      - name: Set up Python
-        uses: actions/setup-python@v2
-        with:
-          python-version: 3.9
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
 
-      - name: Check Chrome Installation
-        run: google-chrome --version
+    # Add a step to check Chrome installation
+    - name: Check Chrome Installation
+      run: google-chrome --version
 
-      - name: Run Robot Framework
-        run: |
-          robot -d results test-cases/*.robot 
-        env:
-          ROBOT_SYSLOG_FILE: ${{ github.workspace }}/output.xml
+    - name: Install dependencies
+      run: |
+        pip install --upgrade pip
+        pip install robotframework robotframework-seleniumlibrary
 
-      - name: Upload test results
-        uses: actions/upload-artifact@v2
-        with:
-          name: robot-results
-          path: results/
+    - name: Run Robot Framework
+      run: robot -d results test-cases/*.robot 
+      working-directory: ./Formsflow-RobotFramework/test-cases
+        
+      env:
+        ROBOT_SYSLOG_FILE: ${{github.workspace}}/output.xml
 
-      - name: Generate and Send Slack Message
-        if: always()
-        run: |
-          success_color="#36a64f"
-          failure_color="#ff0000"
-          status="success"
-          timestamp=$(date +%s)
-          if [ ${{ job.status }} != "success" ]; then
-            status="failure"
-          fi
-          sed -i "s/{{ status_color }}/$status_color/" slack_message.json
-          sed -i "s/{{ status }}/$status/" slack_message.json
-          sed -i "s/{{ timestamp }}/$timestamp/" slack_message.json
-          curl -X POST -H 'Content-type: application/json' --data @slack_message.json ${{ secrets.SLACK_WEBHOOK_URL }}
+    - name: Upload test results
+      uses: actions/upload-artifact@v2
+      with:
+        name: robot-results
+        path: results/
+
+    - name: Post to a Slack channel
+      id: slack
+      uses: Ilshidur/action-slack@2.1.0
+      with:
+        # Slack channel id, channel name, or user id to post message.
+        # See also: https://api.slack.com/methods/chat.postMessage#channels
+        # You can pass in multiple channels to post to by providing a comma-delimited list of channel IDs.
+        channel-id: C063RFBM6KS
+        # For posting a simple plain text message
+        slack-message: "GitHub build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
+      env:
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
