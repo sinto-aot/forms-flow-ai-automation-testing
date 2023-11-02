@@ -1,51 +1,51 @@
-name: Robot Framework Tests
+name: Notify Slack on Success/Failure
 
 on:
   push:
     branches:
       - main
-      - develop  # Adjust the branch as needed
   schedule:
-    - cron: '0 0 */2 * *' # Schedule to run every two days
+    - cron: '0 0 */2 * *'
 
 jobs:
-  run-tests:
+  notify-slack:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: 3.9
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.9
 
-    # Add a step to check Chrome installation
-    - name: Check Chrome Installation
-      run: google-chrome --version
+      - name: Check Chrome Installation
+        run: google-chrome --version
 
-    - name: Install dependencies
-      run: |
-        pip install --upgrade pip
-        pip install robotframework robotframework-seleniumlibrary
+      - name: Run Robot Framework
+        run: |
+          robot -d results test-cases/*.robot 
+        env:
+          ROBOT_SYSLOG_FILE: ${{ github.workspace }}/output.xml
 
-    - name: Run Robot Framework
-      run: robot -d results FormsflowRobotFramework/test-cases/*.robot 
-        
-      env:
-        ROBOT_SYSLOG_FILE: ${{github.workspace}}/output.xml
+      - name: Upload test results
+        uses: actions/upload-artifact@v2
+        with:
+          name: robot-results
+          path: results/
 
-    - name: Upload test results
-      uses: actions/upload-artifact@v2
-      with:
-        name: robot-results
-        path: results/
-
-    - name: Notify on success or failure
-      if: always()
-      uses: Ilshidur/action-slack@2.1.0
-      with:
-        status: ${{ job.status }}
-      env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+      - name: Generate and Send Slack Message
+        if: always()
+        run: |
+          success_color="#36a64f"
+          failure_color="#ff0000"
+          status="success"
+          timestamp=$(date +%s)
+          if [ ${{ job.status }} != "success" ]; then
+            status="failure"
+          fi
+          sed -i "s/{{ status_color }}/$status_color/" slack_message.json
+          sed -i "s/{{ status }}/$status/" slack_message.json
+          sed -i "s/{{ timestamp }}/$timestamp/" slack_message.json
+          curl -X POST -H 'Content-type: application/json' --data @slack_message.json ${{ secrets.SLACK_WEBHOOK_URL }}
