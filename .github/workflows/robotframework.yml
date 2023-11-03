@@ -31,7 +31,7 @@ jobs:
         pip install robotframework robotframework-seleniumlibrary
 
     - name: Run Robot Framework
-      run: robot -d results test-cases/*.robot 
+      run: robot -d results Formsflow-RobotFramework/test-cases/*.robot 
       working-directory: ./Formsflow-RobotFramework/test-cases
         
       env:
