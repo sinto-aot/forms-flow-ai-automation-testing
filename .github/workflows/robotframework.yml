@@ -37,12 +37,12 @@ jobs:
    
     - name: Install ChromeDriver
       run: |
-        pip install chromedriver-binary 
+        pip install chromedriver-binary==121.0.6109.0.0
 
     - name: Verify ChromeDriver Version
       run: chromedriver --version
 
-      
+
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
