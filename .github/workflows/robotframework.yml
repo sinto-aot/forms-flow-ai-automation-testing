@@ -38,7 +38,7 @@ jobs:
 
     - name: Run Robot Framework Tests
       run: |
-        robot -d results --variable USERNAME:$USERNAME --variable PASSWORD:$PASSWORD --variable BROWSER:headlesschrome ./Formsflow-RobotFramework/test-cases/login.robot
+        robot -d results ./Formsflow-RobotFramework/test-cases/login.robot
       env:
         ROBOT_SYSLOG_FILE: ${{github.workspace}}/output.xml
         
@@ -47,16 +47,3 @@ jobs:
       with:
         name: robot-results
         path: results/
-
-    - name: Post to a Slack channel
-      id: slack
-      uses: Ilshidur/action-slack@2.1.0
-      with:
-        # Slack channel id, channel name, or user id to post message.
-        # See also: https://api.slack.com/methods/chat.postMessage#channels
-        # You can pass in multiple channels to post to by providing a comma-delimited list of channel IDs.
-        channel-id: C063RFBM6KS
-        # For posting a simple plain text message
-        slack-message: "GitHub build result: ${{ job.status }}\n${{ github.event.pull_request.html_url || github.event.head_commit.url }}"
-      env:
-        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
