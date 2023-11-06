@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation     New Form Creation.
 Test Setup     Open chrome Browser and goto QAbundle instance
-Library           SeleniumLibrary
+Library           SeleniumLibrary  executable_path=/path/to/chromedriver
 Library           DateTime
 Resource            ../PageObejcts/FormCreate.robot
 Resource            ../PageObejcts/Generic.robot
