@@ -37,7 +37,10 @@ jobs:
    
     - name: Install ChromeDriver
       run: |
-        pip install chromedriver-binary==121.0.6109.0.0
+        CHROMEDRIVER_VERSION="119.0.6045.105"
+        wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip
+        unzip chromedriver_linux64.zip
+        sudo mv chromedriver /usr/local/bin/
 
     - name: Verify ChromeDriver Version
       run: chromedriver --version
