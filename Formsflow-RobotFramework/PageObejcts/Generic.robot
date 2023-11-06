@@ -19,7 +19,8 @@ ${username_reviewer}     formsflow-reviewer
 
 
 *** Keywords ***
-
+Open chrome Browser and goto QAbundle instance
+    Go To ${url}
 Login To Qaee instance as designer
 
     Wait Until Element Is Visible    //*[@id="username"]
