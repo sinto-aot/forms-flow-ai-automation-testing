@@ -22,7 +22,7 @@ ${username_reviewer}     formsflow-reviewer
 
 Open chrome Browser and goto QAbundle instance
 
-    Open Browser       ${url}      ${browser_name}
+    Create Webdriver    Chrome     executable_path=/Users/rahulshetty/Documents/chromedriver
     Maximize Browser Window
 
 Login To Qaee instance as designer
