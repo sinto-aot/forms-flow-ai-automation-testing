@@ -32,10 +32,17 @@ jobs:
         sudo apt-get update
         sudo apt-get install google-chrome-stable
       shell: bash    
-
+    - name: Check Chrome Version
+      run: google-chrome --version
+   
     - name: Install ChromeDriver
       run: |
         pip install chromedriver-binary 
+
+    - name: Verify ChromeDriver Version
+      run: chromedriver --version
+
+      
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
