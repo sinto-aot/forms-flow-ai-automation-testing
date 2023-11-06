@@ -1,5 +1,5 @@
 robotframework==4.1.1
-robotframework-seleniumlibrary==5.2.0
+robotframework-seleniumlibrary
 robotframework-databaselibrary==1.2.4
 robotframework-requests==0.10.7
 robotframework-excellibrary==0.1.3
