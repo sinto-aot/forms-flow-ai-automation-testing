@@ -20,11 +20,6 @@ ${username_reviewer}     formsflow-reviewer
 
 *** Keywords ***
 
-Open chrome Browser and goto QAbundle instance
-
-    Create Webdriver    Chrome     executable_path=/Users/rahulshetty/Documents/chromedriver
-    Maximize Browser Window
-
 Login To Qaee instance as designer
 
     Wait Until Element Is Visible    //*[@id="username"]
