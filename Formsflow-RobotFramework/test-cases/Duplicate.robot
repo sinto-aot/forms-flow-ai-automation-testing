@@ -2,7 +2,6 @@
 Documentation    Submit form bundle as client.
 Test Setup     Open chrome Browser and goto QAbundle instance
 Library           SeleniumLibrary
-Test
 Resource            ../PageObejcts/DuplicateForm.robot
 Resource            ../PageObejcts/Generic.robot
 
