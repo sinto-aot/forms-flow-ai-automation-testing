@@ -20,7 +20,7 @@ ${username_reviewer}     formsflow-reviewer
 
 *** Keywords ***
 Open chrome Browser and goto QAbundle instance
-    Open Browser       ${url}      ${browser_name}
+    Open Browser       ${url}     browser=chrome    options=add_argument("--headless") 
     Maximize Browser Window
 Login To Qaee instance as designer
 
