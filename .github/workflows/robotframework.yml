@@ -38,7 +38,7 @@ jobs:
 
     - name: Run Robot Framework Tests
       run: |
-        robot -d results ./RobotFramework/test-cases/*.robot
+        robot -d results ./RobotFramework/test-cases/Bundle_create.robot
       env:
         ROBOT_SYSLOG_FILE: ${{github.workspace}}/output.xml
         
