@@ -42,7 +42,7 @@ jobs:
         node-version: 14
 
     - name: Install Robot Framework
-      run: npm install -g robotframework
+      run: pip install robotframework
 
     - name: Install Robot Framework Browser
       run: pip install robotframework-browser
