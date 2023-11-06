@@ -31,6 +31,16 @@ jobs:
         sudo dpkg -i google-chrome-stable_current_amd64.deb
       if: success()  # Only install if the previous step was successful
 
+    - name: Download and configure Chromedriver
+      run: |
+        LATEST_CHROMEDRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE")
+        wget "https://chromedriver.storage.googleapis.com/$LATEST_CHROMEDRIVER_VERSION/chromedriver_linux64.zip"
+        unzip chromedriver_linux64.zip -d ~/bin
+        export PATH=$PATH:~/bin
+
+    - name: Verify Chromedriver version
+      run: chromedriver --version
+
     - name: Install dependencies
       run: |
         pip install --upgrade pip

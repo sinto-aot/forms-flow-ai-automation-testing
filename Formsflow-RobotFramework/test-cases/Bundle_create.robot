@@ -2,7 +2,7 @@
 *** Settings ***
 Documentation     Form BundlingRBAC.
 Test Setup     Open chrome Browser and goto QAbundle instance
-Library           SeleniumLibrary
+Library           SeleniumLibrary  executable_path=/path/to/chromedriver
 Library           DateTime
 Resource            ../PageObejcts/BundleCreatePAge.robot
 Resource            ../PageObejcts/Generic.robot
