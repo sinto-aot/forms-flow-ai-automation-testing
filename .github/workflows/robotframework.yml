@@ -34,7 +34,7 @@ jobs:
         echo "Chromedriver version: $(chromedriver --version)"
         export PATH=$PATH:$HOME
         chromedriver --version
-      if: runner.os == 'Linux' && env.CHROME_HEADLESS == 'true'
+      #if: runner.os == 'Linux' && env.CHROME_HEADLESS == 'true'
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
