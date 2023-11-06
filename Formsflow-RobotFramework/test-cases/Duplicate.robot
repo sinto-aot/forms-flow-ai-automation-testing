@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation    Submit form bundle as client.
 Test Setup     Open chrome Browser and goto QAbundle instance
-Library           SeleniumLibrary  executable_path=/path/to/chromedriver
+Library           SeleniumLibrary
 Test
 Resource            ../PageObejcts/DuplicateForm.robot
 Resource            ../PageObejcts/Generic.robot

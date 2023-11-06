@@ -1,7 +1,7 @@
 *** Settings ***
 Documentation        New Form Creation.
 Test Setup           Open chrome Browser and goto QAbundle instance
-Library             SeleniumLibrary  executable_path=/path/to/chromedriver
+Library             SeleniumLibrary
 Resource            ../PageObejcts/FormOrBundleDelete.robot
 Resource            ../PageObejcts/Generic.robot
 
