@@ -4,36 +4,51 @@ on:
   push:
     branches:
       - main
-      - develop  # Adjust the branch as needed
+      - develop
+  pull_request:
+    branches:
+      - main
+      - develop
   schedule:
     - cron: '0 0 */2 * *' # Schedule to run every two days
 
 jobs:
-  run-tests:
+  robot-framework:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Check out code
       uses: actions/checkout@v2
 
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.9
+        python-version: 3.8
 
-    - name: Install dependencies
+    - name: Install Chromedriver
       run: |
-        pip install --upgrade pip
-        pip install robotframework robotframework-seleniumlibrary
+        CHROMEDRIVER_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d. -f1)
+        CHROMEDRIVER_DOWNLOAD_URL="https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip"
+        wget -N $CHROMEDRIVER_DOWNLOAD_URL -O chromedriver.zip
+        unzip chromedriver.zip -d $HOME
+        echo "Chromedriver version: $(chromedriver --version)"
+        export PATH=$PATH:$HOME
+        chromedriver --version
+      if: runner.os == 'Linux' && env.CHROME_HEADLESS == 'true'
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: 14
+
+    - name: Install Robot Framework
+      run: npm install -g robotframework
+
+    - name: Install Robot Framework Browser
+      run: pip install robotframework-browser
 
     - name: Run Robot Framework Tests
       run: |
         robot -d results ./Formsflow-RobotFramework/test-cases/*.robot
       env:
-        ROBOT_SYSLOG_FILE: ${{github.workspace}}/output.xml
-        
-    - name: Upload test results
-      uses: actions/upload-artifact@v2
-      with:
-        name: robot-results
-        path: results/
+        CHROME_HEADLESS: true
