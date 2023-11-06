@@ -25,17 +25,16 @@ jobs:
       with:
         python-version: 3.8
 
-    - name: Install Chromedriver
+    - name: Install Chrome and ChromeDriver
       run: |
-        CHROMEDRIVER_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d. -f1)
-        CHROMEDRIVER_DOWNLOAD_URL="https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip"
-        wget -N $CHROMEDRIVER_DOWNLOAD_URL -O chromedriver.zip
-        unzip chromedriver.zip -d $HOME
-        echo "Chromedriver version: $(chromedriver --version)"
-        export PATH=$PATH:$HOME
-        chromedriver --version
-      #if: runner.os == 'Linux' && env.CHROME_HEADLESS == 'true'
-
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+          LATEST_CHROMEDRIVER_VERSION=$(curl -s https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
+          curl -O https://chromedriver.storage.googleapis.com/$LATEST_CHROMEDRIVER_VERSION/chromedriver_linux64.zip
+          unzip chromedriver_linux64.zip
+          sudo mv chromedriver /usr/local/bin/
+          rm chromedriver_linux64.zip
+      shell: bash
     - name: Set up Node.js
       uses: actions/setup-node@v2
       with:
