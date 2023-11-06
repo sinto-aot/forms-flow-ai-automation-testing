@@ -2,7 +2,7 @@ robotframework
 robotframework-seleniumlibrary
 robotframework-databaselibrary
 robotframework-requests
-robotframework-excellibrary
+#robotframework-excellibrary
 robotframework-sshlibrary
 robotframework-ftplibrary
 robotframework-appiumlibrary
