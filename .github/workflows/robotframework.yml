@@ -46,7 +46,7 @@ jobs:
 
     - name: Install dependencies
       run: |
-        pip install requirements.txt
+        pip install -r requirements.txt
 
     - name: Install Robot Framework Browser
       run: pip install robotframework-browser
