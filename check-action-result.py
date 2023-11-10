@@ -10,7 +10,7 @@ def main():
 
 
 def send_message_to_chat(message):
-    url = 'https://chat.googleapis.com/v1/spaces/AAAA8Z0qjaE/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=hAsqjVt0pR5AwuhBdRx8DtcNIgOX83nC87bVBvr1ioI'
+    url = os.environ['WEBHOOK_URL_HERE']
     bot_message = {
         'text': message,
     }
@@ -22,5 +22,4 @@ def send_message_to_chat(message):
         headers=message_headers,
         body=dumps(bot_message),
     )
-
 main()
