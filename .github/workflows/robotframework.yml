@@ -63,3 +63,6 @@ jobs:
         robot -d results ./Formsflow-RobotFramework/test-cases/*.robot
       env:
         CHROME_HEADLESS: true
+    - name: Send message to Google Chat
+      run: |
+        curl -X POST -H 'Content-Type: application/json' -d '{"text": "GitHub Actions job has completed: ${{ job.status }}"}' ${{ secrets.WEBHOOK_URL_HERE}}
