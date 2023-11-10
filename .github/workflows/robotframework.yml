@@ -62,12 +62,17 @@ jobs:
       id: robot-test
       run: |
         robot -d results ./Formsflow-RobotFramework/test-cases/*.robot
+        if [[ $exit_code -ne 0 || $exit_code -eq 10 ]]; then
+            echo "Error: Process completed with exit code $exit_code"
+            exit 1
+        fi
       env:
         CHROME_HEADLESS: true
+
   check_status:
     runs-on: ubuntu-latest
     needs: robot-framework
-    
+    if: failure() || needs.robot-framework.outputs.robot-test-result == 'failure'
     steps:            
     - name: Send Google Chat Alert  
       if: ${{ steps.robot-test.outcome != 'success' }}
