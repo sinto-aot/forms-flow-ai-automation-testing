@@ -1,4 +1,5 @@
 name: Robot Framework Test Status
+
 on:
   workflow_run:
     workflows: ["Robot Framework Tests"]
@@ -8,10 +9,13 @@ on:
 jobs:
   check_status:
     runs-on: ubuntu-latest
+#    needs: robot-framework
+#    if: failure() || needs.robot-framework.outputs.robot-test-result == 'failure'
     steps:
       - name: Check out code
-        uses: actions/checkout@v2           
-      - name: Send Google Chat Alert  
+        uses: actions/checkout@v2
+      - name: Send Google Chat Alert
+        if: ${{ job.status != 'success' }}
         run: |
           pip install schedule
           pip install requests
@@ -23,4 +27,4 @@ jobs:
           ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
           REPO_NAME: ${{ secrets.REPO_NAME }}
           WORKFLOW_NAME: ${{ secrets.WORKFLOW_NAME }}
-          USER_NAME: ${{ secrets.WORKFLOW_NAME }}    
+          USER_NAME: ${{ secrets.USER_NAME }}
