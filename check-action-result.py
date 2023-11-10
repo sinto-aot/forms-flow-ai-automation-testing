@@ -3,7 +3,7 @@ from httplib2 import Http
 #import docker
 import schedule
 import time
-
+import os
 
 def main():
     send_message_to_chat('Testing Robot Framework')
@@ -21,5 +21,5 @@ def send_message_to_chat(message):
         method='POST',
         headers=message_headers,
         body=dumps(bot_message),
-    )
+    )      
 main()
