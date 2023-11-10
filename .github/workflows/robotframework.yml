@@ -80,4 +80,7 @@ jobs:
       if: ${{ steps.robot-test.outcome != 'success' }}
       run: |
         pip install schedule
-        python check-action-result.py
+        for i in {1..3}; do
+          python check-action-result.py
+        done
+          
