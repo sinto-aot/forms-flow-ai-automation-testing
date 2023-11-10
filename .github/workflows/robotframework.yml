@@ -84,5 +84,5 @@ jobs:
           python check-action-result.py
         done
       env:
-        WEBHOOK_URL_HERE: ${{{ secrets.WEBHOOK_URL_HERE }}
+        WEBHOOK_URL_HERE: ${{ secrets.WEBHOOK_URL_HERE }}
           
