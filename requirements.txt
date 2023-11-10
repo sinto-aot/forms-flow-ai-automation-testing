@@ -7,3 +7,4 @@ robotframework-sshlibrary
 robotframework-ftplibrary
 robotframework-appiumlibrary
 robotframework-archivelibrary
+schedule
