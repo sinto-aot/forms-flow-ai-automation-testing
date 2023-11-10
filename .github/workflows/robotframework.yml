@@ -68,21 +68,4 @@ jobs:
         fi
       env:
         CHROME_HEADLESS: true
-
-  check_status:
-    runs-on: ubuntu-latest
-    needs: robot-framework
-    if: failure() || needs.robot-framework.outputs.robot-test-result == 'failure'
-    steps:
-    - name: Check out code
-      uses: actions/checkout@v2           
-    - name: Send Google Chat Alert  
-      if: ${{ steps.robot-test.outcome != 'success' }}
-      run: |
-        pip install schedule
-        for i in {1..3}; do
-          python check-action-result.py
-        done
-      env:
-        WEBHOOK_URL_HERE: ${{ secrets.WEBHOOK_URL_HERE }}
           
