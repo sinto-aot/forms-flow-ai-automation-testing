@@ -78,4 +78,6 @@ jobs:
       uses: actions/checkout@v2           
     - name: Send Google Chat Alert  
       if: ${{ steps.robot-test.outcome != 'success' }}
-      run: python check-action-result.py
+      run: |
+        pip install schedule
+        python check-action-result.py
