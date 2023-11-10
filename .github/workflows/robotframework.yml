@@ -57,11 +57,14 @@ jobs:
 
     - name: Install Robot Framework Browser
       run: pip install robotframework-browser
-    - name: Send message to Google Chat
-      run: |
-        curl -X POST -H 'Content-Type: application/json' -d '{"text": "GitHub Actions job has completed: ${{ job.status }}"}' https://chat.googleapis.com/v1/spaces/AAAA8Z0qjaE/messages?key=AIzaSyDdI0hCZtE6vySjMm-WEfRq3CPzqKqqsHI&token=hAsqjVt0pR5AwuhBdRx8DtcNIgOX83nC87bVBvr1ioI
+
     - name: Run Robot Framework Tests
+      id: robot-test
       run: |
         robot -d results ./Formsflow-RobotFramework/test-cases/*.robot
       env:
         CHROME_HEADLESS: true
+        
+    - name: Send Google Chat Alert
+      if: ${{ steps.robot-test.outcome != 'success' }}
+      run: python check-action-result.py
