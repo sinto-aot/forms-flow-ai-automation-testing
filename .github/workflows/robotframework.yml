@@ -64,7 +64,11 @@ jobs:
         robot -d results ./Formsflow-RobotFramework/test-cases/*.robot
       env:
         CHROME_HEADLESS: true
-        
-    - name: Send Google Chat Alert
+  check_status:
+    runs-on: ubuntu-latest
+    needs: robot-framework
+    
+    steps:            
+    - name: Send Google Chat Alert  
       if: ${{ steps.robot-test.outcome != 'success' }}
       run: python check-action-result.py
