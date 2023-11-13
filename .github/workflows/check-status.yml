@@ -1,6 +1,7 @@
 name: Robot Framework Status
 on:
-    workflow_dispatch:
+    push:
+        - develop
 jobs:
     robot_test:
         runs-on: ubuntu-latest
