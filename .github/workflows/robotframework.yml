@@ -62,7 +62,6 @@ jobs:
       id: robot-test
       run: |
         robot -d results ./Formsflow-RobotFramework/test-cases/*.robot
-      continue-on-error: true
       env:
         CHROME_HEADLESS: true
   check-status:
