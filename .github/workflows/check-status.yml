@@ -1,9 +1,6 @@
 name: Robot Framework Status
 on:
-    workflow_run:
-        workflows: ["Robot Framework Tests"]
-        types:
-            - completed
+    workflow_dispatch:
 jobs:
     robot_test:
         runs-on: ubuntu-latest
