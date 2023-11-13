@@ -10,7 +10,6 @@ jobs:
             - name: check out code
               uses: actions/checkout@v2
             - name: Send Google Chat Alert
-              if: ${{ job.status != 'success' }}
               run: |
                 pip install schedule
                 pip install requests
