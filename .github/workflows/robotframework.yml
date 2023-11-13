@@ -73,7 +73,7 @@ jobs:
       env:
         GOOGLE_CHAT_WEBHOOK: ${{ secrets.WEBHOOK_URL_HERE }}
       run: |
-        MESSAGE="Robot framework Testing Job Completed in GitHub Actions.${{ github.workflow }} workflow failed on branch ${{ github.ref }}.Error Details:${{ job.status }}: ${{ job.name }}${{ job.steps[0].name }}: ${{ job.steps[0].outcome }}"
+        MESSAGE="${{ github.workflow }} workflow failed on branch ${{ github.ref }}.Error Details:${{ job.status }}: ${{ job.name }}${{ job.steps[0].name }}: ${{ job.steps[0].outcome }}"
           
         python - <<EOF
         import requests
