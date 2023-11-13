@@ -1,7 +1,8 @@
 name: Robot Framework Status
 on:
     push:
-        - develop
+        branches:
+            - develop
 jobs:
     robot_test:
         runs-on: ubuntu-latest
