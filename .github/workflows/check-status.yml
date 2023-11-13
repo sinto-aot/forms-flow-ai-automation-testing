@@ -3,10 +3,9 @@ on:
     push:
         branches:
             - develop
-    workflow_run:
-        workflows: ["Robot Framework Tests"]
-            types:
-                - completed
+    workflow_run: ["Robot Framework Tests"]
+        types:
+            - completed
 jobs:
     robot_test:
         runs-on: ubuntu-latest
