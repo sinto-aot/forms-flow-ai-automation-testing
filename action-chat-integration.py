@@ -1,5 +1,6 @@
 import requests
 import json
+import os
 # Define the message to send
 message = {
     "text": "Error Details from GitHub Actions",
