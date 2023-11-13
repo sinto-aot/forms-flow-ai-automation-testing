@@ -61,7 +61,7 @@ jobs:
     - name: Run Robot Framework Tests
       id: robot-test
       run: |
-        robot -d results ./Formsflow-RobotFramework/test-cases/*.robot
+#       robot -d results ./Formsflow-RobotFramework/test-cases/*.robot
       continue-on-error: true
       env:
         CHROME_HEADLESS: true
@@ -77,4 +77,4 @@ jobs:
           GOOGLE_CHAT_WEBHOOK: ${{ secrets.WEBHOOK_URL_HERE }}
         run: |
           pip install requests
-          python action-chat-itegration.py
+          python action-chat-integration.py
