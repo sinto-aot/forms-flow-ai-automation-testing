@@ -105,5 +105,3 @@ jobs:
         else:
             print(f"Failed to send message to Google Chat. Status code: {response.status_code}")
         EOF
-      env:
-        GOOGLE_CHAT_WEBHOOK: ${{ secrets.GOOGLE_CHAT_WEBHOOK }}
