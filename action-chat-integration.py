@@ -17,11 +17,17 @@ commit_sha = os.environ.get("GITHUB_SHA")
 github_token = os.environ.get("ACCESS_TOKEN")
 
 def main():
-    error_details=get_failed_job_details()
-    message = create_message(error_details, branch_name, commit_sha)
-    send_message_to_chat(message)
-    
-def get_failed_job_details():
+    failed_jobs = get_failed_jobs()
+    if failed_jobs:
+        for job in failed_jobs:
+            print(f"Failed Job Name: {job['name']}")
+            print(f"Branch Name: {job['head_branch']}")
+            print(f"Commit SHA: {job['head_sha']}")
+            print("\n")
+    else:
+        print("No failed jobs found in the latest workflow run.")
+
+def get_failed_jobs():
     headers = {"Authorization": f"Bearer {github_token}"}
     url = f"https://api.github.com/repos/{repository_owner}/{repository_name}/actions/runs"
     response = requests.get(url, headers=headers)
@@ -40,24 +46,6 @@ def get_failed_job_details():
     else:
         print(f"Failed to fetch job details. Status code: {response.status_code}")
         return None
-def create_message(error_details, branch_name, commit_sha):
-    if error_details.startswith("https://"):
-        return f"GitHub Actions on branch '{branch_name}' and commit '{commit_sha}' failed. Details: {error_details}"
-    else:
-        return f"GitHub Actions on branch '{branch_name}' and commit '{commit_sha}' succeeded. {error_details}"
-def send_message_to_chat(message):
-    url = os.environ['WEBHOOK_URL_HERE']
-    bot_message = {
-        'text': message,
-    }
-    message_headers = {'Content-Type': 'application/json; charset=UTF-8'}
-    http_obj = Http()
-    response = http_obj.request(
-        uri=url,
-        method='POST',
-        headers=message_headers,
-        body=dumps(bot_message),
-    )      
 if __name__ == "__main__":
     main()
 
