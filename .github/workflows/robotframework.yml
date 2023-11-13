@@ -65,12 +65,16 @@ jobs:
       continue-on-error: true
       env:
         CHROME_HEADLESS: true
-    
+  check-status:
+    runs-on: ubuntu-latest
+    needs: robot-framework
+    if: failure() 
+    steps:  
     - name: Send Error Details to Google Chat
       env:
         GOOGLE_CHAT_WEBHOOK: ${{ secrets.WEBHOOK_URL_HERE }}
       run: |
-        MESSAGE="The build job failed in GitHub Actions.${{ github.workflow }} workflow failed on branch ${{ github.ref }}.Error Details:${{ job.status }}: ${{ job.name }}${{ job.steps[0].name }}: ${{ job.steps[0].outcome }}"
+        MESSAGE="Robot framework Testing Job Completed in GitHub Actions.${{ github.workflow }} workflow failed on branch ${{ github.ref }}.Error Details:${{ job.status }}: ${{ job.name }}${{ job.steps[0].name }}: ${{ job.steps[0].outcome }}"
           
         python - <<EOF
         import requests
