@@ -1,3 +1,8 @@
+from json import dumps
+from httplib2 import Http
+#import docker
+import schedule
+import time
 import os
 import requests
 
@@ -12,32 +17,47 @@ commit_sha = os.environ.get("GITHUB_SHA")
 github_token = os.environ.get("ACCESS_TOKEN")
 
 def main():
-    failed_job_details = get_failed_job_details()
-    if failed_job_details:
-        print(f"Failed Job Details: {failed_job_details}")
-    else:
-        print("No failed job found.")
+    error_details=get_failed_job_details()
+    message = create_message(error_details, branch_name, commit_sha)
+    send_message_to_chat(message)
+    
 def get_failed_job_details():
     headers = {"Authorization": f"Bearer {github_token}"}
-    url = f"https://api.github.com/repos/{repository_owner}/{repository_name}/actions/workflows/{workflow_id}/jobs"
+    url = f"https://api.github.com/repos/{repository_owner}/{repository_name}/actions/runs"
     response = requests.get(url, headers=headers)
 
     if response.status_code == 200:
-        jobs = response.json()["jobs"]
-        for job in jobs:
-            if job["name"] == job_name and job["conclusion"] == "failure":
-                branch_name = job["head_branch"]
-                commit_sha = job["head_sha"]
-                return {
-                    "Job Name": job_name,
-                    "Branch Name": branch_name,
-                    "Commit SHA": commit_sha
-                }
+        latest_run = response.json().get("workflow_runs")[0] 
+        if latest_run["conclusion"] == "failure":
+            jobs_url = latest_run["jobs_url"]
+            jobs_response = requests.get(jobs_url, headers=headers)
+            if jobs_response.status_code == 200:
+                failed_jobs = [job for job in jobs_response.json()["jobs"] if job["conclusion"] == "failure"]
+                return failed_jobs
+            else:
+                print(f"Failed to fetch job details. Status code: {jobs_response.status_code}")
         return None
     else:
         print(f"Failed to fetch job details. Status code: {response.status_code}")
         return None
-
+def create_message(error_details, branch_name, commit_sha):
+    if error_details.startswith("https://"):
+        return f"GitHub Actions on branch '{branch_name}' and commit '{commit_sha}' failed. Details: {error_details}"
+    else:
+        return f"GitHub Actions on branch '{branch_name}' and commit '{commit_sha}' succeeded. {error_details}"
+def send_message_to_chat(message):
+    url = os.environ['WEBHOOK_URL_HERE']
+    bot_message = {
+        'text': message,
+    }
+    message_headers = {'Content-Type': 'application/json; charset=UTF-8'}
+    http_obj = Http()
+    response = http_obj.request(
+        uri=url,
+        method='POST',
+        headers=message_headers,
+        body=dumps(bot_message),
+    )      
 if __name__ == "__main__":
     main()
 
