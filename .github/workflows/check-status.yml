@@ -1,0 +1,27 @@
+name: Robot Framework Status
+on:
+    workflow_run:
+        workflows: ["Robot Framework Tests"]
+        types:
+            - completed
+jobs:
+    robot_test:
+        runs-on: ubuntu-latest
+        steps:
+            - name: check out code
+              uses: actions/checkout@v2
+            - name: Send Google Chat Alert
+              uses: Send Google Chat Alert
+              if: ${{ job.status != 'success' }}
+              run: |
+                pip install schedule
+                pip install requests
+                for i in {1..3}; do
+                  python check-action-result.py
+                done
+              env:
+                WEBHOOK_URL_HERE: ${{ secrets.WEBHOOK_URL_HERE }}
+                ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+                REPO_NAME: ${{ secrets.REPO_NAME }}
+                WORKFLOW_NAME: ${{ secrets.WORKFLOW_NAME }}
+                USER_NAME: ${{ secrets.USER_NAME }}      
