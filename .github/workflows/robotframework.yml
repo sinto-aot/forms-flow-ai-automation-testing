@@ -75,6 +75,7 @@ jobs:
         python - <<EOF
         import requests
         import json
+        import os
         # Define the message to send
         message = {
             "text": "$MESSAGE",
