@@ -77,4 +77,4 @@ jobs:
           GOOGLE_CHAT_WEBHOOK: ${{ secrets.WEBHOOK_URL_HERE }}
         run: |
           pip install requests
-          pytho action-chat=itegration.py
+          python action-chat-itegration.py
