@@ -13,7 +13,7 @@ Resource            ../PageObejcts/ApplicationPage.robot
 
 Resource            ../PageObejcts/workflowSelectPage.robot
 
-Suite Teardown    Close Browser
+Test Teardown    Close Browser
 
 *** Variables ***
 ${Bundle_form}       Automation_bundle
@@ -36,13 +36,14 @@ Bundle_FormfillByClient
   Applicationpage.Check status of form submitted
   Generic.logout
 Bundle_TaskActionByReviewer
-	[Tags]    Sanity
+
+
   Generic.LoginToApplication_reviewer
   ReviewerPage.ReviewerAction
   Applicationpage.Check status of form submitted
 
 BundlingRBAC_negative
-
+    [Tags]    Sanity
    Generic.Login To Qaee instance as designer
     BundleCreatePAge.Verify negative flow-enter same bundle name created earlier
 

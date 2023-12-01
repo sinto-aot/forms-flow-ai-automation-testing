@@ -6,7 +6,6 @@ Library           DateTime
 Resource            ../PageObejcts/Generic.robot
 Resource            ../PageObejcts/FormsLandingPAge.robot
 Resource            ../PageObejcts/TemplatePage.robot
-Resource            ../PageObejcts/workflowSelectPage.robot
 
 Suite Teardown    Close Browser
 
@@ -17,8 +16,7 @@ Template_Create
     FormsLandingPAge.select a form and saving it as template
     FormsLandingPAge.Choose From Template
     TemplatePage.Search category
-     workflowSelectPage.select workflow and publish to client
-Delete Template
+#     workflowSelectPage.select workflow and publish to client
 
 
 
