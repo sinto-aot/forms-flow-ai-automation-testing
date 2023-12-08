@@ -61,8 +61,3 @@ logout
 	Wait Until Element Is Visible    xpath=//*[@id="responsive-navbar-nav"]/div[3]/div/a
 	Click Element      xpath=//*[@id="responsive-navbar-nav"]/div[3]/div/a
     Click Element         xpath://*[@id="responsive-navbar-nav"]/div[3]/div/div/a[2]
-
-
-
-
-
