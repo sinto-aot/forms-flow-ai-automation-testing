@@ -24,17 +24,23 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
-
-    - name: Install Chromedriver
+        
+    - name: Set up Google Chrome
       run: |
-        CHROMEDRIVER_VERSION=$(google-chrome --version | awk '{print $3}' | cut -d. -f1)
-        CHROMEDRIVER_DOWNLOAD_URL="https://chromedriver.storage.googleapis.com/${CHROMEDRIVER_VERSION}/chromedriver_linux64.zip"
-        wget -N $CHROMEDRIVER_DOWNLOAD_URL -O chromedriver.zip
-        unzip chromedriver.zip -d $HOME
-        echo "Chromedriver version: $(chromedriver --version)"
-        export PATH=$PATH:$HOME
-        chromedriver --version
-      if: runner.os == 'Linux' && env.CHROME_HEADLESS == 'true'
+        wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+        sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+        sudo apt-get update
+        sudo apt-get install google-chrome-stable
+      shell: bash    
+    - name: Check Chrome Version
+      run: google-chrome --version
+   
+    - name: Install ChromeDriver
+      run: |
+        CHROMEDRIVER_VERSION="2.0"
+        wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip
+        unzip chromedriver_linux64.zip
+        sudo mv chromedriver /usr/local/bin/
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
@@ -44,11 +50,26 @@ jobs:
     - name: Install Robot Framework
       run: pip install robotframework
 
+    - name: Install dependencies
+      run: |
+        pip install --upgrade setuptools
+        pip install -r requirements.txt
+
     - name: Install Robot Framework Browser
       run: pip install robotframework-browser
+    
+    - name: Delay for 1 minute
+      run: |
+        echo "Sleeping for 1 minutes"
+        sleep 60
 
     - name: Run Robot Framework Tests
       run: |
-        robot -d results ./Formsflow-RobotFramework/test-cases/*.robot
+        for file in ./Formsflow-RobotFramework/test-cases/*.robot; do
+          echo "Running test case: $file"
+          robot -d results "$file"
+          echo "Sleeping for 1 minute before the next test case"
+          sleep 60
+        done
       env:
         CHROME_HEADLESS: true
