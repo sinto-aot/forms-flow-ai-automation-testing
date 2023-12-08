@@ -18,18 +18,20 @@ ${criteria}       textField== 'yes'
 CreateBundle
 
     Click Element    //span[text()='Form Bundle']
-    Click Element    //a[contains(@href,'/bundleflow/create')]
+    sleep    2
+    Wait Until Element Is Visible   //button[contains(text(),'Create Bundle')]
+    Click Element    //button[contains(text(),'Create Bundle')]
     ${CurrentDate}    Get Time
     Input Text    //input[@placeholder='Enter name']    ${Bundlename} + ${CurrentDate}
-    Input Text    //*[@id="main"]/div/div[2]/div[2]/section[1]/div/div[2]/div/div[2]/div/div[1]    ${BundleDesc}
-    Click Element    //*[@id="main"]/div/div[2]/div[2]/section[2]/div[1]/div/div[1]/div/table/tbody/tr[2]/td/button
+    Input Text    //div[@class='ql-editor ql-blank']    ${BundleDesc}
+    Click Element    //button[contains(text(),'Add Forms')]
     sleep    3
     Input Text    //input[@placeholder='Search...']    ${formname}
     Press Keys    //input[@placeholder='Search...']    ENTER
     sleep    3
-    Select Checkbox    xpath=//html/body/div[2]/div/div/div[2]/div[2]/div/table/thead/tr/th[1]/span/span[1]/input
+    Select Checkbox    xpath=//th[@class='text-center']/input
     Click Button    xpath=//button[contains(text(),'Insert')]
-    Click Button    xpath=//*[@id="main"]/div/div[2]/div[2]/section[2]/div[2]/div/div[1]/table/tbody/tr[2]/td/button
+    Click Button    xpath=//button[contains(text(),' Add Conditions')]
     Input Text    xpath=//textarea[@placeholder='Enter criteria']    ${criteria}
     click Element    xpath=/html/body/div[2]/div/div/div[2]/div/div[2]/div[2]/div/div[1]
     sleep    2
@@ -61,21 +63,22 @@ Verify negative flow-enter same bundle name created earlier
 
     Click Element    //span[text()='Form Bundle']
     sleep    2
-    ${form_bundlename}    Get Text    xpath=//*[@id="main"]/div/section/div[2]/div/table/tbody/tr[3]/td[1]
-    Click Element    //*[@id="main"]/div/section/div[1]/div[2]/a
+    ${form_bundlename}    Get Text    xpath=//td[@headers='search-container bundle-name']
+    Click Element    //button[@class='btn btn-primary']
 
     Input Text    //input[@placeholder='Enter name']    ${form_bundlename}
-    Input Text    //*[@id="main"]/div/div[2]/div[2]/section[1]/div/div[2]/div/div[2]/div/div[1]    ${BundleDesc}
-    Click Element    //*[@id="main"]/div/div[2]/div[2]/section[2]/div[1]/div/div[1]/div/table/tbody/tr[2]/td/button
+    Input Text    //div[@class='ql-editor ql-blank']    ${BundleDesc}
+    Click Element    //button[normalize-space()='Add Forms']
     sleep    3
     Input Text    //input[@placeholder='Search...']    ${formname}
     Press Keys    //input[@placeholder='Search...']    ENTER
     sleep    3
-    Select Checkbox    xpath=//html/body/div[2]/div/div/div[2]/div[2]/div/table/thead/tr/th[1]/span/span[1]/input
+    Select Checkbox    xpath=//table[@class='table']//th[@class='text-center']/input
     Click Button    xpath=//button[contains(text(),'Insert')]
     scroll element into view    xpath=//button[contains(text(),'Save & Preview')]
     sleep    0.5s
     Click Button    xpath=//button[contains(text(),'Save & Preview')]
     sleep    5
-    ${negative}=    Get Text    xpath=//*[@id="main"]/div/div[2]/div[1]
+    ${negative}=    Get Text    xpath=//div[contains(@role,'alert')]//div[1]
+    log     ${negative}
     Should Be Equal As Strings    ${negative}    ValidatorError (name) - The Name must be unique per Project.

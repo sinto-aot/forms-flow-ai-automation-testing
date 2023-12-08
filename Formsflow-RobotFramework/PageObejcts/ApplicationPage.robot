@@ -9,7 +9,7 @@ ${formname}   Automation_Form
 Check status of form submitted
 	Click Element    xpath=//a[contains(@href,'/application')]
 	sleep    3
-	Click Element    xpath=//*[@id="main"]/div/div[2]/div[1]/div/table/tbody[2]/tr[1]/td[1]/a
+	Click Element    xpath=//button[@class='btn btn-link mt-2' and text()='View Details']
 	sleep   3
 	Click Element    xpath=//*[@id='application-details-tab-form']
 	sleep   2
