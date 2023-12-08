@@ -1,18 +1,14 @@
 *** Settings ***
-Documentation     New Form Creation.
+Documentation     Upload a file.
 Test Setup     Open chrome Browser and goto QAbundle instance
 Library           SeleniumLibrary
 Library           DateTime
-Resource            ../PageObejcts/FormCreate.robot
+Resource            ../PageObejcts/FormsLandingPAge.robot
 Resource            ../PageObejcts/Generic.robot
 Suite Teardown    Close Browser
 
 *** Test Cases ***
 
-Newform_Create
-
+Upload Form
     Generic.Login To Qaee instance as designer
-    FormCreate.Create new Form
-    Generic.validate success message after form create
-    FormCreate.check form status
-    Generic.logout
+    FormsLandingPAge.Upload Form
