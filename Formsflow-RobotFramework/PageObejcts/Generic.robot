@@ -62,7 +62,3 @@ logout
 	  Click Element         xpath=//div[@class='nav-item dropdown']/a[@class='dropdown-toggle nav-link']
     Click Element         xpath=//a[normalize-space()='Logout']
 
-
-
-
-
