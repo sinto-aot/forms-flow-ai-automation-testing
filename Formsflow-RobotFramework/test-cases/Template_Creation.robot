@@ -17,6 +17,13 @@ Template_Create
     FormsLandingPAge.Choose From Template
     TemplatePage.Search category
 #     workflowSelectPage.select workflow and publish to client
+<<<<<<< HEAD
+=======
+
+>>>>>>> 45dbadc5c4dac44a248e8a9551f8469d18b9e705
 
 
-
+RBAC
+    [Tags]    Sanity1
+    Generic.Login To Qaee instance as designer
+    FormsLandingPAge.RBAC

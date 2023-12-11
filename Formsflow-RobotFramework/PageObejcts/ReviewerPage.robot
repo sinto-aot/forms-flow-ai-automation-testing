@@ -13,10 +13,10 @@ ${textArea}    check
 
 *** Keywords ***
 ReviewerAction
-	sleep    2
-    Click Element    xpath=//*[@id="main"]/div[2]/div[1]/section/div/div[2]
+	sleep    6
+    Click Element    xpath=//span[contains(@title,'Form Name')]
     sleep       10
-    Click Element    xpath=//span[contains(text(),'Claim')]
+    Click Element    xpath=//span[text()='Claim']
     sleep    5
     Scroll Element Into View  xpath=//button[contains(text(),'Next Form')]
     sleep    2
