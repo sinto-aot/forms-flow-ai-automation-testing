@@ -20,7 +20,8 @@ ${username_reviewer}     formsflow-reviewer
 
 *** Keywords ***
 Open chrome Browser and goto QAbundle instance
-    Open Browser       ${url}     browser=chrome    options=add_argument("--headless") 
+#    Open Browser       ${url}     browser=chrome    options=add_argument("--headless")
+      Open Browser       ${url}     ${browser_name}
     Maximize Browser Window
 Login To Qaee instance as designer
 
@@ -58,6 +59,6 @@ validate success message after form create
 
 logout
 	sleep  7
-	Wait Until Element Is Visible    xpath=//*[@id="responsive-navbar-nav"]/div[3]/div/a
-	Click Element      xpath=//*[@id="responsive-navbar-nav"]/div[3]/div/a
-    Click Element         xpath://*[@id="responsive-navbar-nav"]/div[3]/div/div/a[2]
+	  Click Element         xpath=//div[@class='nav-item dropdown']/a[@class='dropdown-toggle nav-link']
+    Click Element         xpath=//a[normalize-space()='Logout']
+

@@ -12,11 +12,17 @@ Search category
 
     Click Element        //span[text()='checking template']
     sleep     2
-   Click Element    //*[@id="main"]/div/div/div[4]/div[2]/div/div/div/div[1]
+   Click Element    //h5[@class='card-title font-weight-bold text-truncate ']
    sleep    3
     Click Element       //a[contains( text(), 'Connected Workflow')]
    Wait Until Element Is Visible    //button[contains( text(), 'Use Template')]
     Click Button     //button[contains( text(), 'Use Template')]
     Click Button     //button[contains( text(), 'Reuse Existing Workflow')]
-    sleep    3
+    sleep    5
     Page Should Contain    Form created successfully
+    click button                 xpath://button[normalize-space()='Next']
+    sleep                        2s
+    click button                 xpath://button[normalize-space()='Next']
+    sleep                        4s
+    Click Element                  //div[@class='custom-control custom-switch']
+    click button                 xpath://button[normalize-space()='Save']
