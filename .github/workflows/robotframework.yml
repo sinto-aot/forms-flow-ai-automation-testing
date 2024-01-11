@@ -74,7 +74,7 @@ jobs:
 
     - name: Run Robot Framework Tests
       run: |
-        for file in ./Formsflow-RobotFramework/test-cases/DraftSubmission.robot; do
+        for file in ./Formsflow-RobotFramework/test-cases/Fill_Businessformclient.robot; do
           echo "Running test case: $file"
           robot -d results "$file"
           echo "Sleeping for 1 minute before the next test case"
