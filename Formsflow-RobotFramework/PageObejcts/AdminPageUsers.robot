@@ -26,8 +26,7 @@ Add a new usergroup to the role
     sleep                           3
     element should be visible       //div[contains(@class,'role-list')]//div[2]
     wait until page contains element    //div[contains(@class, 'role-highlighted')]
-    sleep                           3
-    Scroll Element Into View        //div[@class='role-list']/div[text()='/formsflow-analytics/${NewGroup}']
+    sleep                            3
     Click Element                   //div[@class='role-list']/div[text()='/formsflow-analytics/${NewGroup}']
     element should be visible       //i[contains(@class,'fa fa-check')]
     sleep                           2

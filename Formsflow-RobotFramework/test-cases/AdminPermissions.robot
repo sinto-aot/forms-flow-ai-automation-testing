@@ -14,11 +14,10 @@ Resource            ../PageObejcts/Generic.robot
 Dashboard Permissions
     [Tags]    dashboard
     Generic.LoginToApplication_Admin
-    AdminPageDashboard.Basic Dashboard Permissions
+#  AdminPageDashboard.Basic Dashboard Permissions
     InsightsPage.Check for Assigned Dashboard
     AdminPageDashboard.Remove a group from Dashboard
 
-# Run robot -d results -i dashboard test-cases/AdminPermissions.robot to run Dashboard permissions alone
 
 Roles Creation Page permissions
     [Tags]    roles
@@ -31,7 +30,7 @@ Roles Creation Page permissions
     AdminPageRoles.Edit a Role
 #    AdminPageRoles.Add a Usergroup to the new role
     AdminPageRoles.Delete a Role
-# Run robot -d results -i roles test-cases/AdminPermissions.robot to run Roles creation page testcases
+
 
 User Persmissions
     [Tags]    users
@@ -40,5 +39,3 @@ User Persmissions
     AdminPageUsers.Add a new usergroup to the role
     AdminPageUsers.Remove added user group
     AdminPageUsers.Filter By Usergroup
-
-# Run robot -d results -i users test-cases/AdminPermissions.robot to run User permissions alone

@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.11.5 on win32)" generated="20240111 17:57:52.080" rpa="false" schemaversion="4">
+<suite id="s1" name="TaskFilters" source="D:\AutomationDev\forms-flow-ai-automation-testing\Formsflow-RobotFramework\test-cases\TaskFilters.robot">
+<test id="s1-t1" name="Task filters cases" line="14">
+<kw name="Open chrome Browser and goto QAbundle instance" library="Generic" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${url}</arg>
+<arg>${browser_name}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20240111 17:57:52.221" level="INFO">Opening browser 'Chrome' to base url 'https://forms-flow-web-qaee.aot-technologies.com/'.</msg>
+<status status="PASS" starttime="20240111 17:57:52.221" endtime="20240111 17:58:01.231"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20240111 17:58:01.231" endtime="20240111 17:58:01.656"/>
+</kw>
+<status status="PASS" starttime="20240111 17:57:52.221" endtime="20240111 17:58:01.656"/>
+</kw>
+<kw name="LoginToApplication_testreviewer" library="Generic">
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240111 17:58:01.656" endtime="20240111 17:58:01.696"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="username"]</arg>
+<arg>${test_reviewer}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240111 17:58:01.697" level="INFO">Typing text 'test-reviewer' into text field '//*[@id="username"]'.</msg>
+<status status="PASS" starttime="20240111 17:58:01.696" endtime="20240111 17:58:01.797"/>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>//*[@id="password"]</arg>
+<arg>${password}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20240111 17:58:01.798" level="INFO">Typing password into text field '//*[@id="password"]'.</msg>
+<msg timestamp="20240111 17:58:01.823" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20240111 17:58:01.873" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20240111 17:58:01.797" endtime="20240111 17:58:01.873"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="kc-login"]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240111 17:58:01.873" level="INFO">Clicking button '//*[@id="kc-login"]'.</msg>
+<status status="PASS" starttime="20240111 17:58:01.873" endtime="20240111 17:58:03.952"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240111 17:58:08.953" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20240111 17:58:03.953" endtime="20240111 17:58:08.953"/>
+</kw>
+<status status="PASS" starttime="20240111 17:58:01.656" endtime="20240111 17:58:08.953"/>
+</kw>
+<kw name="Check for taskfilters in the list" library="TaskFilterCreate">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240111 17:58:10.954" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240111 17:58:08.953" endtime="20240111 17:58:10.954"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//span[@class='h4 fw-bold']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20240111 17:58:10.954" level="INFO">Clicking element '//span[@class='h4 fw-bold']'.</msg>
+<status status="PASS" starttime="20240111 17:58:10.954" endtime="20240111 17:58:11.021"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@class='dropdown-menu show']/a</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240111 17:58:11.021" endtime="20240111 17:58:11.041"/>
+</kw>
+<kw name="Get WebElements" library="SeleniumLibrary">
+<var>${items}</var>
+<arg>xpath=//div[@class='dropdown-menu show']/a</arg>
+<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
+<msg timestamp="20240111 17:58:11.046" level="INFO">${items} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="6b4f6a12543eb6811e6884ab58f31f29", element="D48747648C20B243F3129CF6956C9706_element_48")&gt;, &lt;selenium.webdriver.remote.webelement.WebElement...</msg>
+<status status="PASS" starttime="20240111 17:58:11.041" endtime="20240111 17:58:11.046"/>
+</kw>
+<kw name="Get Length" library="BuiltIn">
+<var>${item_count}</var>
+<arg>${items}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<msg timestamp="20240111 17:58:11.046" level="INFO">Length is 6</msg>
+<msg timestamp="20240111 17:58:11.046" level="INFO">${item_count} = 6</msg>
+<status status="PASS" starttime="20240111 17:58:11.046" endtime="20240111 17:58:11.046"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>Number of Filters in the Task List is : ${item_count}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240111 17:58:11.046" endtime="20240111 17:58:11.046"/>
+</kw>
+<status status="PASS" starttime="20240111 17:58:08.953" endtime="20240111 17:58:11.046"/>
+</kw>
+<kw name="Create new Taskfilter" library="TaskFilterCreate">
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240111 17:58:13.046" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240111 17:58:11.046" endtime="20240111 17:58:13.046"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@class='btn btn-link text-dark cursor-pointer']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240111 17:58:13.047" level="INFO">Clicking button '//button[@class='btn btn-link text-dark cursor-pointer']'.</msg>
+<status status="PASS" starttime="20240111 17:58:13.046" endtime="20240111 17:58:13.165"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240111 17:58:16.166" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20240111 17:58:13.166" endtime="20240111 17:58:16.166"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//input[@class='filter-name-textfeild' and @title='Add fliter name']</arg>
+<arg>${FilterName}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20240111 17:58:16.166" level="INFO">Typing text 'Automation_Filter' into text field '//input[@class='filter-name-textfeild' and @title='Add fliter name']'.</msg>
+<status status="PASS" starttime="20240111 17:58:16.166" endtime="20240111 17:58:16.309"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240111 17:58:17.309" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20240111 17:58:16.309" endtime="20240111 17:58:17.309"/>
+</kw>
+<kw name="Select Checkbox" library="SeleniumLibrary">
+<arg>//input[@title='Show task based on logged user roles']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<msg timestamp="20240111 17:58:17.309" level="INFO">Selecting checkbox '//input[@title='Show task based on logged user roles']'.</msg>
+<status status="PASS" starttime="20240111 17:58:17.309" endtime="20240111 17:58:17.399"/>
+</kw>
+<kw name="Get Element Attribute" library="SeleniumLibrary">
+<var>${user_permission}</var>
+<arg>xpath=//*[@id="private-only"]</arg>
+<arg>checked</arg>
+<doc>Returns the value of ``attribute`` from the element ``locator``.</doc>
+<msg timestamp="20240111 17:58:17.425" level="INFO">${user_permission} = true</msg>
+<status status="PASS" starttime="20240111 17:58:17.399" endtime="20240111 17:58:17.425"/>
+</kw>
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${user_permission}</arg>
+<arg>true</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20240111 17:58:17.425" endtime="20240111 17:58:17.425"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20240111 17:58:19.426" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20240111 17:58:17.425" endtime="20240111 17:58:19.426"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//button[@class='btn btn-primary submitButton']</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20240111 17:58:19.426" level="INFO">Clicking button '//button[@class='btn btn-primary submitButton']'.</msg>
+<status status="PASS" starttime="20240111 17:58:19.426" endtime="20240111 17:58:19.506"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>//div[@role='alert' and contains(text(), 'Filter Created Successfully')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20240111 17:58:19.506" endtime="20240111 17:58:22.729"/>
+</kw>
+<status status="PASS" starttime="20240111 17:58:11.046" endtime="20240111 17:58:22.733"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20240111 17:58:22.733" endtime="20240111 17:58:24.852"/>
+</kw>
+<status status="PASS" starttime="20240111 17:57:52.221" endtime="20240111 17:58:24.852"/>
+</test>
+<doc>This test case is for checking taskfilters updates.</doc>
+<status status="PASS" starttime="20240111 17:57:52.080" endtime="20240111 17:58:24.852"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="TaskFilters">TaskFilters</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

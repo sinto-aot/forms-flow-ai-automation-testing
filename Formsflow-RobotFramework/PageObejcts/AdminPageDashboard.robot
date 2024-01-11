@@ -26,11 +26,12 @@ Checking if the groups are already added
 
 
 Remove a group from Dashboard
-
-    sleep            4
-    click element    //span[contains(text(), '/formsflow-analytics/group4')]/i[contains(@class, 'fa-xmark')]
-    sleep               2
-    Element Should Be Visible    //div[contains(text(),'Update success!')]
+    click element                       //a[normalize-space()='Admin']
+    sleep                               3
+    sleep                               4
+    click element                       //span[contains(text(), '/formsflow-analytics/group4')]/i[contains(@class, 'fa-xmark')]
+    sleep                               2
+    Element Should Be Visible           //div[contains(text(),'Update success!')]
 
 
 

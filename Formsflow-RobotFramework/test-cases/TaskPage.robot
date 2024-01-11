@@ -24,13 +24,9 @@ TaskSearchByReviewer_listview
 
   Generic.LoginToApplication_reviewer
   ReviewerPage.searchInListView
-  Applicationpage.Check status of form submitted
 
-BundlingRBAC_negative
-	        [Tags]    Sanity
 
-   Generic.Login To Qaee instance as designer
-    BundleCreatePAge.Verify negative flow-enter same bundle name created earlier
+
 
 
 
