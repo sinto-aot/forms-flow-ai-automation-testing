@@ -18,28 +18,12 @@ Test Teardown    Close Browser
 *** Variables ***
 ${Bundle_form}       Automation_bundle
 *** Test Cases ***
-Bundle_Create
 
-
-    Generic.Login To Qaee instance as designer
-    BundleCreatePAge.CreateBundle
-     workflowSelectPage.select workflow and publish to client
-   Generic.validate success message after form create
-     Generic.logout
-Bundle_FormfillByClient
-
-  Generic.LoginToApplication_client
-  FormsLandingPAge.Search Bundle_Form   ${Bundle_form}
-  FormfillClient.Fill_BundleForm
-  FormfillClient.check second bundle form displayed
-  FormfillClient.Fill_Freedomform
-  Applicationpage.Check status of form submitted
-  Generic.logout
-Bundle_TaskActionByReviewer
+TaskSearchByReviewer_listview
 
 
   Generic.LoginToApplication_reviewer
-  ReviewerPage.ReviewerAction
+  ReviewerPage.searchInListView
   Applicationpage.Check status of form submitted
 
 BundlingRBAC_negative

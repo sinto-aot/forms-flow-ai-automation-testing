@@ -4,12 +4,7 @@ Library           SeleniumLibrary
 
 *** Variables ***
 
-${BusinessName}    aot
-${natureOfBusiness}    IT
-${noOfEmployess}    15
-${mail}           ati@gmail.com
-${textField}     yes
-${textArea}    check
+${name}    Nancy smith
 
 *** Keywords ***
 ReviewerAction
@@ -32,3 +27,20 @@ ReviewerAction
   Scroll Element Into View    xpath=//button[contains(text(),'Previous Form')]
    Click Element       xpath=//button[@name='data[submitAction]']
    sleep     5
+
+searchInListView
+
+	 Click Element    //button[@class='btn me-1 btn-light']
+	 sleep    3
+	 Click Element    //div[@class='Select-Task-Variables task-filter-list-view']/button
+	 Click Element    //div[@class='filter-container-list task-filter-list-view']/button
+	 Input Text    //input[@name='name']   ${name}
+	 Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+	 Click Element    //button[text()='Show results']
+	 sleep                       3
+    page should contain           ${name}
+    Click Element    //div[@class='filter-container-list task-filter-list-view']/button
+    Input Text    //input[@name='applicationId']   112
+   ${response}=    Get Text    //div[@class='not-selected mt-2 ms-1 row']
+	 Should Be Equal As Strings    ${response}    No task matching filters found.
+

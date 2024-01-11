@@ -13,7 +13,7 @@ Create new Form
     sleep                        4s
     ${CurrentDate}               Get Time
      ${title}    set variable   ${formname}+${CurrentDate}
-    input text                   xpath://input[@id='title']      ${title}
+    input text                   //*[@id="title"]      ${title}
     drag and drop                xpath://span[@data-type='textarea']       xpath://div[@role='alert']
     input text                   name=data[label]      Feedback
     click button                 xpath://button[@class='btn btn-success']

@@ -3,7 +3,7 @@ Documentation     All the page objects and keywords of formpage
 Library           SeleniumLibrary
 Library    OperatingSystem
 Library         DateTime
-Library           AutoItLibrary
+Library           AutoItLibrary    C:\Program Files (x86)\AutoIt3\AutoItX\AutoItX3.dll
 Library    Process
 
 
@@ -15,16 +15,15 @@ ${category}       checking template
 ${intro}          Test
 ${description}    creating template from a form
 ${AUTOIT_SCRIPT}     ${CURDIR}${/}Resource\\Fileuautoit.exe
-${FILE_PATH}       ${CURDIR}${/}Resource\\forms(2)-2023-12-01T05_16_42.json
-
+${FILE_PATH}       ${CURDIR}${/}Resource\\BusinessFreedom.json
 *** Keywords ***
 
 Search Form
-    [Arguments]    ${formname_client}
-	Input Text    //input[contains(@placeholder,'Search by form title')]     ${formname_client}
-    Press Keys    //input[contains(@placeholder,'Search by form title')]    ENTER
+    [Arguments]    ${formname_client}      ${form_id}
+	Input Text    //input[@data-testid='form-search-input-box']     ${formname_client}
+    Click Element        //*[@data-testid='form-search-click-button']
     sleep    3
-    click Button    //tbody/tr[1]/td[3]/button[1]
+    click Button    //*[@data-testid='form-submit-button-${form_id}']
     sleep    5
 
 Search Bundle_Form
@@ -121,7 +120,7 @@ Upload Form
 
       Run Process     ${AUTOIT_SCRIPT}    ${FILE_PATH}
     # Continue with other test steps or verifications
-#        sleep     9
+       sleep     15
         ${check_element}=  Run Keyword and Return Status   Wait Until Page Contains Element    //div[contains(text(),'2 of 2 form uploaded')]    12s
      Run Keyword If      '${check_element}' == 'True'     Log To Console    "upload succesfull"
 

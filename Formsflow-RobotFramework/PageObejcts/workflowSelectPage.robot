@@ -20,10 +20,10 @@ select workflow and publish to client
     Press Keys    xpath=//div[@class=' css-1hwfws3']/div/div/input    ENTER
     Click Button    xpath=//button[contains(text(),'Next')]
 #    Wait Until Element Is Visible     xpath=//label[@for='form-publish']
-      ${BG}   Get WebElement     xpath=//label[@for='form-publish']
-      Log To Console        ${BG}
-    ${bg color}    Call Method    ${BG}    value_of_css_property    background-color
-    Log   ${bg color}
-    Run Keyword If    '${bg color}'=='rgba(0, 0, 0, 0)'    Click Element      xpath=//div[@class="custom-control custom-switch"]
-    Click Button    xpath=//button[text()='Save']
+
+    sleep    0.5s
+    Click Button    //input[@id='form-publish']
+    Click Button     xpath=//button[text()='Save']
     sleep    5
+
+

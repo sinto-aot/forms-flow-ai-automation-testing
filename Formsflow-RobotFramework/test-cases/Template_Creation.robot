@@ -16,11 +16,7 @@ Template_Create
     FormsLandingPAge.select a form and saving it as template
     FormsLandingPAge.Choose From Template
     TemplatePage.Search category
-#     workflowSelectPage.select workflow and publish to client
-<<<<<<< HEAD
-=======
-
->>>>>>> 45dbadc5c4dac44a248e8a9551f8469d18b9e705
+#    workflowSelectPage.select workflow and publish to client
 
 
 RBAC

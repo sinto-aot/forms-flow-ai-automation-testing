@@ -14,14 +14,12 @@ ${username_client}   formsflow-client
 ${url}                   https://forms-flow-web-qaee.aot-technologies.com/
 ${browser_name}          Chrome
 ${username_reviewer}     formsflow-reviewer
-
-
-
+${username_admin}        john.honai
 
 *** Keywords ***
 Open chrome Browser and goto QAbundle instance
-     Open Browser       ${url}     browser=chrome    options=add_argument("--headless")
-#      Open Browser       ${url}     ${browser_name}
+#     Open Browser       ${url}     browser=chrome    options=add_argument("--headless")
+    Open Browser       ${url}     ${browser_name}
     Maximize Browser Window
 Login To Qaee instance as designer
 
@@ -34,6 +32,12 @@ LoginToApplication_client
 
                 Wait Until Element Is Visible    //*[@id="username"]
                 Input Text    //*[@id="username"]    ${username_client}
+                Input Password    //*[@id="password"]    ${password}
+                Click Button    //*[@id="kc-login"]
+                Sleep    5
+LoginToApplication_Admin
+                Wait Until Element Is Visible    //*[@id="username"]
+                Input Text    //*[@id="username"]    ${username_admin}
                 Input Password    //*[@id="password"]    ${password}
                 Click Button    //*[@id="kc-login"]
                 Sleep    5
@@ -58,7 +62,7 @@ validate success message after form create
 
 
 logout
-	sleep  7
+	sleep  10
 	  Click Element         xpath=//div[@class='nav-item dropdown']/a[@class='dropdown-toggle nav-link']
     Click Element         xpath=//a[normalize-space()='Logout']
 
