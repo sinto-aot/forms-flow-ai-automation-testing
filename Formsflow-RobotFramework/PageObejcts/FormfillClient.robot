@@ -30,6 +30,8 @@ Fill_Form
     Wait Until Element Is Enabled    //*[@name="data[submit]"]
 
     Click Button    //*[@name="data[submit]"]
+
+    sleep   7
     Wait Until Page Contains    Submission Saved.
 Fill_Freedomform
 	    sleep    2
