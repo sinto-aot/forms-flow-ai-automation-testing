@@ -11,7 +11,7 @@ Test Teardown    Close Browser
 
 *** Variables ***
 ${search}       Automation Draft test
-${form_id}      65828a754f60733fe6acbf8a
+${form_id}      65828aa77eb909f9083f8fb4
 *** Test Cases ***
 
 New Draft

@@ -16,7 +16,7 @@ Suite Teardown    Close Browser
 *** Variables ***
 ${formname_client}       New Business
 ${formname_freedom}     freedom
-${form_id}          64b66133562e31056b28b8e9
+${form_id}          64b8dd187b3d9f92a25474ca
 *** Test Cases ***
 Logintest
   Generic.LoginToApplication_client
