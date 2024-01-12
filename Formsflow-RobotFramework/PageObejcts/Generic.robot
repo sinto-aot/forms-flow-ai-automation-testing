@@ -26,35 +26,41 @@ Open chrome Browser and goto QAbundle instance
                 Maximize Browser Window
 
 Login To Qaee instance as designer
-                 Wait Until Element Is Visible    //*[@id="username"]
+	sleep    2
+#                 Wait Until Element Is Visible    //*[@id="username"]
                  Input Text    //*[@id="username"]     ${username}
                  Input Password    //*[@id="password"]    ${password}
                  Click Button    //*[@id="kc-login"]
                  sleep    5
 
 LoginToApplication_client
-                Wait Until Element Is Visible    //*[@id="username"]
+	sleep    2
+#                Wait Until Element Is Visible    //*[@id="username"]
                 Input Text    //*[@id="username"]    ${username_client}
                 Input Password    //*[@id="password"]    ${password}
                 Click Button    //*[@id="kc-login"]
                 Sleep    5
 
 LoginToApplication_Admin
-                Wait Until Element Is Visible    //*[@id="username"]
+	sleep    2
+#                Wait Until Element Is Visible    //*[@id="username"]
                 Input Text    //*[@id="username"]    ${username_admin}
                 Input Password    //*[@id="password"]    ${password}
                 Click Button    //*[@id="kc-login"]
                 Sleep    5
 
 LoginToApplication_reviewer
-                Wait Until Element Is Visible    //*[@id="username"]
+	sleep    2
+#                Wait Until Element Is Visible    //*[@id="username"]
                 Input Text    //*[@id="username"]    ${username_reviewer}
                 Input Password    //*[@id="password"]    ${password}
                 Click Button    //*[@id="kc-login"]
                 Sleep    5
 
 LoginToApplication_testreviewer
-                Wait Until Element Is Visible    //*[@id="username"]
+
+	sleep    2
+#                Wait Until Element Is Visible    //*[@id="username"]
                 Input Text    //*[@id="username"]    ${test_reviewer}
                 Input Password    //*[@id="password"]    ${password}
                 Click Button    //*[@id="kc-login"]
