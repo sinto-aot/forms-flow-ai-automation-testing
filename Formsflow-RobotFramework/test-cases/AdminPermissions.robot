@@ -14,10 +14,10 @@ Test Teardown    Close Browser
 
 Dashboard Permissions
     [Tags]    dashboard
-    Generic.Login To Qaee instance as designer
+    Generic.LoginToApplication_Admin
 
-#  AdminPageDashboard.Basic Dashboard Permissions
-#    InsightsPage.Check for Assigned Dashboard
+# AdminPageDashboard.Basic Dashboard Permissions
+  InsightsPage.Check for Assigned Dashboard
     AdminPageDashboard.Remove a group from Dashboard
 
 
