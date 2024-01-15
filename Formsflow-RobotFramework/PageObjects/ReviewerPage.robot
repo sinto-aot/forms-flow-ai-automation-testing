@@ -41,7 +41,15 @@ searchInListView
     Click Element    //div[@class='filter-container-list task-filter-list-view']/button
     Input Text    //input[@name='applicationId']   112
     Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+<<<<<<< Updated upstream
     Click Element    //button[text()='Show results']
     sleep     3
     ${response}=    Get Text    //div[@class='not-selected mt-2 ms-1 row']
     Should Be Equal As Strings    ${response}    No task matching filters found.
+=======
+	 Click Element    //button[text()='Show results']
+	 sleep     3
+   ${response}=    Get Text    //div[@class='not-selected mt-2 ms-1 row']
+	 Should Be Equal As Strings    ${response}    No task matching filters found.
+
+>>>>>>> Stashed changes

@@ -2,10 +2,10 @@
 Documentation     Form BundlingRBAC.
 Test Setup     Open chrome Browser and goto QAbundle instance
 Library           SeleniumLibrary
-Resource            ../PageObejcts/Generic.robot
-Resource            ../PageObejcts/FormsLandingPAge.robot
+Resource            ../PageObjects/Generic.robot
+Resource            ../PageObjects/FormsLandingPAge.robot
 
-Resource            ../PageObejcts/DraftPage.robot
+Resource            ../PageObjects/DraftPage.robot
 
 Test Teardown    Close Browser
 

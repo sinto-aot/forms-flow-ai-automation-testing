@@ -6,10 +6,10 @@ Library           DateTime
 
 Test Setup      Open chrome Browser and goto QAbundle instance
 
-Resource            ../PageObejcts/FormsLandingPAge.robot
-Resource            ../PageObejcts/FormfillClient.robot
-Resource            ../PageObejcts/Generic.robot
-Resource            ../PageObejcts/ApplicationPage.robot
+Resource            ../PageObjects/FormsLandingPAge.robot
+Resource            ../PageObjects/FormfillClient.robot
+Resource            ../PageObjects/Generic.robot
+Resource            ../PageObjects/ApplicationPage.robot
 
 Suite Teardown    Close Browser
 

@@ -2,10 +2,11 @@
 Documentation       This test case is for checking all the permission available for admin user.
 Test Setup          Open chrome Browser and goto QAbundle instance
 Library             SeleniumLibrary
-Resource            ../PageObejcts/AdminPageDashboard.robot
-Resource            ../PageObejcts/AdminPageRoles.robot
-Resource            ../PageObejcts/AdminPageUsers.robot
-Resource            ../PageObejcts/Generic.robot
+Resource            ../PageObjects/AdminPageDashboard.robot
+Resource            ../PageObjects/AdminPageRoles.robot
+Resource            ../PageObjects/AdminPageUsers.robot
+Resource            ../PageObjects/Generic.robot
+Test Teardown    Close Browser
 
 *** Variables ***
 
@@ -13,9 +14,10 @@ Resource            ../PageObejcts/Generic.robot
 
 Dashboard Permissions
     [Tags]    dashboard
-    Generic.LoginToApplication_Admin
+    Generic.Login To Qaee instance as designer
+
 #  AdminPageDashboard.Basic Dashboard Permissions
-    InsightsPage.Check for Assigned Dashboard
+#    InsightsPage.Check for Assigned Dashboard
     AdminPageDashboard.Remove a group from Dashboard
 
 

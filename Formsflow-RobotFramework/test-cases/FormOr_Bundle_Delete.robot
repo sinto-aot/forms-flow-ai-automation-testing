@@ -2,8 +2,8 @@
 Documentation        New Form Creation.
 Test Setup           Open chrome Browser and goto QAbundle instance
 Library             SeleniumLibrary
-Resource            ../PageObejcts/FormOrBundleDelete.robot
-Resource            ../PageObejcts/Generic.robot
+Resource            ../PageObjects/FormOrBundleDelete.robot
+Resource            ../PageObjects/Generic.robot
 
 *** Test Cases ***
 

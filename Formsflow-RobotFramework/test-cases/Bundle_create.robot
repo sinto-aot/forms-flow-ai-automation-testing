@@ -4,14 +4,14 @@ Documentation     Form BundlingRBAC.
 Test Setup     Open chrome Browser and goto QAbundle instance
 Library           SeleniumLibrary
 Library           DateTime
-Resource            ../PageObejcts/BundleCreatePAge.robot
-Resource            ../PageObejcts/Generic.robot
-Resource            ../PageObejcts/FormsLandingPAge.robot
-Resource            ../PageObejcts/FormfillClient.robot
-Resource            ../PageObejcts/ReviewerPage.robot
-Resource            ../PageObejcts/ApplicationPage.robot
+Resource            ../PageObjects/BundleCreatePAge.robot
+Resource            ../PageObjects/Generic.robot
+Resource            ../PageObjects/FormsLandingPAge.robot
+Resource            ../PageObjects/FormfillClient.robot
+Resource            ../PageObjects/ReviewerPage.robot
+Resource            ../PageObjects/ApplicationPage.robot
 
-Resource            ../PageObejcts/workflowSelectPage.robot
+Resource            ../PageObjects/workflowSelectPage.robot
 
 Test Teardown    Close Browser
 

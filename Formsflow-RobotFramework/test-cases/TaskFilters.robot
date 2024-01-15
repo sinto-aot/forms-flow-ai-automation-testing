@@ -2,9 +2,9 @@
 Documentation       This test case is for checking taskfilters updates.
 Test Setup          Open chrome Browser and goto QAbundle instance
 Library             SeleniumLibrary
-Resource            ../PageObejcts/TaskFilterCreate.robot
+Resource            ../PageObjects/TaskFilterCreate.robot
 
-Resource            ../PageObejcts/Generic.robot
+Resource            ../PageObjects/Generic.robot
 Test Teardown    Close Browser
 
 *** Variables ***

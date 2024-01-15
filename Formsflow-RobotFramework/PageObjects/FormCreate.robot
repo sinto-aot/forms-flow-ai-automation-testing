@@ -25,8 +25,8 @@ Create new Form
     sleep                        2s
     click button                 xpath://button[normalize-space()='Next']
     sleep                        4s
-    Click Element                  //div[@class='custom-control custom-switch']
-    click button                 xpath://button[normalize-space()='Save']
+    Click Element                  //input[@id='form-publish']
+    click button                 //button[@data-testid='save-form-button']
     sleep                        4
     Set Global Variable   ${title}
 check form status

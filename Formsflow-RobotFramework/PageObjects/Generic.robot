@@ -21,12 +21,18 @@ ${test_reviewer}         test-reviewer
 *** Keywords ***
 
 Open chrome Browser and goto QAbundle instance
+<<<<<<< Updated upstream
         Open Browser       ${url}     browser=chrome    options=add_argument("--headless")
 #                 Open Browser       ${url}     ${browser_name}
                 Maximize Browser Window
 
+=======
+#   Open Browser       ${url}     browser=chrome    options=add_argument("--headless")
+  Open Browser       ${url}     ${browser_name}
+    Maximize Browser Window
+>>>>>>> Stashed changes
 Login To Qaee instance as designer
-	sleep    2
+	sleep    5
 #                 Wait Until Element Is Visible    //*[@id="username"]
                  Input Text    //*[@id="username"]     ${username}
                  Input Password    //*[@id="password"]    ${password}
@@ -34,7 +40,7 @@ Login To Qaee instance as designer
                  sleep    5
 
 LoginToApplication_client
-	sleep    2
+	sleep    5
 #                Wait Until Element Is Visible    //*[@id="username"]
                 Input Text    //*[@id="username"]    ${username_client}
                 Input Password    //*[@id="password"]    ${password}
@@ -42,7 +48,7 @@ LoginToApplication_client
                 Sleep    5
 
 LoginToApplication_Admin
-	sleep    2
+	sleep    5
 #                Wait Until Element Is Visible    //*[@id="username"]
                 Input Text    //*[@id="username"]    ${username_admin}
                 Input Password    //*[@id="password"]    ${password}
@@ -50,7 +56,7 @@ LoginToApplication_Admin
                 Sleep    5
 
 LoginToApplication_reviewer
-	sleep    2
+	sleep    5
 #                Wait Until Element Is Visible    //*[@id="username"]
                 Input Text    //*[@id="username"]    ${username_reviewer}
                 Input Password    //*[@id="password"]    ${password}
@@ -59,7 +65,7 @@ LoginToApplication_reviewer
 
 LoginToApplication_testreviewer
 
-	sleep    2
+	sleep    5
 #                Wait Until Element Is Visible    //*[@id="username"]
                 Input Text    //*[@id="username"]    ${test_reviewer}
                 Input Password    //*[@id="password"]    ${password}
@@ -72,6 +78,7 @@ Close Browser session
 Wait Until element passed is located on Page
                 [arguments]         ${page_locator}
                  Wait Until Element Is Visible        ${page_locator}        timeout=10
+
 
 
 validate success message after form create

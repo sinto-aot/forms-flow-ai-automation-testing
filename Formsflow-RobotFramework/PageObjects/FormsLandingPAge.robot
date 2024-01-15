@@ -49,9 +49,10 @@ RBAC
    Run Keyword If    ${is_checked}== True    log  "access to all designers"     ELSE    log  "not access to all designers"
 
 select a form and saving it as template
-
+    [Arguments]    ${template_form_id}
 	sleep    3
-	Click Button    //tbody/tr[1]/td[6]/span[1]/button[1]
+
+	Click Button    //button[@data-testid='form-view-or-edit-button-${template_form_id}']
 
 	Wait Until Element Is Visible         //button[contains(text(),'Next')]
 	Click Button     //button[contains(text(),'Next')]
@@ -64,35 +65,35 @@ select a form and saving it as template
 	    Run Keyword If    ${isExist}== False    update template     ELSE    save as template
 
 update template
-	Click Element     //button[contains(text(),'Update Template')]
-	Click Element    //*[@id="updateFormData"]
+	Click Element     //button[@data-testid='save-update-template-button']
+	Click Element    //input[@data-testid='update-form-checkbox']
     sleep    3
-	Click Element        xpath=/html/body/div[2]/div/div/div/div[3]/button[2]
+	Click Element        //button[@data-testid='update-save-template-button']
 	sleep    2
 	Page Should Contain    Template updated successfully
 	sleep    3
-	Click Button    xpath=//button[contains(text(),'Save')]
+	Click Button    //button[@data-testid='save-form-button']
     sleep    5
 save as template
-     Click Element     //button[contains(text(),'Save as Template')]
+     Click Element     //button[@data-testid='save-update-template-button']
      ${min}=   Get Current Date   result_format=%M
 	 ${min}=   Convert To Integer   ${min}
-	Input Text     //input[@placeholder='Enter title']         ${title}'+'${min}
+	Input Text     //input[@data-testid='template-title-input']         ${title}'+'${min}
 	Input Text      xpath=/html/body/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div/div/input      ${category}
 	Press Keys     xpath=/html/body/div[2]/div/div/div/div[2]/div/div[2]/div/div/div/div[1]/div[1]      ENTER
-	Input Text    //textarea[@placeholder='Enter short intro']    ${intro}
-	Input Text    //textarea[@placeholder='Enter description']    ${description}
+	Input Text    //input[@data-testid='template-short-intro-input']    ${intro}
+	Input Text    //input[@data-testid='template-description-input']    ${description}
 
-	Click Element     xpath=/html/body/div[2]/div/div/div/div[3]/button[2]
+	Click Element     //button[@data-testid='update-save-template-button'
 	sleep    2
 	Page Should Contain    Template created successfully
 	sleep     3
-	Click Button    xpath=//button[contains(text(),'Save')]
+	Click Button    //button[@data-testid='save-form-button']
     sleep    5
 Choose From Template
 
-	  Wait Until Element Is Visible    //button[@class='btn btn-secondary ml-4']
-		Click Element       //button[@class='btn btn-secondary ml-4']
+	  Wait Until Element Is Visible    //button[@data-testid='choose-template-button']
+		Click Element       //button[@data-testid='choose-template-button']
 
 Upload Form
 

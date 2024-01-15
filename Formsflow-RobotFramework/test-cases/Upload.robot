@@ -3,8 +3,8 @@ Documentation     Upload a file.
 Test Setup     Open chrome Browser and goto QAbundle instance
 Library           SeleniumLibrary
 Library           DateTime
-Resource            ../PageObejcts/FormsLandingPAge.robot
-Resource            ../PageObejcts/Generic.robot
+Resource            ../PageObjects/FormsLandingPAge.robot
+Resource            ../PageObjects/Generic.robot
 Suite Teardown    Close Browser
 
 *** Test Cases ***
