@@ -37,8 +37,8 @@ When setting up a test project with Robot Framework, it's essential to maintain 
     * Form_create.robot
     * Bundle_create.robot
 * `PageObjects`: Directory for resource files containing reusable keywords and variables.
-    *Generic.robot
-    *FormfillClient.robot
+    * Generic.robot
+    * FormfillClient.robot
 * `Resources`: File containing all resources for the execution ( we used to store json files).
 * `results`: Directory to store test execution logs and reports.
 * `README.md`: Documentation detailing project setup, test execution steps, and other relevant information.
@@ -82,7 +82,7 @@ Testcases can be executed using the `robot` command:
 `robot -d results test-cases/formLandingpage.robot`
 
 ### Running Specific Test Cases
-Using tags, we may specify test scenarios within a testsuite. Use the `-i tagname1` to execute these test cases:  Like, for example, sanity
+Using tags, we may specify test scenarios within a testsuite. Use the `-i tagname` to execute these test cases(for example, sanity).
 
 `robot -d -i sanity test-cases/formLandingpage.robot`
 
