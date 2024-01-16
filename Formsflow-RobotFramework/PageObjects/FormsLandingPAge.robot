@@ -3,7 +3,7 @@ Documentation     All the page objects and keywords of formpage
 Library           SeleniumLibrary
 Library    OperatingSystem
 Library         DateTime
-Library           AutoItLibrary    C:\Program Files (x86)\AutoIt3\AutoItX\AutoItX3.dll
+Library           AutoItLibrary  
 Library    Process
 
 
