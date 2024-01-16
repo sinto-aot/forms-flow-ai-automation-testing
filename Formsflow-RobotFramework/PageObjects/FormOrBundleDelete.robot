@@ -9,12 +9,14 @@ ${Delete_alert}     Delete Confirmation
 
 Delete a form
 
-    input text                          xpath://input[@placeholder='Search...']       ${Search_value}
-    Press Keys                          //input[@placeholder='Search...']    ENTER
+    input text                          xpath://input[@placeholder='Search by form title']       ${Search_value}
+    Press Keys                          //input[@placeholder='Search by form title']    ENTER
     sleep                               4s
-    click element                       xpath://td//i[contains(@class, 'fa fa-trash fa-lg delete_button')]
+    click element                       xpath://i[@class='fa-solid fa-ellipsis']
+    Click Element               xpath=//a[text()='Delete']
+    sleep   3
     Wait Until Page Contains            Delete Confirmation
-    click button                        xpath://button[normalize-space()='Confirm']
+    click button                        xpath://button[text()='Delete']
     sleep                               4s
     page should contain                 Form deleted successfully
 

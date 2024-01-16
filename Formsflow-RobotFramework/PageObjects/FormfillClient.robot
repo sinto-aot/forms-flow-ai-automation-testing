@@ -20,14 +20,18 @@ Fill_Form
     Input Text    //input[@name='data[natureOfBusiness]']    ${natureOfBusiness}
     Input Text    //input[@name='data[numberOfEmployees]']    ${noOfEmployess}
     Input Text    //*[@id="e7m8htm-eMail"]    ${mail}
-    Scroll Element Into View    //div[@id='e0tc0f']/div/div/label/input[contains(@name,'data[typeOfBussiness]') and @value='Sole Proprietor']
-    Click Element    //div[@id='e0tc0f']/div/div/label/input[contains(@name,'data[typeOfBussiness]') and @value='Sole Proprietor']
+    sleep   2
+#    Scroll Element Into View    //input[contains(@name,'data[typeOfBussiness]') and @value='Sole Proprietor']
+    Wait Until Element Is Visible     //input[contains(@name,'data[typeOfBussiness]') and @value='Sole Proprietor']
+    Click Element   //input[contains(@name,'data[typeOfBussiness]') and @value='Sole Proprietor']
     Click Element    //*[@id="eyfajb"]/div[1]/div[2]/label/input
     Click Element    //*[@id="elacr9"]/div[1]/div[2]/label/input
     Click Element    //*[@id="ecqy9f8"]/div[1]/div[2]/label/input
     Wait Until Element Is Enabled    //*[@name="data[submit]"]
-    Scroll Element Into View    //*[@id="elmutrg"]/button
+
     Click Button    //*[@name="data[submit]"]
+
+    sleep   7
     Wait Until Page Contains    Submission Saved.
 Fill_Freedomform
 	    sleep    2
@@ -43,7 +47,8 @@ Fill_Freedomform
     Input Text     xpath=//*[contains(@name,'informationRequested')]            test
     Click Element    xpath=//span[contains(text(),'Receive Copy')]
     sleep    2
-    Scroll Element Into View    //*[text()='Submit Form']
+    Execute JavaScript    window.scrollTo(0, document.body.scrollHeight)
+    sleep     2
     Click Button    //*[text()='Submit Form']
     Wait Until Page Contains    Submission Saved.
     sleep    7
