@@ -103,7 +103,7 @@ Upload Form
 
         # Continue with the rest of your test
 
-        Click Element       //button[@title='Upload json form only']
+        Click Element       //button[@data-testid='upload-form-btn']
         sleep    2
 
         # Get all window titles

@@ -9,15 +9,15 @@ ${title}
 
 Create new Form
     wait until page contains element    //span[text()='Forms']
-    click element                //button[@class='btn btn-primary']
+    click element                //button[@data-testid='create-form-btn']
     sleep                        4s
     ${CurrentDate}               Get Time
      ${title}    set variable   ${formname}+${CurrentDate}
-    input text                   //*[@id="title"]      ${title}
+    input text                   //input[@data-testid='create-form-title']      ${title}
     drag and drop                xpath://span[@data-type='textarea']       xpath://div[@role='alert']
     input text                   name=data[label]      Feedback
     click button                 xpath://button[@class='btn btn-success']
-    click button                 xpath://button[@class='btn btn-primary']
+    click button                 //button[@data-testid='create-form-btn-save']
     sleep                        4s
     element should be visible    xpath://div[@role='alert']
     sleep                        4s

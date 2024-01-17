@@ -1,382 +1,166 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20240115 15:03:34.617" rpa="false" schemaversion="4">
-<suite id="s1" name="AdminPermissions" source="D:\latest_script_updated_develop\forms-flow-ai-automation-testing\Formsflow-RobotFramework\test-cases\AdminPermissions.robot">
-<test id="s1-t1" name="Dashboard Permissions" line="15">
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20240117 09:56:18.416" rpa="false" schemaversion="4">
+<suite id="s1" name="API" source="D:\latest_script_updated_develop\forms-flow-ai-automation-testing\Formsflow-RobotFramework\test-cases\API.robot">
+<test id="s1-t1" name="Send GET Request and Extract ID by Name" line="15">
 <kw name="Open chrome Browser and goto QAbundle instance" library="Generic" type="SETUP">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser_name}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240115 15:03:34.782" level="INFO">Opening browser 'Chrome' to base url 'https://forms-flow-web-qaee.aot-technologies.com/'.</msg>
-<msg timestamp="20240115 15:03:35.927" level="WARN">The chromedriver version (119.0.6045.105) detected in PATH at C:\Users\AOT\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11\chromedriver.exe might not be compatible with the detected chrome version (120.0.6099.217); currently, chromedriver 120.0.6099.109 is recommended for chrome 120.*, so it is advised to delete the driver in PATH and retry</msg>
-<status status="PASS" starttime="20240115 15:03:34.782" endtime="20240115 15:03:38.572"/>
+<msg timestamp="20240117 09:56:18.594" level="INFO">Opening browser 'Chrome' to base url 'https://forms-flow-web-qaee.aot-technologies.com/'.</msg>
+<msg timestamp="20240117 09:56:19.104" level="WARN">The chromedriver version (119.0.6045.105) detected in PATH at C:\Users\AOT\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11\chromedriver.exe might not be compatible with the detected chrome version (120.0.6099.217); currently, chromedriver 120.0.6099.109 is recommended for chrome 120.*, so it is advised to delete the driver in PATH and retry</msg>
+<status status="PASS" starttime="20240117 09:56:18.594" endtime="20240117 09:56:27.513"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<msg timestamp="20240115 15:03:38.581" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Stacktrace:
-	GetHandleVerifier [0x00007FF73D4882B2+55298]
-	(No symbol) [0x00007FF73D3F5E02]
-	(No symbol) [0x00007FF73D2B05AB]
-	(No symbol) [0x00007FF73D290038]
-	(No symbol) [0x00007FF73D316BC7]
-	(No symbol) [0x00007FF73D32A15F]
-	(No symbol) [0x00007FF73D311E83]
-	(No symbol) [0x00007FF73D2E670A]
-	(No symbol) [0x00007FF73D2E7964]
-	GetHandleVerifier [0x00007FF73D800AAB+3694587]
-	GetHandleVerifier [0x00007FF73D85728E+4048862]
-	GetHandleVerifier [0x00007FF73D84F173+4015811]
-	GetHandleVerifier [0x00007FF73D5247D6+695590]
-	(No symbol) [0x00007FF73D400CE8]
-	(No symbol) [0x00007FF73D3FCF34]
-	(No symbol) [0x00007FF73D3FD062]
-	(No symbol) [0x00007FF73D3ED3A3]
-	BaseThreadInitThunk [0x00007FFC81F17344+20]
-	RtlUserThreadStart [0x00007FFC82BC26B1+33]
-</msg>
-<msg timestamp="20240115 15:03:38.588" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Stacktrace:
-	GetHandleVerifier [0x00007FF73D4882B2+55298]
-	(No symbol) [0x00007FF73D3F5E02]
-	(No symbol) [0x00007FF73D2B05AB]
-	(No symbol) [0x00007FF73D290038]
-	(No symbol) [0x00007FF73D316BC7]
-	(No symbol) [0x00007FF73D32A15F]
-	(No symbol) [0x00007FF73D311E83]
-	(No symbol) [0x00007FF73D2E670A]
-	(No symbol) [0x00007FF73D2E7964]
-	GetHandleVerifier [0x00007FF73D800AAB+3694587]
-	GetHandleVerifier [0x00007FF73D85728E+4048862]
-	GetHandleVerifier [0x00007FF73D84F173+4015811]
-	GetHandleVerifier [0x00007FF73D5247D6+695590]
-	(No symbol) [0x00007FF73D400CE8]
-	(No symbol) [0x00007FF73D3FCF34]
-	(No symbol) [0x00007FF73D3FD062]
-	(No symbol) [0x00007FF73D3ED3A3]
-	BaseThreadInitThunk [0x00007FFC81F17344+20]
-	RtlUserThreadStart [0x00007FFC82BC26B1+33]
-</msg>
-<status status="FAIL" starttime="20240115 15:03:38.572" endtime="20240115 15:03:38.594"/>
+<status status="PASS" starttime="20240117 09:56:27.513" endtime="20240117 09:56:27.658"/>
 </kw>
-<status status="FAIL" starttime="20240115 15:03:34.782" endtime="20240115 15:03:38.594"/>
+<status status="PASS" starttime="20240117 09:56:18.594" endtime="20240117 09:56:27.658"/>
 </kw>
-<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20240115 15:03:38.597" endtime="20240115 15:03:40.698"/>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${body}</var>
+<arg>grant_type=client_credentials</arg>
+<arg>client_id=forms-flow-bpm</arg>
+<arg>client_secret=786001d6-68a8-4519-903c-bc5b5a870d68</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20240117 09:56:27.658" level="INFO">${body} = {'grant_type': 'client_credentials', 'client_id': 'forms-flow-bpm', 'client_secret': '786001d6-68a8-4519-903c-bc5b5a870d68'}</msg>
+<status status="PASS" starttime="20240117 09:56:27.658" endtime="20240117 09:56:27.658"/>
 </kw>
-<tag>dashboard</tag>
-<status status="FAIL" starttime="20240115 15:03:34.782" endtime="20240115 15:03:40.698">Setup failed:
-NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Stacktrace:
-	GetHandleVerifier [0x00007FF73D4882B2+55298]
-	(No symbol) [0x00007FF73D3F5E02]
-	(No symbol) [0x00007FF73D2B05AB]
-	(No symbol) [0x00007FF73D290038]
-	(No symbol) [0x00007FF73D316BC7]
-	(No symbol) [0x00007FF73D32A15F]
-	(No symbol) [0x00007FF73D311E83]
-	(No symbol) [0x00007FF73D2E670A]
-	(No symbol) [0x00007FF73D2E7964]
-	GetHandleVerifier [0x00007FF73D800AAB+3694587]
-	GetHandleVerifier [0x00007FF73D85728E+4048862]
-	GetHandleVerifier [0x00007FF73D84F173+4015811]
-	GetHandleVerifier [0x00007FF73D5247D6+695590]
-	(No symbol) [0x00007FF73D400CE8]
-	(No symbol) [0x00007FF73D3FCF34]
-	(No symbol) [0x00007FF73D3FD062]
-	(No symbol) [0x00007FF73D3ED3A3]
-	BaseThreadInitThunk [0x00007FFC81F17344+20]
-	RtlUserThreadStart [0x00007FFC82BC26B1+33]
-</status>
-</test>
-<test id="s1-t2" name="Roles Creation Page permissions" line="24">
-<kw name="Open chrome Browser and goto QAbundle instance" library="Generic" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${browser_name}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240115 15:03:40.700" level="INFO">Opening browser 'Chrome' to base url 'https://forms-flow-web-qaee.aot-technologies.com/'.</msg>
-<msg timestamp="20240115 15:03:41.430" level="WARN">The chromedriver version (119.0.6045.105) detected in PATH at C:\Users\AOT\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11\chromedriver.exe might not be compatible with the detected chrome version (120.0.6099.217); currently, chromedriver 120.0.6099.109 is recommended for chrome 120.*, so it is advised to delete the driver in PATH and retry</msg>
-<status status="PASS" starttime="20240115 15:03:40.700" endtime="20240115 15:03:44.352"/>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${header}</var>
+<arg>Content-Type=x-www-form-urlencoded</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20240117 09:56:27.658" level="INFO">${header} = {'Content-Type': 'x-www-form-urlencoded'}</msg>
+<status status="PASS" starttime="20240117 09:56:27.658" endtime="20240117 09:56:27.658"/>
 </kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<msg timestamp="20240115 15:03:44.359" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Stacktrace:
-	GetHandleVerifier [0x00007FF73D4882B2+55298]
-	(No symbol) [0x00007FF73D3F5E02]
-	(No symbol) [0x00007FF73D2B05AB]
-	(No symbol) [0x00007FF73D290038]
-	(No symbol) [0x00007FF73D316BC7]
-	(No symbol) [0x00007FF73D32A15F]
-	(No symbol) [0x00007FF73D311E83]
-	(No symbol) [0x00007FF73D2E670A]
-	(No symbol) [0x00007FF73D2E7964]
-	GetHandleVerifier [0x00007FF73D800AAB+3694587]
-	GetHandleVerifier [0x00007FF73D85728E+4048862]
-	GetHandleVerifier [0x00007FF73D84F173+4015811]
-	GetHandleVerifier [0x00007FF73D5247D6+695590]
-	(No symbol) [0x00007FF73D400CE8]
-	(No symbol) [0x00007FF73D3FCF34]
-	(No symbol) [0x00007FF73D3FD062]
-	(No symbol) [0x00007FF73D3ED3A3]
-	BaseThreadInitThunk [0x00007FFC81F17344+20]
-	RtlUserThreadStart [0x00007FFC82BC26B1+33]
-</msg>
-<msg timestamp="20240115 15:03:44.363" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Stacktrace:
-	GetHandleVerifier [0x00007FF73D4882B2+55298]
-	(No symbol) [0x00007FF73D3F5E02]
-	(No symbol) [0x00007FF73D2B05AB]
-	(No symbol) [0x00007FF73D290038]
-	(No symbol) [0x00007FF73D316BC7]
-	(No symbol) [0x00007FF73D32A15F]
-	(No symbol) [0x00007FF73D311E83]
-	(No symbol) [0x00007FF73D2E670A]
-	(No symbol) [0x00007FF73D2E7964]
-	GetHandleVerifier [0x00007FF73D800AAB+3694587]
-	GetHandleVerifier [0x00007FF73D85728E+4048862]
-	GetHandleVerifier [0x00007FF73D84F173+4015811]
-	GetHandleVerifier [0x00007FF73D5247D6+695590]
-	(No symbol) [0x00007FF73D400CE8]
-	(No symbol) [0x00007FF73D3FCF34]
-	(No symbol) [0x00007FF73D3FD062]
-	(No symbol) [0x00007FF73D3ED3A3]
-	BaseThreadInitThunk [0x00007FFC81F17344+20]
-	RtlUserThreadStart [0x00007FFC82BC26B1+33]
-</msg>
-<status status="FAIL" starttime="20240115 15:03:44.353" endtime="20240115 15:03:44.363"/>
+<kw name="POST" library="RequestsLibrary">
+<var>${resp}</var>
+<arg>https://forms-flow-idm-qa.aot-technologies.com/auth/realms/forms-flow-ai/protocol/openid-connect/token</arg>
+<arg>${body}</arg>
+<arg>${header}</arg>
+<doc>Sends a POST request.</doc>
+<msg timestamp="20240117 09:56:28.518" level="INFO">POST Request : url=https://forms-flow-idm-qa.aot-technologies.com/auth/realms/forms-flow-ai/protocol/openid-connect/token 
+ path_url=/auth/realms/forms-flow-ai/protocol/openid-connect/token 
+ headers={'User-Agent': 'python-requests/2.31.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '105', 'Content-Type': 'application/x-www-form-urlencoded'} 
+ body=grant_type=client_credentials&amp;client_id=forms-flow-bpm&amp;client_secret=786001d6-68a8-4519-903c-bc5b5a870d68 
+ </msg>
+<msg timestamp="20240117 09:56:28.518" level="INFO">POST Response : url=https://forms-flow-idm-qa.aot-technologies.com/auth/realms/forms-flow-ai/protocol/openid-connect/token 
+ status=200, reason=OK 
+ headers={'Date': 'Wed, 17 Jan 2024 04:26:28 GMT', 'Content-Type': 'application/json', 'Content-Length': '1771', 'Connection': 'keep-alive', 'Cache-Control': 'no-store', 'Set-Cookie': 'KC_RESTART=; Version=1; Expires=Thu, 01-Jan-1970 00:00:10 GMT; Max-Age=0; Path=/auth/realms/forms-flow-ai/; HttpOnly', 'X-XSS-Protection': '1; mode=block', 'Pragma': 'no-cache', 'X-Frame-Options': 'SAMEORIGIN', 'Referrer-Policy': 'no-referrer', 'Strict-Transport-Security': 'max-age=15724800; includeSubDomains', 'X-Content-Type-Options': 'nosniff'} 
+ body={"access_token":"eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0SmJvcjlQbDlmcmhMSXg4ZWxsaVp4bmw4Mk5WeVBfY1gtMVBwdVBlVzFvIn0.eyJleHAiOjE3MDU0NjU4ODgsImlhdCI6MTcwNTQ2NTU4OCwianRpIjoiOWFmNDQzNTktYjg5MC00MWI3LWFmZGMtZDczOGYzNDNmNjI2IiwiaXNzIjoiaHR0cHM6Ly9mb3Jtcy1mbG93LWlkbS1xYS5hb3QtdGVjaG5vbG9naWVzLmNvbS9hdXRoL3JlYWxtcy9mb3Jtcy1mbG93LWFpIiwiYXVkIjpbImNhbXVuZGEtcmVzdC1hcGkiLCJmb3Jtcy1mbG93LXdlYiIsInJlYWxtLW1hbmFnZW1lbnQiLCJhY2NvdW50Il0sInN1YiI6ImI2ZjVhZDA5LTFmNDAtNGIyZi05MzUyLTU1ZTRjZmE0YjZkMCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImZvcm1zLWZsb3ctYnBtIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJtYW5hZ2UtdXNlcnMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwicXVlcnktY2xpZW50cyIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIiwicXVlcnktdXNlcnMiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiY2FtdW5kYS1yZXN0LWFwaSBlbWFpbCBwcm9maWxlIiwiY2xpZW50SWQiOiJmb3Jtcy1mbG93LWJwbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xpZW50SG9zdCI6IjEwLjE1LjIuMjIwIiwiZ3JvdXBzIjpbIi9jYW11bmRhLWFkbWluIl0sInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1mb3Jtcy1mbG93LWJwbSIsImNsaWVudEFkZHJlc3MiOiIxMC4xNS4yLjIyMCJ9.BF-Los8gpeQu8rEUZdm0Z3pYPH7qepKTCQYJwVvCzJdSxu4uzkM65JEwoZjF_5SseMx2tNdGWBrzhxXFyJOs4Rb8Xt-HHVjPmFvrRkmALoA-WotKYA0PlDAhgmjVv8EycvMSnkp9udetkZBFZJmbfAlPn9G91MCez84XF1uD9AIkIdnGby4plHPYmxsQNVQXvl_rn1gW4TP2PDoamtbEV91bRk-KdEHkTcPs-lqqfjU3oyzhiGoDA4kQrsg5JK6RTTgwMrGA43CYItO6RT0oiOfxwpkKerFQent_5Bt-uEBiey63gGtVVihkv6GHcfSEJnXfMnJP0I5U5CL2zU1HOw","expires_in":300,"refresh_expires_in":0,"token_type":"Bearer","not-before-policy":0,"scope":"camunda-rest-api email profile"} 
+ </msg>
+<msg timestamp="20240117 09:56:28.518" level="INFO">${resp} = &lt;Response [200]&gt;</msg>
+<status status="PASS" starttime="20240117 09:56:27.658" endtime="20240117 09:56:28.518"/>
 </kw>
-<status status="FAIL" starttime="20240115 15:03:40.700" endtime="20240115 15:03:44.363"/>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${resp}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20240117 09:56:28.519" endtime="20240117 09:56:28.519"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${access_token}</var>
+<arg>${resp.json().get('access_token')}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240117 09:56:28.520" level="INFO">${access_token} = eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0SmJvcjlQbDlmcmhMSXg4ZWxsaVp4bmw4Mk5WeVBfY1gtMVBwdVBlVzFvIn0.eyJleHAiOjE3MDU0NjU4ODgsImlhdCI6MTcwNTQ2NTU4OCwianRpIjoiOWFmNDQzNTktYjg5MC00MWI3LWFmZGMt...</msg>
+<status status="PASS" starttime="20240117 09:56:28.520" endtime="20240117 09:56:28.520"/>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<arg>${access_token}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<msg timestamp="20240117 09:56:28.521" level="INFO">Length is 1627</msg>
+<status status="PASS" starttime="20240117 09:56:28.521" endtime="20240117 09:56:28.521"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>The access token is: ${access_token}</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20240117 09:56:28.521" level="INFO">The access token is: eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICI0SmJvcjlQbDlmcmhMSXg4ZWxsaVp4bmw4Mk5WeVBfY1gtMVBwdVBlVzFvIn0.eyJleHAiOjE3MDU0NjU4ODgsImlhdCI6MTcwNTQ2NTU4OCwianRpIjoiOWFmNDQzNTktYjg5MC00MWI3LWFmZGMtZDczOGYzNDNmNjI2IiwiaXNzIjoiaHR0cHM6Ly9mb3Jtcy1mbG93LWlkbS1xYS5hb3QtdGVjaG5vbG9naWVzLmNvbS9hdXRoL3JlYWxtcy9mb3Jtcy1mbG93LWFpIiwiYXVkIjpbImNhbXVuZGEtcmVzdC1hcGkiLCJmb3Jtcy1mbG93LXdlYiIsInJlYWxtLW1hbmFnZW1lbnQiLCJhY2NvdW50Il0sInN1YiI6ImI2ZjVhZDA5LTFmNDAtNGIyZi05MzUyLTU1ZTRjZmE0YjZkMCIsInR5cCI6IkJlYXJlciIsImF6cCI6ImZvcm1zLWZsb3ctYnBtIiwiYWNyIjoiMSIsImFsbG93ZWQtb3JpZ2lucyI6WyIqIl0sInJlYWxtX2FjY2VzcyI6eyJyb2xlcyI6WyJvZmZsaW5lX2FjY2VzcyIsInVtYV9hdXRob3JpemF0aW9uIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsicmVhbG0tbWFuYWdlbWVudCI6eyJyb2xlcyI6WyJtYW5hZ2UtdXNlcnMiLCJ2aWV3LXVzZXJzIiwidmlldy1jbGllbnRzIiwicXVlcnktY2xpZW50cyIsIm1hbmFnZS1jbGllbnRzIiwicXVlcnktZ3JvdXBzIiwicXVlcnktdXNlcnMiXX0sImFjY291bnQiOnsicm9sZXMiOlsibWFuYWdlLWFjY291bnQiLCJtYW5hZ2UtYWNjb3VudC1saW5rcyIsInZpZXctcHJvZmlsZSJdfX0sInNjb3BlIjoiY2FtdW5kYS1yZXN0LWFwaSBlbWFpbCBwcm9maWxlIiwiY2xpZW50SWQiOiJmb3Jtcy1mbG93LWJwbSIsImVtYWlsX3ZlcmlmaWVkIjpmYWxzZSwiY2xpZW50SG9zdCI6IjEwLjE1LjIuMjIwIiwiZ3JvdXBzIjpbIi9jYW11bmRhLWFkbWluIl0sInByZWZlcnJlZF91c2VybmFtZSI6InNlcnZpY2UtYWNjb3VudC1mb3Jtcy1mbG93LWJwbSIsImNsaWVudEFkZHJlc3MiOiIxMC4xNS4yLjIyMCJ9.BF-Los8gpeQu8rEUZdm0Z3pYPH7qepKTCQYJwVvCzJdSxu4uzkM65JEwoZjF_5SseMx2tNdGWBrzhxXFyJOs4Rb8Xt-HHVjPmFvrRkmALoA-WotKYA0PlDAhgmjVv8EycvMSnkp9udetkZBFZJmbfAlPn9G91MCez84XF1uD9AIkIdnGby4plHPYmxsQNVQXvl_rn1gW4TP2PDoamtbEV91bRk-KdEHkTcPs-lqqfjU3oyzhiGoDA4kQrsg5JK6RTTgwMrGA43CYItO6RT0oiOfxwpkKerFQent_5Bt-uEBiey63gGtVVihkv6GHcfSEJnXfMnJP0I5U5CL2zU1HOw</msg>
+<status status="PASS" starttime="20240117 09:56:28.521" endtime="20240117 09:56:28.521"/>
+</kw>
+<kw name="Set Variable" library="BuiltIn">
+<var>${name}</var>
+<arg>automation</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20240117 09:56:28.522" level="INFO">${name} = automation</msg>
+<status status="PASS" starttime="20240117 09:56:28.521" endtime="20240117 09:56:28.522"/>
+</kw>
+<kw name="Create Dictionary" library="BuiltIn">
+<var>${headers}</var>
+<arg>Authorization=Bearer ${resp}</arg>
+<doc>Creates and returns a dictionary based on the given ``items``.</doc>
+<msg timestamp="20240117 09:56:28.522" level="INFO">${headers} = {'Authorization': 'Bearer &lt;Response [200]&gt;'}</msg>
+<status status="PASS" starttime="20240117 09:56:28.522" endtime="20240117 09:56:28.522"/>
+</kw>
+<kw name="GET" library="RequestsLibrary">
+<var>${response}</var>
+<arg>url=https://forms-flow-api-qaee.aot-technologies.com/form?pageNo=1&amp;limit=5&amp;sortBy=formName&amp;sortOrder=asc&amp;formType=form,resource&amp;formName=${name}</arg>
+<arg>headers=${access_token}</arg>
+<doc>Sends a GET request.</doc>
+<msg timestamp="20240117 09:56:28.524" level="FAIL">AttributeError: 'str' object has no attribute 'items'</msg>
+<status status="FAIL" starttime="20240117 09:56:28.523" endtime="20240117 09:56:28.525"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Response: ${response.content}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20240117 09:56:28.525" endtime="20240117 09:56:28.526"/>
+</kw>
+<kw name=":FOR">
+<arg>${form}</arg>
+<arg>IN</arg>
+<arg>@{response.json()}</arg>
+<status status="NOT RUN" starttime="20240117 09:56:28.526" endtime="20240117 09:56:28.526"/>
+</kw>
+<kw name="\">
+<arg>Run Keyword If</arg>
+<arg>'${name}' in ${form.name}</arg>
+<arg>\</arg>
+<arg>Set Variable</arg>
+<arg>${form_id}</arg>
+<arg>${form.id}</arg>
+<status status="NOT RUN" starttime="20240117 09:56:28.526" endtime="20240117 09:56:28.527"/>
+</kw>
+<kw name="Should Not Be Empty" library="BuiltIn">
+<arg>${form_id}</arg>
+<doc>Verifies that the given item is not empty.</doc>
+<status status="NOT RUN" starttime="20240117 09:56:28.527" endtime="20240117 09:56:28.527"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>The form ID for form ${form_name} is: ${form_id}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20240117 09:56:28.527" endtime="20240117 09:56:28.527"/>
 </kw>
 <kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20240115 15:03:44.363" endtime="20240115 15:03:46.480"/>
+<status status="PASS" starttime="20240117 09:56:28.528" endtime="20240117 09:56:30.652"/>
 </kw>
-<tag>roles</tag>
-<status status="FAIL" starttime="20240115 15:03:40.700" endtime="20240115 15:03:46.480">Setup failed:
-NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Stacktrace:
-	GetHandleVerifier [0x00007FF73D4882B2+55298]
-	(No symbol) [0x00007FF73D3F5E02]
-	(No symbol) [0x00007FF73D2B05AB]
-	(No symbol) [0x00007FF73D290038]
-	(No symbol) [0x00007FF73D316BC7]
-	(No symbol) [0x00007FF73D32A15F]
-	(No symbol) [0x00007FF73D311E83]
-	(No symbol) [0x00007FF73D2E670A]
-	(No symbol) [0x00007FF73D2E7964]
-	GetHandleVerifier [0x00007FF73D800AAB+3694587]
-	GetHandleVerifier [0x00007FF73D85728E+4048862]
-	GetHandleVerifier [0x00007FF73D84F173+4015811]
-	GetHandleVerifier [0x00007FF73D5247D6+695590]
-	(No symbol) [0x00007FF73D400CE8]
-	(No symbol) [0x00007FF73D3FCF34]
-	(No symbol) [0x00007FF73D3FD062]
-	(No symbol) [0x00007FF73D3ED3A3]
-	BaseThreadInitThunk [0x00007FFC81F17344+20]
-	RtlUserThreadStart [0x00007FFC82BC26B1+33]
-</status>
-</test>
-<test id="s1-t3" name="User Persmissions" line="37">
-<kw name="Open chrome Browser and goto QAbundle instance" library="Generic" type="SETUP">
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>${url}</arg>
-<arg>${browser_name}</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20240115 15:03:46.480" level="INFO">Opening browser 'Chrome' to base url 'https://forms-flow-web-qaee.aot-technologies.com/'.</msg>
-<msg timestamp="20240115 15:03:47.092" level="WARN">The chromedriver version (119.0.6045.105) detected in PATH at C:\Users\AOT\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11\chromedriver.exe might not be compatible with the detected chrome version (120.0.6099.217); currently, chromedriver 120.0.6099.109 is recommended for chrome 120.*, so it is advised to delete the driver in PATH and retry</msg>
-<status status="PASS" starttime="20240115 15:03:46.480" endtime="20240115 15:03:54.349"/>
-</kw>
-<kw name="Maximize Browser Window" library="SeleniumLibrary">
-<doc>Maximizes current browser window.</doc>
-<msg timestamp="20240115 15:03:54.358" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Stacktrace:
-	GetHandleVerifier [0x00007FF73D4882B2+55298]
-	(No symbol) [0x00007FF73D3F5E02]
-	(No symbol) [0x00007FF73D2B05AB]
-	(No symbol) [0x00007FF73D290038]
-	(No symbol) [0x00007FF73D316BC7]
-	(No symbol) [0x00007FF73D32A15F]
-	(No symbol) [0x00007FF73D311E83]
-	(No symbol) [0x00007FF73D2E670A]
-	(No symbol) [0x00007FF73D2E7964]
-	GetHandleVerifier [0x00007FF73D800AAB+3694587]
-	GetHandleVerifier [0x00007FF73D85728E+4048862]
-	GetHandleVerifier [0x00007FF73D84F173+4015811]
-	GetHandleVerifier [0x00007FF73D5247D6+695590]
-	(No symbol) [0x00007FF73D400CE8]
-	(No symbol) [0x00007FF73D3FCF34]
-	(No symbol) [0x00007FF73D3FD062]
-	(No symbol) [0x00007FF73D3ED3A3]
-	BaseThreadInitThunk [0x00007FFC81F17344+20]
-	RtlUserThreadStart [0x00007FFC82BC26B1+33]
-</msg>
-<msg timestamp="20240115 15:03:54.366" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Stacktrace:
-	GetHandleVerifier [0x00007FF73D4882B2+55298]
-	(No symbol) [0x00007FF73D3F5E02]
-	(No symbol) [0x00007FF73D2B05AB]
-	(No symbol) [0x00007FF73D290038]
-	(No symbol) [0x00007FF73D316BC7]
-	(No symbol) [0x00007FF73D32A15F]
-	(No symbol) [0x00007FF73D311E83]
-	(No symbol) [0x00007FF73D2E670A]
-	(No symbol) [0x00007FF73D2E7964]
-	GetHandleVerifier [0x00007FF73D800AAB+3694587]
-	GetHandleVerifier [0x00007FF73D85728E+4048862]
-	GetHandleVerifier [0x00007FF73D84F173+4015811]
-	GetHandleVerifier [0x00007FF73D5247D6+695590]
-	(No symbol) [0x00007FF73D400CE8]
-	(No symbol) [0x00007FF73D3FCF34]
-	(No symbol) [0x00007FF73D3FD062]
-	(No symbol) [0x00007FF73D3ED3A3]
-	BaseThreadInitThunk [0x00007FFC81F17344+20]
-	RtlUserThreadStart [0x00007FFC82BC26B1+33]
-</msg>
-<status status="FAIL" starttime="20240115 15:03:54.350" endtime="20240115 15:03:54.373"/>
-</kw>
-<status status="FAIL" starttime="20240115 15:03:46.480" endtime="20240115 15:03:54.377"/>
-</kw>
-<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
-<doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20240115 15:03:54.385" endtime="20240115 15:03:56.490"/>
-</kw>
-<tag>users</tag>
-<status status="FAIL" starttime="20240115 15:03:46.480" endtime="20240115 15:03:56.492">Setup failed:
-NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Stacktrace:
-	GetHandleVerifier [0x00007FF73D4882B2+55298]
-	(No symbol) [0x00007FF73D3F5E02]
-	(No symbol) [0x00007FF73D2B05AB]
-	(No symbol) [0x00007FF73D290038]
-	(No symbol) [0x00007FF73D316BC7]
-	(No symbol) [0x00007FF73D32A15F]
-	(No symbol) [0x00007FF73D311E83]
-	(No symbol) [0x00007FF73D2E670A]
-	(No symbol) [0x00007FF73D2E7964]
-	GetHandleVerifier [0x00007FF73D800AAB+3694587]
-	GetHandleVerifier [0x00007FF73D85728E+4048862]
-	GetHandleVerifier [0x00007FF73D84F173+4015811]
-	GetHandleVerifier [0x00007FF73D5247D6+695590]
-	(No symbol) [0x00007FF73D400CE8]
-	(No symbol) [0x00007FF73D3FCF34]
-	(No symbol) [0x00007FF73D3FD062]
-	(No symbol) [0x00007FF73D3ED3A3]
-	BaseThreadInitThunk [0x00007FFC81F17344+20]
-	RtlUserThreadStart [0x00007FFC82BC26B1+33]
-</status>
+<status status="FAIL" starttime="20240117 09:56:18.594" endtime="20240117 09:56:30.653">AttributeError: 'str' object has no attribute 'items'</status>
 </test>
 <doc>This test case is for checking all the permission available for admin user.</doc>
-<status status="FAIL" starttime="20240115 15:03:34.620" endtime="20240115 15:03:56.492"/>
+<status status="FAIL" starttime="20240117 09:56:18.416" endtime="20240117 09:56:30.655"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="3" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="0" fail="1" skip="0">dashboard</stat>
-<stat pass="0" fail="1" skip="0">roles</stat>
-<stat pass="0" fail="1" skip="0">users</stat>
 </tag>
 <suite>
-<stat pass="0" fail="3" skip="0" id="s1" name="AdminPermissions">AdminPermissions</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="API">API</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20240115 15:03:35.927" level="WARN">The chromedriver version (119.0.6045.105) detected in PATH at C:\Users\AOT\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11\chromedriver.exe might not be compatible with the detected chrome version (120.0.6099.217); currently, chromedriver 120.0.6099.109 is recommended for chrome 120.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg timestamp="20240115 15:03:38.581" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Stacktrace:
-	GetHandleVerifier [0x00007FF73D4882B2+55298]
-	(No symbol) [0x00007FF73D3F5E02]
-	(No symbol) [0x00007FF73D2B05AB]
-	(No symbol) [0x00007FF73D290038]
-	(No symbol) [0x00007FF73D316BC7]
-	(No symbol) [0x00007FF73D32A15F]
-	(No symbol) [0x00007FF73D311E83]
-	(No symbol) [0x00007FF73D2E670A]
-	(No symbol) [0x00007FF73D2E7964]
-	GetHandleVerifier [0x00007FF73D800AAB+3694587]
-	GetHandleVerifier [0x00007FF73D85728E+4048862]
-	GetHandleVerifier [0x00007FF73D84F173+4015811]
-	GetHandleVerifier [0x00007FF73D5247D6+695590]
-	(No symbol) [0x00007FF73D400CE8]
-	(No symbol) [0x00007FF73D3FCF34]
-	(No symbol) [0x00007FF73D3FD062]
-	(No symbol) [0x00007FF73D3ED3A3]
-	BaseThreadInitThunk [0x00007FFC81F17344+20]
-	RtlUserThreadStart [0x00007FFC82BC26B1+33]
-</msg>
-<msg timestamp="20240115 15:03:41.430" level="WARN">The chromedriver version (119.0.6045.105) detected in PATH at C:\Users\AOT\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11\chromedriver.exe might not be compatible with the detected chrome version (120.0.6099.217); currently, chromedriver 120.0.6099.109 is recommended for chrome 120.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg timestamp="20240115 15:03:44.359" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Stacktrace:
-	GetHandleVerifier [0x00007FF73D4882B2+55298]
-	(No symbol) [0x00007FF73D3F5E02]
-	(No symbol) [0x00007FF73D2B05AB]
-	(No symbol) [0x00007FF73D290038]
-	(No symbol) [0x00007FF73D316BC7]
-	(No symbol) [0x00007FF73D32A15F]
-	(No symbol) [0x00007FF73D311E83]
-	(No symbol) [0x00007FF73D2E670A]
-	(No symbol) [0x00007FF73D2E7964]
-	GetHandleVerifier [0x00007FF73D800AAB+3694587]
-	GetHandleVerifier [0x00007FF73D85728E+4048862]
-	GetHandleVerifier [0x00007FF73D84F173+4015811]
-	GetHandleVerifier [0x00007FF73D5247D6+695590]
-	(No symbol) [0x00007FF73D400CE8]
-	(No symbol) [0x00007FF73D3FCF34]
-	(No symbol) [0x00007FF73D3FD062]
-	(No symbol) [0x00007FF73D3ED3A3]
-	BaseThreadInitThunk [0x00007FFC81F17344+20]
-	RtlUserThreadStart [0x00007FFC82BC26B1+33]
-</msg>
-<msg timestamp="20240115 15:03:47.092" level="WARN">The chromedriver version (119.0.6045.105) detected in PATH at C:\Users\AOT\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11\chromedriver.exe might not be compatible with the detected chrome version (120.0.6099.217); currently, chromedriver 120.0.6099.109 is recommended for chrome 120.*, so it is advised to delete the driver in PATH and retry</msg>
-<msg timestamp="20240115 15:03:54.358" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=120.0.6099.217)
-Stacktrace:
-	GetHandleVerifier [0x00007FF73D4882B2+55298]
-	(No symbol) [0x00007FF73D3F5E02]
-	(No symbol) [0x00007FF73D2B05AB]
-	(No symbol) [0x00007FF73D290038]
-	(No symbol) [0x00007FF73D316BC7]
-	(No symbol) [0x00007FF73D32A15F]
-	(No symbol) [0x00007FF73D311E83]
-	(No symbol) [0x00007FF73D2E670A]
-	(No symbol) [0x00007FF73D2E7964]
-	GetHandleVerifier [0x00007FF73D800AAB+3694587]
-	GetHandleVerifier [0x00007FF73D85728E+4048862]
-	GetHandleVerifier [0x00007FF73D84F173+4015811]
-	GetHandleVerifier [0x00007FF73D5247D6+695590]
-	(No symbol) [0x00007FF73D400CE8]
-	(No symbol) [0x00007FF73D3FCF34]
-	(No symbol) [0x00007FF73D3FD062]
-	(No symbol) [0x00007FF73D3ED3A3]
-	BaseThreadInitThunk [0x00007FFC81F17344+20]
-	RtlUserThreadStart [0x00007FFC82BC26B1+33]
-</msg>
+<msg timestamp="20240117 09:56:18.586" level="ERROR">Error in file 'D:\latest_script_updated_develop\forms-flow-ai-automation-testing\Formsflow-RobotFramework\test-cases\API.robot' on line 6: Importing library 'JSON' failed: ModuleNotFoundError: No module named 'JSON'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  D:\Robot Framework\Scripts\robot.exe
+  D:\Robot Framework\python311.zip
+  D:\Robot Framework\DLLs
+  D:\Robot Framework\Lib
+  D:\Robot Framework
+  D:\Robot Framework\Lib\site-packages
+  D:\Robot Framework\Lib\site-packages\win32
+  D:\Robot Framework\Lib\site-packages\win32\lib
+  D:\Robot Framework\Lib\site-packages\Pythonwin</msg>
+<msg timestamp="20240117 09:56:19.104" level="WARN">The chromedriver version (119.0.6045.105) detected in PATH at C:\Users\AOT\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Python 3.11\chromedriver.exe might not be compatible with the detected chrome version (120.0.6099.217); currently, chromedriver 120.0.6099.109 is recommended for chrome 120.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>
