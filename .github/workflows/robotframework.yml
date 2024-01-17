@@ -73,6 +73,7 @@ jobs:
         sleep 60
 
     - name: Run Robot Framework Tests
+      id: robot-test
       run: |
         for file in ./Formsflow-RobotFramework/test-cases/AdminPermissions.robot; do
           echo "Running test case: $file"
@@ -82,3 +83,48 @@ jobs:
         done
       env:
         CHROME_HEADLESS: true
+  check-status:
+    runs-on: ubuntu-latest
+    needs: robot-framework
+    if: failure() 
+    steps:  
+    - name: Send Error Details to Google Chat
+      env:
+        GOOGLE_CHAT_WEBHOOK: ${{ secrets.WEBHOOK_URL_HERE }}
+      run: |
+        MESSAGE="${{ github.workflow }} workflow failed on branch ${{ github.ref }}.Error Details:${{ job.status }}: ${{ job.name }}${{ job.steps[0].name }}: ${{ job.steps[0].outcome }}"
+          
+        python - <<EOF
+        import requests
+        import json
+        import os
+        # Define the message to send
+        message = {
+            "text": "$MESSAGE",
+            "cards": [
+                {
+                    "sections": [
+                        {
+                            "widgets": [
+                                {
+                                    "textParagraph": {
+                                        "text": "$MESSAGE"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+        # Send the message to Google Chat
+        response = requests.post(
+            os.environ["GOOGLE_CHAT_WEBHOOK"],
+            headers={"Content-Type": "application/json"},
+            data=json.dumps(message),
+        )
+        if response.status_code == 200:
+            print("Message sent to Google Chat successfully")
+        else:
+            print(f"Failed to send message to Google Chat. Status code: {response.status_code}")
+        EOF
