@@ -5,7 +5,8 @@ Library    OperatingSystem
 Library         DateTime
 Library           AutoItLibrary  
 Library    Process
-
+Library  RequestsLibrary
+#Library  JSON
 
 *** Variables ***
 
@@ -16,6 +17,9 @@ ${intro}          Test
 ${description}    creating template from a form
 ${AUTOIT_SCRIPT}     ${CURDIR}${/}Resource\\Fileuautoit.exe
 ${FILE_PATH}       ${CURDIR}${/}Resource\\BusinessFreedom.json
+${name}   Automation_bundle + 2023-11-30 10:25:24
+${TABLE_ROW_NUMBER}    1  # The actual row number
+${TABLE_COLUMN_NUMBER}    1  # The actual column number
 *** Keywords ***
 
 Search Form
@@ -128,3 +132,56 @@ Upload Form
      ${upload}=    Get Text    xpath=//div[@class='modal-body']/div
 
     Log To Console    ${upload}
+
+
+
+Send GET Request and Extract ID by Name
+	sleep   2
+	${form_name} =    Fetch Form ID       ${TABLE_ROW_NUMBER}    ${TABLE_COLUMN_NUMBER}
+    Log To Console    ${form_name}
+    ${pattern}=   Set Variable    like
+    ${encoded_form_name}    Evaluate    urllib.parse.quote("${form_name}")
+    Log    Encoded Form Name: ${encoded_form_name}
+    ${base_url}      Set Variable    http://forms-flow-api-qaee.aot-technologies.com
+
+    Create Session    alias_name    ${base_url}
+    ${body}=    create dictionary    grant_type=password  client_id=forms-flow-web        username=formsflow-designer    password=aot123
+
+    ${header}=  create dictionary    Content-Type=x-www-form-urlencoded
+    ${resp}=    POST      https://forms-flow-idm-qa.aot-technologies.com/auth/realms/forms-flow-ai/protocol/openid-connect/token    ${body}    ${header}
+    Log To Console    ${resp}
+      ${json_response}    Set Variable    ${resp.json()}
+    ${access_token}    Set Variable    ${json_response["access_token"]}
+    Should Not Be Empty    ${access_token}
+
+    Log    Access Token: ${access_token}
+    ${query_params}    Create Dictionary    pageNo=1    limit=5    sortBy=formName    sortOrder=asc    formType=form   formName=${encoded_form_name}
+    ${headers}    Create Dictionary    Authorization=Bearer ${access_token}
+
+    ${response}    GET On Session         alias_name  /form    params=${query_params}    headers=${headers}
+
+    Log    Response Status Code: ${response.status_code}
+    Log    Response Content: ${response.content}
+
+
+   Should Be Equal As Numbers    ${response.status_code}    200
+   ${form_id}=     Get Form ID From API Response    ${response.content}
+    Log             Form ID: ${form_id}
+
+Fetch form ID
+    [Arguments]    ${row_number}    ${column_number}
+    # Construct XPath based on row and column numbers
+    ${xpath} =    Set Variable    //table[contains(@class,'table custom-table table-responsive-sm')]/tbody/tr[${row_number}]/td[${column_number}]
+    # Get the ID value using the constructed XPath
+    ${id_value} =    Get Text    xpath=${xpath}
+    [Return]    ${id_value}
+
+
+Get Form ID From API Response
+
+    [Arguments]    ${api_response}
+    ${json_data}=    Evaluate    json.loads($api_response)    json
+    Log             JSON Data: ${json_data}
+    ${form_id}=    Set Variable    ${json_data['forms'][0]['formId']}
+#    Log    Form ID: ${form_id}
+    [Return]         ${form_id}
