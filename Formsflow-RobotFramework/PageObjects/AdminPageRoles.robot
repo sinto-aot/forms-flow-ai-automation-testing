@@ -21,31 +21,29 @@ ${ErrorMessage}           Role names cannot contain special characters except _ 
 
 
 Click on Roles
-
-    click element                       //a[normalize-space()='Admin']
-    sleep                   3
-    click element            //span[@class="application-text" and text()="Roles"]
-    sleep               2
+    click element                       //a[@data-testid='admin-nav-link']
+    sleep                               3
+    click element                       //span[@class="application-text" and text()="Roles"]
+    sleep                               2
 
 Roles Creation
-
     click on roles
-    click button        //button[normalize-space()='Create New Role']
-    ${Create role} =     get text       //div[@class='modal-header']
-    should be equal     ${Create role}        ${Create newrole}
-    sleep               2
-    input text          //input[@id='role-name']            ${New role}
-    element should be disabled               //button[@type='submit']
-    input text          //textarea[@id='role-description']  ${Description}
-    click button        //button[@type='submit']
-    wait until element is visible    //div[contains(text(),'Role created successfully!')]
+    click button                        //button[normalize-space()='Create New Role']
+    ${Create role} =                    get text       //div[@class='modal-header']
+    should be equal                     ${Create role}        ${Create newrole}
+    sleep                               2
+    input text                         //input[@id='role-name']            ${New role}
+    element should be disabled         //button[@type='submit']
+    input text                         //textarea[@id='role-description']  ${Description}
+    click button                       //button[@type='submit']
+    wait until element is visible      //div[contains(text(),'Role created successfully!')]
     sleep                   3
 
 Duplicate role
     sleep                               2
     click button                        //button[normalize-space()='Create New Role']
-    ${Create role} =     get text       //div[@class='modal-header']
-    should be equal     ${Create role}        ${Create newrole}
+    ${Create role} =                    get text       //div[@class='modal-header']
+    should be equal                     ${Create role}        ${Create newrole}
     sleep                               2
     input text                          //input[@id='role-name']            ${DefaultRole}
     element should be disabled          //button[@type='submit']
@@ -56,10 +54,10 @@ Duplicate role
     sleep                               2
     click element                       //button[@aria-label='Close']
     sleep                               3
+    Log To Console                      Not able to create duplicate roles.
 
 
 Searching for default user
-
     input text                          //input[contains(@placeholder,'Search by role name')]       ${DefaultRole}
     sleep                               4
     page should contain                 ${DefaultRole}
@@ -70,78 +68,78 @@ Searching for default user
     sleep                               2
     element should be visible           //div[@class='role-list']/div[@class='role-user']
     sleep                                3
-    click button                         //button[normalize-space()='Clear']
+    click button                        //button[normalize-space()='Clear']
 
 
 Search for created Role
-    sleep                            3
-    input text                      //input[contains(@placeholder,'Search by role name')]       ${New role}
-    sleep                           2
-    page should contain             ${New role}
-    element should be visible       //i[@class='fa fa-trash delete_button']
-    sleep                           2
-    element should be visible       //i[contains(@class, 'fa-pencil')]
-    click element                   //p[normalize-space()='View']
+    sleep                               3
+    input text                          //input[contains(@placeholder,'Search by role name')]       ${New role}
+    sleep                               2
+    page should contain                 ${New role}
+    element should be visible           //i[@class='fa fa-trash delete_button']
+    sleep                               2
+    element should be visible           //i[contains(@class, 'fa-pencil')]
+    click element                       //p[normalize-space()='View']
     wait until element is visible      //div[contains(text(),'No results found')]
-    log to console                  Created role can be edit, delete and view from here.
-    sleep                           4
+    log to console                      Created role can be edit, delete and view from here.
+    sleep                               4
 
 Edit a Role
-    click element                   //i[contains(@class, 'fa-pencil')]
-    page should contain             ${EditConfirm}
-    sleep                              2
-    input text                       //input[@placeholder='Eg: Account Manager']      ${Edit rolename}
-    sleep                              2
-    click button                    //button[normalize-space()='Save']
-    wait until element is visible      //div[contains(text(),'Role updated successfully!')]
-    log to console                   Role Name updated succesfully !
-    click button                    //button[normalize-space()='Clear']
+    click element                       //i[contains(@class, 'fa-pencil')]
+    page should contain                 ${EditConfirm}
+    sleep                               2
+    input text                          //input[@placeholder='Eg: Account Manager']      ${Edit rolename}
+    sleep                               2
+    click button                        //button[normalize-space()='Save']
+    wait until element is visible       //div[contains(text(),'Role updated successfully!')]
+    log to console                      Role Name updated succesfully !
+    click button                        //button[normalize-space()='Clear']
 
 Add a Usergroup to the new role
     click on users
     Search for a default User
-    click button                    //button[normalize-space()='Add Role']
-    sleep                           3
-    element should be visible       //div[contains(@class,'role-list')]//div[2]
+    click button                        //button[normalize-space()='Add Role']
+    sleep                               3
+    element should be visible           //div[contains(@class,'role-list')]//div[2]
     wait until page contains element    //div[contains(@class, 'role-highlighted')]
-    sleep                           3
-    Scroll Element Into View        //div[contains(text(), '${Edit rolename}')]
-    Click Element                   //div[contains(text(), '${Edit rolename}')]
-    element should be visible       //i[contains(@class,'fa fa-check')]
-    sleep                           2
-    click button                    //button[normalize-space()='Done']
-    wait until element is visible   //div[contains(text(),'${UpdateMessage}')]
+    sleep                               3
+    Scroll Element Into View            //div[contains(text(), '${Edit rolename}')]
+    Click Element                       //div[contains(text(), '${Edit rolename}')]
+    element should be visible           //i[contains(@class,'fa fa-check')]
+    sleep                               2
+    click button                        //button[normalize-space()='Done']
+    wait until element is visible       //div[contains(text(),'${UpdateMessage}')]
 
 
 
 Delete a Role
-    sleep                           2
-    input text                      //input[contains(@placeholder,'Search by role name')]       ${Edit rolename}
-    sleep                           2
-    click element                   //i[@class='fa fa-trash delete_button']
-    sleep                            2
-    page should contain             ${DeleteConfirm} ${Edit rolename}
-    click button                    //button[normalize-space()='Delete']
-    wait until element is visible   //div[contains(text(),'Role deleted successfully!')]
+    Click on Roles
+    sleep                               3
+    input text                          //input[contains(@placeholder,'Search by role name')]       ${Edit rolename}
+    sleep                               3
+    click element                       //i[@class='fa fa-trash delete_button']
+    sleep                               3
+    page should contain                 ${DeleteConfirm} ${Edit rolename}
+    click button                        //button[normalize-space()='Delete']
+    wait until element is visible       //div[contains(text(),'Role deleted successfully!')]
+    Log To Console                      Role deleted successfully
 
 
 Search for invalid rolename
-    sleep                           2
-    input text                      //input[contains(@placeholder,'Search by role name')]       ${Invalid role}
-    sleep                           2
-    page should contain             ${Not found}
-    click button                    //button[normalize-space()='Clear']
+    sleep                               3
+    input text                         //input[contains(@placeholder,'Search by role name')]       ${Invalid role}
+    sleep                               2
+    page should contain                 ${Not found}
+    click button                        //button[normalize-space()='Clear']
 
 Create new role with specialcharacters
-    sleep                               2
+    sleep                               5
     click button                        //button[normalize-space()='Create New Role']
     ${Create role} =     get text       //div[@class='modal-header']
-
-    should be equal     ${Create role}        ${Create newrole}
-
+    should be equal                     ${Create role}        ${Create newrole}
     sleep                                2
     input text                          //input[@id='role-name']            ${Invalid role}
-    element should be disabled           //button[@type='submit']
+    element should be disabled          //button[@type='submit']
     input text                          //textarea[@id='role-description']  ${Description}
     click button                        //button[@type='submit']
     wait until element is visible       //div[contains(text(),'${ErrorMessage} ')]

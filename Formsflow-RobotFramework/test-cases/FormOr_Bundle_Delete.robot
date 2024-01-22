@@ -9,7 +9,7 @@ Resource            ../PageObjects/Generic.robot
 
 Deleting a Form
     [Tags]    Sanity
-    Generic.Login To Qaee instance as designer
+    Generic.Login To QA Instance   ${designer_user}
     FormOrBundleDelete.Delete a form
-#    FormOrBundleDelete.Delete a Bundle
+    FormOrBundleDelete.Delete a Bundle
     Generic.logout

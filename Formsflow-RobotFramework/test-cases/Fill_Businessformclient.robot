@@ -14,13 +14,13 @@ Resource            ../PageObjects/ApplicationPage.robot
 Suite Teardown    Close Browser
 
 *** Variables ***
-${formname_client}       New Business
-${formname_freedom}     freedom
-${form_id}          64b8dd187b3d9f92a25474ca
+${New_businessform}       New Business License
+${formname_freedom}       freedom
+${form_id}                64b8dd187b3d9f92a25474ca
 *** Test Cases ***
 Logintest
-  Generic.LoginToApplication_client
-  FormsLandingPAge.Search Form     ${formname_client}     ${form_id}
+  Generic.Login To QA Instance   ${client_user}
+  FormsLandingPAge.Search Form     ${New_businessform}     ${form_id}
   FormfillClient.Fill_Form
-   Applicationpage.Check status of form submitted
+  Applicationpage.Check status of form submitted
 

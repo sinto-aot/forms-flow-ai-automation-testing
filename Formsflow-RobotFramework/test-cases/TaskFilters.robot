@@ -12,6 +12,6 @@ Test Teardown    Close Browser
 *** Test Cases ***
 
 Task filters cases
-    Generic.LoginToApplication_testreviewer
+    Generic.Login To QA Instance   ${test_reviewer}
     TaskFilterCreate.Check for taskfilters in the list
     TaskFilterCreate.Create new Taskfilter

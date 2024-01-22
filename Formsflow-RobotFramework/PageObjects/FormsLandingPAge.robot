@@ -3,7 +3,7 @@ Documentation     All the page objects and keywords of formpage
 Library           SeleniumLibrary
 Library    OperatingSystem
 Library         DateTime
-Library           AutoItLibrary  
+Library         AutoItLibrary
 Library    Process
 Library  RequestsLibrary
 #Library  JSON
@@ -20,6 +20,7 @@ ${FILE_PATH}       ${CURDIR}${/}Resource\\BusinessFreedom.json
 ${name}   Automation_bundle + 2023-11-30 10:25:24
 ${TABLE_ROW_NUMBER}    1  # The actual row number
 ${TABLE_COLUMN_NUMBER}    1  # The actual column number
+
 *** Keywords ***
 
 Search Form
@@ -28,7 +29,7 @@ Search Form
     Click Element        //*[@data-testid='form-search-click-button']
     sleep    3
     click Button    //*[@data-testid='form-submit-button-${form_id}']
-    sleep    5
+    sleep    10
 
 Search Bundle_Form
     [Arguments]    ${Bundle_form}
@@ -37,6 +38,7 @@ Search Bundle_Form
     sleep    3
     click Button    //tbody/tr[1]/td[3]/button[1]
     sleep    5
+
 RBAC
 	sleep    3
 	Click Button    //tbody/tr[1]/td[6]/span[1]/button[1]
@@ -94,6 +96,7 @@ save as template
 	sleep     3
 	Click Button    //button[@data-testid='save-form-button']
     sleep    5
+
 Choose From Template
 
 	  Wait Until Element Is Visible    //button[@data-testid='choose-template-button']
@@ -174,7 +177,7 @@ Fetch form ID
     ${xpath} =    Set Variable    //table[contains(@class,'table custom-table table-responsive-sm')]/tbody/tr[${row_number}]/td[${column_number}]
     # Get the ID value using the constructed XPath
     ${id_value} =    Get Text    xpath=${xpath}
-    [Return]    ${id_value}
+    RETURN     ${id_value}
 
 
 Get Form ID From API Response
@@ -184,4 +187,4 @@ Get Form ID From API Response
     Log             JSON Data: ${json_data}
     ${form_id}=    Set Variable    ${json_data['forms'][0]['formId']}
 #    Log    Form ID: ${form_id}
-    [Return]         ${form_id}
+    RETURN         ${form_id}

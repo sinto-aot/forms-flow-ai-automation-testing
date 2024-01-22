@@ -10,5 +10,5 @@ Suite Teardown    Close Browser
 *** Test Cases ***
 
 Upload Form
-    Generic.Login To Qaee instance as designer
+    Generic.Login To QA Instance   ${designer_user}
     FormsLandingPAge.Upload Form

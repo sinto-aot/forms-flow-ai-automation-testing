@@ -1,32 +1,39 @@
 *** Settings ***
 Library    SeleniumLibrary
+Library    XML
 
 *** Variables ***
-${Search_value}     Automation_Duplicate_test-copy
-${Delete_alert}     Delete Confirmation
+${Search_form}     Automation Draft test-copy
+${Search_bundle}   Automation_bundle +
+${Delete_alert}    Delete Confirmation
 
 *** Keywords ***
 
 Delete a form
 
-    input text                          xpath://input[@placeholder='Search by form title']       ${Search_value}
-    Press Keys                          //input[@placeholder='Search by form title']    ENTER
+    input text                          //input[@data-testid='form-search-input-box']     ${Search_form}
+    Press Keys                          //input[@data-testid='form-search-input-box']     ENTER
     sleep                               4s
-    click element                       xpath://i[@class='fa-solid fa-ellipsis']
-    Click Element               xpath=//a[text()='Delete']
-    sleep   3
+    click element                       //i[@class='fa-solid fa-ellipsis']
+    Click Element                       //a[contains(@data-testid, 'designer-form-option-') and contains(@data-testid, '-delete')]
+    sleep                                3
     Wait Until Page Contains            Delete Confirmation
-    click button                        xpath://button[text()='Delete']
-    sleep                               4s
-    page should contain                 Form deleted successfully
+    click button                        //button[@data-testid="delete-confirm-button"]
+    Click Element                       //*[@data-testid="form-search-cear-button"]
+    Wait Until Page Contains            Form deleted successfully
+    sleep                               5
 
 Delete a Bundle
-   click element                        xpath://span[normalize-space()='Form Bundle']
-   input text                           xpath://input[@placeholder='Search...']     ${Search_value}
-   Press Keys                           //input[@placeholder='Search...']    ENTER
-   sleep                                3s
-   click element                        xpath://i[contains(@class, 'fa fa-trash fa-lg delete_button')]
+   Sleep                                4
+   click element                        //span[normalize-space()='Form Bundle']
+   input text                           //*[@data-testid="bundle-search-input-box"]    ${Search_bundle}
+   Sleep                                 2
+   Click Element                        //div[@data-testid="bundle-search-click-button"]
+   sleep                                4
+   Click Element                        //i[@class='fa-solid fa-ellipsis']
+   Sleep                                4
+   click element                        //a[contains(@data-testid, 'designer-bundle-option') and contains(@data-testid, '-delete')]
    Wait Until Page Contains             Delete Confirmation
-   click button                         xpath://button[normalize-space()='Confirm']
-   sleep                                4s
-   page should contain                  Bundle deleted successfully
+   click button                         //button[@data-testid="delete-confirm-button"]
+   Wait Until Page Contains             Bundle deleted successfully
+

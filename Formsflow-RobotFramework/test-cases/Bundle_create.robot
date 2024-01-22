@@ -16,36 +16,40 @@ Resource            ../PageObjects/workflowSelectPage.robot
 Test Teardown    Close Browser
 
 *** Variables ***
+
 ${Bundle_form}       Automation_bundle
+
 *** Test Cases ***
+
 Bundle_Create
-
-
-    Generic.Login To Qaee instance as designer
+    [Tags]    BundleCreate
+    Generic.Login To QA Instance    ${designer_user}
     BundleCreatePAge.CreateBundle
-     workflowSelectPage.select workflow and publish to client
-   Generic.validate success message after form create
-     Generic.logout
-Bundle_FormfillByClient
+    workflowSelectPage.select bundle workflow and publish to client
+    Generic.validate success message after form create
+    Generic.logout
 
-  Generic.LoginToApplication_client
+Bundle_FormfillByClient
+   [Tags]    Fillform
+  Generic.Login To QA Instance    ${client_user}
   FormsLandingPAge.Search Bundle_Form   ${Bundle_form}
   FormfillClient.Fill_BundleForm
   FormfillClient.check second bundle form displayed
   FormfillClient.Fill_Freedomform
   Applicationpage.Check status of form submitted
   Generic.logout
+
+
 Bundle_TaskActionByReviewer
-
-
-  Generic.LoginToApplication_reviewer
+  [Tags]    ReviewerAction
+  Generic.Login To QA Instance   ${reviewer_user}
   ReviewerPage.ReviewerAction
   Applicationpage.Check status of form submitted
 
 BundlingRBAC_negative
-	        [Tags]    Sanity
 
-   Generic.Login To Qaee instance as designer
+	[Tags]    Sanity
+    Generic.Login To QA Instance   ${designer_user}
     BundleCreatePAge.Verify negative flow-enter same bundle name created earlier
 
 

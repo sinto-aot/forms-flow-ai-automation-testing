@@ -12,7 +12,7 @@ Suite Teardown    Close Browser
 *** Test Cases ***
 Template_Create
     [Tags]    Sanity
-    Generic.Login To Qaee instance as designer
+    Generic.Login To QA Instance  ${designer_user}
     FormsLandingPAge.select a form and saving it as template    656968a07eb909f9083f7766
     FormsLandingPAge.Choose From Template
     TemplatePage.Search category
@@ -21,5 +21,5 @@ Template_Create
 
 #RBAC
 #    [Tags]    Sanity1
-#    Generic.Login To Qaee instance as designer
+#    Generic.Login To QA Instance  ${designer_user}
 #    FormsLandingPAge.RBAC

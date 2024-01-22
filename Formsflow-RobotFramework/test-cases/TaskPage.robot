@@ -18,7 +18,7 @@ ${Bundle_form}       Automation_bundle
 TaskSearchByReviewer_listview
 
 
-  Generic.LoginToApplication_reviewer
+  Generic.Login To QA Instance  ${reviewer_user}
   ReviewerPage.searchInListView
 
 

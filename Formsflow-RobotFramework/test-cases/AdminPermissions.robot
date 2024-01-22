@@ -6,37 +6,39 @@ Resource            ../PageObjects/AdminPageDashboard.robot
 Resource            ../PageObjects/AdminPageRoles.robot
 Resource            ../PageObjects/AdminPageUsers.robot
 Resource            ../PageObjects/Generic.robot
-Test Teardown    Close Browser
+Resource            ../PageObjects/InsightsPage.robot
+Test Teardown       Close Browser
 
 *** Variables ***
+
+${username}         john.honai
 
 *** Test Cases ***
 
 Dashboard Permissions
     [Tags]    dashboard
-    Generic.LoginToApplication_Admin
-
-# AdminPageDashboard.Basic Dashboard Permissions
-  InsightsPage.Check for Assigned Dashboard
+    Generic.Login To QA Instance    ${username}
+    AdminPageDashboard.Basic Dashboard Permissions
+    InsightsPage.Check for Assigned Dashboard
     AdminPageDashboard.Remove a group from Dashboard
 
 
 Roles Creation Page permissions
     [Tags]    roles
-    Generic.LoginToApplication_Admin
+    Generic.Login To QA Instance    ${username}
     AdminPageRoles.Roles Creation
     AdminPageRoles.Duplicate role
     AdminPageRoles.Searching for default user
     AdminPageRoles.Search for invalid rolename
     AdminPageRoles.Search for created Role
     AdminPageRoles.Edit a Role
-#    AdminPageRoles.Add a Usergroup to the new role
+    AdminPageRoles.Add a Usergroup to the new role
     AdminPageRoles.Delete a Role
 
 
 User Persmissions
     [Tags]    users
-    Generic.LoginToApplication_Admin
+    Generic.Login To QA Instance    ${username}
     AdminPageUsers.Search for a default User
     AdminPageUsers.Add a new usergroup to the role
     AdminPageUsers.Remove added user group
