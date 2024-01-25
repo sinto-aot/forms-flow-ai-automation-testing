@@ -22,10 +22,7 @@ TaskSearchByReviewer_listview
   ReviewerPage.searchInListView
 
 
-<<<<<<< Updated upstream
 
-=======
->>>>>>> Stashed changes
 
 
 

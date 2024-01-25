@@ -3,7 +3,7 @@ Library    SeleniumLibrary
 Library    XML
 
 *** Variables ***
-${Search_form}     Automation Draft test-copy
+${Search_form}     Automation_Form
 ${Search_bundle}   Automation_bundle +
 ${Delete_alert}    Delete Confirmation
 
@@ -19,7 +19,7 @@ Delete a form
     sleep                                3
     Wait Until Page Contains            Delete Confirmation
     click button                        //button[@data-testid="delete-confirm-button"]
-    Click Element                       //*[@data-testid="form-search-cear-button"]
+    Click Element                       //*[@data-testid="form-search-clear-button"]
     Wait Until Page Contains            Form deleted successfully
     sleep                               5
 

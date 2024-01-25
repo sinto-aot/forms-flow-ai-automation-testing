@@ -5,7 +5,7 @@ Library    SeleniumLibrary
 
 ${formname}      Automation_Form
 ${labelname}     Feedback
-
+${copy}                             -copy
 *** Keywords ***
 
 Create new Form
@@ -33,6 +33,7 @@ Create new Form
     click button                        //button[@data-testid='save-form-button']
     sleep                               4
     Set Global Variable                 ${title}
+    Log To Console                      Form created successfully.
 
 check form status
     Input Text                         //input[@placeholder='Search by form title']    ${title}
@@ -40,6 +41,37 @@ check form status
     sleep                               3
     ${publish_status}=                 Get Text    xpath=//span[@class='badge rounded-pill px-3 py-2 published-forms-label']
     Log To Console                     The newly created form is ${publish_status}.
+
+
+Create Duplicate Form
+    Sleep                               8
+    input text                          //*[@data-testid="form-search-input-box"]        ${formname}
+    Press Keys                          //*[@data-testid="form-search-input-box"]        ENTER
+    sleep                               5
+    wait until page contains            ${formname}
+    Click Element                       //i[@class='fa-solid fa-ellipsis']
+    Click Element                       //a[contains(@data-testid, 'designer-form-option-') and contains(@data-testid, '-view-details')]
+    Sleep                               6
+    Click Button                        //button[@data-testid="form-duplicate-button"]
+    wait until page contains            Create a duplicate form
+    click button                        //button[@data-testid="form-duplicate-yes-button"]
+    sleep                                4
+    page should contain                 Duplicate form created successfully
+    sleep                               3
+    page should contain                 ${copy}
+    click button                        //button[@data-testid="form-next-button"]
+    click button                        //button[@data-testid="form-save-next-button"]
+    Sleep                               3
+    Click Button                        //button[@data-testid="save-form-button"]
+    sleep                               5
+    Log To Console                      Duplicate form created successfully.
+
+
+
+
+
+
+
 
 API Testing
 	[Tags]                             Sanity

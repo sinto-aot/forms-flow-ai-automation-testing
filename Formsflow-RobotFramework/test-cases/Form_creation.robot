@@ -5,7 +5,7 @@ Library           SeleniumLibrary
 Library           DateTime
 Resource          ../PageObjects/FormCreate.robot
 Resource          ../PageObjects/Generic.robot
-Suite Teardown    Close Browser
+Test Teardown     Close Browser
 
 *** Test Cases ***
 
@@ -15,4 +15,10 @@ Newform_Create
     FormCreate.Create new Form
     Generic.validate success message after form create
     FormCreate.check form status
+    Generic.logout
+
+Create duplicate form
+    Generic.Login To QA Instance   ${designer_user}
+    FormCreate.Create Duplicate Form
+    Generic.validate success message after form create
     Generic.logout

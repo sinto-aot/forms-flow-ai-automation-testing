@@ -28,7 +28,7 @@ Remove a group from Dashboard
     click element                       //a[@data-testid='admin-nav-link']
     sleep                               3
     sleep                               4
-    click element                       //span[contains(text(), '/formsflow-analytics/group4')]/i[contains(@class, 'fa-xmark')]
+    click element                       //i[@data-testid='dashboard-remove-auth-btn-1']
     sleep                               2
     Element Should Be Visible           //div[contains(text(),'Update success!')]
 
