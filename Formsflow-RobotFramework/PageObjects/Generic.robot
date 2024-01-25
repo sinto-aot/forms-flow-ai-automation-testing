@@ -26,8 +26,8 @@ ${password}              aot123
 
 Open chrome Browser and goto QAbundle instance
 
-      Open Browser       ${url}        browser=chrome    options=add_argument("--headless")
-#     Open Browser       ${url}        ${browser_name}
+#      Open Browser       ${url}        browser=chrome    options=add_argument("--headless")
+   Open Browser       ${url}        ${browser_name}
       Maximize Browser Window
 
 Login To QA Instance
