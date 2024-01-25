@@ -44,12 +44,18 @@ jobs:
         restore-keys: |
           ${{ runner.os }}-pip- 
    
+    - name: Delete Existing ChromeDriver
+      run: sudo rm /usr/local/bin/chromedriver || true
+
     - name: Install ChromeDriver
       run: |
         CHROMEDRIVER_VERSION=$(curl -sS https://chromedriver.storage.googleapis.com/LATEST_RELEASE)
         wget https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip
         unzip chromedriver_linux64.zip
         sudo mv chromedriver /usr/local/bin/
+ 
+    - name: Check Chrome Version
+      run: google-chrome --version
 
     - name: Set up Node.js
       uses: actions/setup-node@v2
