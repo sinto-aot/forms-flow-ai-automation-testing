@@ -90,11 +90,13 @@ jobs:
       env:
         CHROME_HEADLESS: true
     
-    - name: Upload Robot Framework Logs
-      uses: actions/upload-artifact@v2
-      with:
-        name: robot-logs
-        path: Formsflow-RobotFramework/results
+    - name: Save logs to a file
+      run: |
+        mkdir -p logs
+        # Redirecting all logs to a file
+        exec > logs/full_log.txt 2>&1
+        cat $GITHUB_WORKSPACE/logs/full_log.txt
+      continue-on-error: true
 
   check-status:
     runs-on: ubuntu-latest
