@@ -83,6 +83,13 @@ jobs:
         done
       env:
         CHROME_HEADLESS: true
+    
+    - name: Upload Robot Framework Logs
+      uses: actions/upload-artifact@v2
+      with:
+        name: robot-logs
+        path: Formsflow-RobotFramework/results
+
   check-status:
     runs-on: ubuntu-latest
     needs: robot-framework
