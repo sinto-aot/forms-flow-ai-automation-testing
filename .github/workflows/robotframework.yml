@@ -85,12 +85,12 @@ jobs:
         CHROME_HEADLESS: true
     
     - name: Save logs to a file
-        run: |
-          mkdir -p logs
-          # Redirecting all logs to a file
-          exec > logs/full_log.txt 2>&1
-          cat $GITHUB_WORKSPACE/logs/full_log.txt
-        continue-on-error: true
+      run: |
+        mkdir -p logs
+        # Redirecting all logs to a file
+        exec > logs/full_log.txt 2>&1
+        cat $GITHUB_WORKSPACE/logs/full_log.txt
+      continue-on-error: true
 
   check-status:
     runs-on: ubuntu-latest
